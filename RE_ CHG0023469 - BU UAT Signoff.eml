@@ -1,0 +1,323 @@
+Received: from PSAPR04MB4216.apcprd04.prod.outlook.com (2603:1096:301:33::12)
+ by KL1PR0401MB5130.apcprd04.prod.outlook.com with HTTPS; Thu, 16 Jun 2022
+ 05:13:13 +0000
+Received: from SI2PR04MB5043.apcprd04.prod.outlook.com (2603:1096:4:14f::5) by
+ PSAPR04MB4216.apcprd04.prod.outlook.com (2603:1096:301:33::12) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5332.14; Thu, 16 Jun 2022 05:13:11 +0000
+Received: from SI2PR04MB5043.apcprd04.prod.outlook.com
+ ([fe80::79aa:299a:ff36:ba24]) by SI2PR04MB5043.apcprd04.prod.outlook.com
+ ([fe80::79aa:299a:ff36:ba24%5]) with mapi id 15.20.5332.022; Thu, 16 Jun 2022
+ 05:13:11 +0000
+From: Suriati Abdul Manaf <suriati.abdulmanaf@malaysiaairlines.com>
+To: Rajashekarreddy Kasireddy
+	<ext_rajasekharreddy.kasireddy@malaysiaairlines.com>
+Subject: RE: CHG0023469 - IDVS Bug Fix
+Thread-Topic: CHG0023469 - IDVS Bug Fix
+Thread-Index: AQHYgT9kCtFVlOdavUCSoXDsA0m7zq1RfJ/g
+Importance: high
+X-Priority: 1
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Thu, 16 Jun 2022 05:13:11 +0000
+Message-ID:
+	<SI2PR04MB50437576F1949D556E3A9DF3E5AC9@SI2PR04MB5043.apcprd04.prod.outlook.com>
+References:
+	<KL1PR0401MB5130FCF0D89CF4C937D1C167A7AC9@KL1PR0401MB5130.apcprd04.prod.outlook.com>
+In-Reply-To:
+	<KL1PR0401MB5130FCF0D89CF4C937D1C167A7AC9@KL1PR0401MB5130.apcprd04.prod.outlook.com>
+Accept-Language: en-GB, en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: SI2PR04MB5043.apcprd04.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	bafead6c-e68b-4299-b609-08da4f56e8c6
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+msip_labels:
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:SI2PR04MB5043.apcprd04.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-id: 8fc3a567-1ee8-4994-809c-49f50cdb6d48
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-transport-crosstenantheadersstamped: PSAPR04MB4216
+x-ms-exchange-crosstenant-originalarrivaltime: 16 Jun 2022 05:13:11.6996 (UTC)
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=malaysiaairlines.com;
+x-microsoft-antispam: BCL:0;
+x-ms-office365-filtering-correlation-id: bafead6c-e68b-4299-b609-08da4f56e8c6
+x-ms-traffictypediagnostic: PSAPR04MB4216:EE_
+x-ms-exchange-transport-endtoendlatency: 00:00:01.9964803
+x-ms-exchange-crosstenant-network-message-id:
+	bafead6c-e68b-4299-b609-08da4f56e8c6
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	kcxhFC8Ql+jiMny8oJXYU/P1hdg1XluIPGIEKy9CiOVFSTT9OOZASVYSGzjQH9YQUr1oS+9oXoWA7g/X6rOXnG6Mq4tm3EdUYjIw+v+GvozfAfpwQZru2/mZiPZsCAgQ
+x-ms-exchange-processed-by-bccfoldering: 15.20.5353.015
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource: SI2PR04MB5043.apcprd04.prod.outlook.com
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	M84UYUErNIcFn6EUz1zqVwNYt+kbYpfZ/harNzgTTR3ImIILSIyOGaTULmTl6CJIw16uU/YY3i1JgjDdlRvdQ8zF+z5bJ7ZqLOz4hoDF5uTL0LyieVJ1CoImJQ1e8vec4SyzHJD1sDask1MMly6ORKPoJOphRuyNkX0dD92O58JxfcrzKEpgddp6/NUNMMTdFIlGLWaQqzsxEh8LrF1IcyzAZJoDFxIX/7v5er/Nzub8Ox1brazIbOOqJX3cy2VG2vgSJ6MieSn75TEXA19g0icrbmbjEvbwobS/2hnGA8I84R/lfOReBDnFvXXxn5b8+BBxK8I52du2OCBkG5XlM4vr0yp4fOTc7cUJDzhiBSc1An8Bx7MVhVGlkqVmpRoXKIa7Y+WjLKjyJOcnBh6+TYlTSLqrPlXMyi6TkMp0Y16tO2Lqxsu6oTjvJqfA2+uPxMQCskKh+Xr8/w6R/trkU92nuepgCWHmfQ8pV+ODluWZ9GreyeHL91mBA9EplDtCCTTLH5g+qmL34YqY417zc97WdumkRLDWJBZ2yrldwfzP2thb/lSQEsa92RiMEZFpEDox4wS+g0EGQm/2rdw0OeM1mxpo4Jh5suqf+/Galkm/a66UzxRmJVpwrd8W1t9/hsKv/QQT97J0hg01tFEqbBPVkClriuKaA5cNajYbZ3e38Ty/PMx7yYH7o/qAXBGGa+QbzyLGx0ojpI98GochUA==
+Content-Type: multipart/alternative;
+	boundary="_000_SI2PR04MB50437576F1949D556E3A9DF3E5AC9SI2PR04MB5043apcp_"
+MIME-Version: 1.0
+
+--_000_SI2PR04MB50437576F1949D556E3A9DF3E5AC9SI2PR04MB5043apcp_
+Content-Type: text/plain; charset="us-ascii"
+
+Dear Rajashekarreddy,
+As requested.
+
+UAT SIGNOFF:
+
+  1.  UAT template with test script to be attached in the change. (no signature required)
+  2.  Email approval (with the following signoff and test script attachment in the mail) to be attached in the change.
+
+I hereby APPROVE  CHG0023469  to move to Production and UAT has been completed successfully.
+
+Suriati Abdul Manaf
+
+Manager IT Risk & Cyber Security
+
+Regards
+Suriati
+
+
+From: Rajashekarreddy Kasireddy <ext_rajasekharreddy.kasireddy@malaysiaairlines.com>
+Sent: Thursday, June 16, 2022 1:11 PM
+To: Suriati Abdul Manaf <suriati.abdulmanaf@malaysiaairlines.com>
+Subject: CHG0023469 - IDVS Bug Fix
+
+Dear Suriati,
+
+We have done the bugfix for the IDVS application user listing.
+Kindly share the UAT signoff to promote change into production.
+
+
+
+UAT SIGNOFF:
+
+  1.  UAT template with test script to be attached in the change. (no signature required)
+  2.  Email approval (with the following signoff and test script attachment in the mail) to be attached in the change.
+
+I hereby APPROVE  CHG0023469  to move to Production and UAT has been completed successfully.
+
+<<Email Signature with Designation>>
+
+
+
+Thanks,
+
+RajashekarReddy Kasireddy
+
+AMS - OST Tower Lead
+
+Mobile: +60 1123464348
+
+--_000_SI2PR04MB50437576F1949D556E3A9DF3E5AC9SI2PR04MB5043apcp_
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:5254055;
+	mso-list-template-ids:-877998116;}
+@list l0:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:916981645;
+	mso-list-template-ids:-877998116;}
+@list l1:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="#0563C1" vlink="#954F72" style="word-wrap:break-word">
+<div class="WordSection1">
+<p class="MsoNormal">Dear Rajashekarreddy,<o:p></o:p></p>
+<p class="MsoNormal">As requested.<o:p></o:p></p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td width="623" valign="top" style="width:467.5pt;border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+<p style="background:white"><u><span style="color:#323130">UAT SIGNOFF:&nbsp;</span></u><o:p></o:p></p>
+<ol start="1" type="1">
+<li class="MsoNormal" style="color:#323130;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;mso-list:l0 level1 lfo1;background:white">
+UAT template with test script to be attached in the change. (no signature required)&nbsp;<o:p></o:p></li><li class="MsoNormal" style="color:#323130;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;mso-list:l0 level1 lfo1;background:white">
+Email approval (with the following signoff and test script attachment in the mail) to be attached in the change.&nbsp;<o:p></o:p></li></ol>
+<p style="margin-left:.5in;background:white"><b><span style="color:#323130">I hereby APPROVE&nbsp; CHG0023469&nbsp; to move to Production and UAT has been completed successfully.&nbsp;</span></b><o:p></o:p></p>
+<p style="margin-left:.5in;background:white"><b><span style="color:#323130">Suriati Abdul Manaf<o:p></o:p></span></b></p>
+<p style="margin-left:.5in;background:white"><b><span style="color:#323130">Manager IT Risk &amp; Cyber Security</span></b><span style="color:black">&nbsp;</span><o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Regards<o:p></o:p></p>
+<p class="MsoNormal">Suriati<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style="border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b>From:</b> Rajashekarreddy Kasireddy &lt;ext_rajasekharreddy.kasireddy@malaysiaairlines.com&gt;
+<br>
+<b>Sent:</b> Thursday, June 16, 2022 1:11 PM<br>
+<b>To:</b> Suriati Abdul Manaf &lt;suriati.abdulmanaf@malaysiaairlines.com&gt;<br>
+<b>Subject:</b> CHG0023469 - IDVS Bug Fix<o:p></o:p></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class="MsoNormal"><span style="font-size:12.0pt;color:black">Dear Suriati,<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:12.0pt;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:12.0pt;color:black">We have done the bugfix for the IDVS application user listing.<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:12.0pt;color:black">Kindly share the UAT signoff to promote change into production.<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:12.0pt;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="color:black">&nbsp;<o:p></o:p></span></p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td width="623" valign="top" style="width:467.5pt;border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+<p style="background:white"><u><span style="color:#323130">UAT SIGNOFF:&nbsp;</span></u><o:p></o:p></p>
+<ol start="1" type="1">
+<li class="MsoNormal" style="color:#323130;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;mso-list:l1 level1 lfo2;background:white">
+UAT template with test script to be attached in the change. (no signature required)&nbsp;<o:p></o:p></li><li class="MsoNormal" style="color:#323130;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;mso-list:l1 level1 lfo2;background:white">
+Email approval (with the following signoff and test script attachment in the mail) to be attached in the change.&nbsp;<o:p></o:p></li></ol>
+<p style="margin-left:.5in;background:white"><b><span style="color:#323130">I hereby APPROVE&nbsp; CHG0023469&nbsp; to move to Production and UAT has been completed successfully.&nbsp;</span></b><o:p></o:p></p>
+<p style="margin-left:.5in;background:white"><b><span style="color:#323130">&lt;&lt;Email Signature with Designation&gt;&gt;</span></b><span style="color:black">&nbsp;</span><o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><span style="font-size:12.0pt;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:12.0pt;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<p style="background:white;text-align:start"><span style="font-size:12.0pt;color:#1F497D">Thanks,</span><span style="color:#201F1E"><o:p></o:p></span></p>
+<p style="background:white;text-align:start"><span style="font-size:12.0pt;color:#1F497D">RajashekarReddy Kasireddy</span><span style="color:#201F1E"><o:p></o:p></span></p>
+<p style="background:white;text-align:start"><span style="font-size:12.0pt;color:#1F497D;border:none windowtext 1.0pt;padding:0in">AMS &#8211; OST Tower Lead</span><span style="color:#201F1E"><o:p></o:p></span></p>
+<p style="background:white;text-align:start"><span style="font-size:12.0pt;color:#1F497D;border:none windowtext 1.0pt;padding:0in">Mobile: +60 1123464348</span><span style="color:#201F1E"><o:p></o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_SI2PR04MB50437576F1949D556E3A9DF3E5AC9SI2PR04MB5043apcp_--

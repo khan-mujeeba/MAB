@@ -1,0 +1,657 @@
+﻿staff_id,staff_name,staff_email,staff_password,staff_type,staff_alt_email,staff_ctc,approver_level,updated_datetime,password_key,password_requested_datetime,password_updated_datetime
+2112722,Philip See Yew Jin,philip.see@malaysiaairlines.com,d00f5d5217896fb7fd601412cb890830,NON_MAB_STAFF,,012-2158975,2,2021-05-04 15:37:00,,,2021-05-04 15:55:00
+8500006,Gladys Ong Guat Lee,gladys.ong@fireflyz.com.my,,NON_MAB_STAFF,,016-5530015,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500008,Nor Hazlina Binti Hashim,hazlina.hashim@fireflyz.com.my,,NON_MAB_STAFF,,016-6689196,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500012,Jenffer Anak Jiping,jennfer.jiping@fireflyz.com.my,,NON_MAB_STAFF,,016-9793364,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500032,Shari Afendi Bin Mohd Sidek,afendi.sidek@fireflyz.com.my,,NON_MAB_STAFF,,019-3113002,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500035,Priyadharshini A/P R.Harikrishnan,priya.harikrishnan@fireflyz.com.my,,NON_MAB_STAFF,,016-3381427,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500037,Shahrul Nizam Bin Mohamad Razali,shahrul.nizam@fireflyz.com.my,01020eb286199e12843f372ad56b0dd2,NON_MAB_STAFF,,173950921,0,2020-12-14 15:37:00,OGY0NGU5NzIxZGMzMGRmMmE4OTZmZmE2MjlmNjk3NzU4NTAwMDM3MTY0Njg4Njc0OQ==,2022-03-10 12:32:29,2021-06-14 15:17:37
+8500038,Saiful Anuar Bin Mohd Sabrie,saiful.sabrie@fireflyz.com.my,,NON_MAB_STAFF,,012-2404536,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500040,Hafiz Muzammil Bin Shahruddin,hafiz.muzammil@fireflyz.com.my,,NON_MAB_STAFF,,017-4228088,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500045,Nur Farhana Binti Mohd Ishak,nurfarhana.ishak@fireflyz.com.my,,NON_MAB_STAFF,,124194093,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500059,Nik Fazirudean Ibrahim Bin Khairi,fazirudean.khairi@fireflyz.com.my,,NON_MAB_STAFF,,016-5611793,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500065,Halijah Bte Harun,halijah.harun@fireflyz.com.my,,NON_MAB_STAFF,,012-2001234,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500066,Sharifah Zainab Binti Syed Derahin,zainab.derahin@fireflyz.com.my,,NON_MAB_STAFF,,019-2597447,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500067,Shah Hasliza Binti Abu Hassan,hasliza.hassan@fireflyz.com.my,,NON_MAB_STAFF,,016-3648667,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500068,Dayang Junainah Bt Awang Morshaidi,dayang.morshaidi@fireflyz.com.my,,NON_MAB_STAFF,,011-28695268,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500071,Siti Roshanniza Binti Ramli,roshanniza.ramli@fireflyz.com.my,,NON_MAB_STAFF,,017-3779535,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500075,Mohd Ariffathillah Bin Jamel,ariffathillah.jamel@fireflyz.com.my,,NON_MAB_STAFF,,132878373,1,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500088,Razifah Hashim Binti Shahrir Hashim,razifah.hashim@fireflyz.com.my,,NON_MAB_STAFF,,019-2191915,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500090,Jurina Binti Ab Karim,jurina.abkarim@fireflyz.com.my,,NON_MAB_STAFF,,016-4478217,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500092,Noozira Binti Zakaria,noorzira.zakaria@fireflyz.com.my,,NON_MAB_STAFF,,193888971,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500099,Lonnie Paul,lonnie.paul@fireflyz.com.my,,NON_MAB_STAFF,,1136629210,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500100,Wan Azrilnaen Bin Wan Aziz,azrilnaen.aziz@fireflyz.com.my,,NON_MAB_STAFF,,016-9012052,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500110,Mohamad Tajuddin Bin Osman,tajuddin.osman@fireflyz.com.my,,NON_MAB_STAFF,,182569500,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500124,Mat Hanim Bin Rahmat,mathanim.rahmat@fireflyz.com.my,,NON_MAB_STAFF,,013-6646040,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500128,Muizzuddin Bin Mahmud,muizz.mahmud@fireflyz.com.my,,NON_MAB_STAFF,,60122066986,1,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500130,Ahmad Aizuddin Bin Ab Rashid,aizuddin.rashid@fireflyz.com.my,,NON_MAB_STAFF,,010-9197321,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500141,Zainab Binti Yusoff,zainab.yusoff@fireflyz.com.my,,NON_MAB_STAFF,,012-9600146,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500142,Thirukumar A/L Velayutham,thirukumar.velayutham@fireflyz.com.my,,NON_MAB_STAFF,,012-9303670,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500152,Norhalizawati Binti Ali,norhalizawati.ali@fireflyz.com.my,,NON_MAB_STAFF,,016-4485695,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500159,Lai Sin Ting,lai.sinting@fireflyz.com.my,,NON_MAB_STAFF,,017-6556123,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500176,Syaful Aizat Bin Salim,aizat.salim@fireflyz.com.my,,NON_MAB_STAFF,,017-2360336,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500209,Norhayati Sufira Binti Ibrahim,sufira.ibrahim@fireflyz.com.my,d00f5d5217896fb7fd601412cb890830,NON_MAB_STAFF,,019-2533038,1,2021-04-27 15:37:00,,,2021-04-27 11:02:53
+8500227,Laila Binti Naina Mohd,laila.naila@fireflyz.com.my,,NON_MAB_STAFF,,016-4979085,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500230,Maslinda Binti Shukor,maslinda.shukor@fireflyz.com.my,,NON_MAB_STAFF,,012-2591969,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500242,Zainiza Binti Zainudin,zainiza.zainudin@fireflyz.com.my,,NON_MAB_STAFF,,013-7786002,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500244,Muhammad Syafiq Bin Shaharani,syafiq.shaharani@fireflyz.com.my,,NON_MAB_STAFF,,012-4425868,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500245,Muhamad Faiz Bin Sazali,faiz.sazali@fireflyz.com.my,,NON_MAB_STAFF,,017-4398206,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500246,Mohd Ariff Bin Mohd Ariffin,ariff.ariffin@fireflyz.com.my,,NON_MAB_STAFF,,011-24331030,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500250,Afizi Bin Idrus,afizi.idrus@fireflyz.com.my,,NON_MAB_STAFF,,012-4166077,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500255,Mohd Muhaizal Bin Mohd Izham,muhaizal.izham@fireflyz.com.my,,NON_MAB_STAFF,,012-5853944,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500273,Mohamad Firdaus Bin Mohd Amin,firdaus.amin@fireflyz.com.my,,NON_MAB_STAFF,,012-3674344,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500276,Muhammed Fauzi Bin Muhammed Hatta,fauzi.hatta@fireflyz.com.my,,NON_MAB_STAFF,,017-5665639,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500299,Teh Boon Chuan,boonchuan.teh@fireflyz.com.my,,NON_MAB_STAFF,,012-6026275,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500301,Naslinda Bt Nasbah,naslinda.nasbah@fireflyz.com.my,70e10ddbc3daac750f12c3793ca04324,NON_MAB_STAFF,,019-4656758,0,2020-12-14 15:37:00,,,2021-06-17 08:48:48
+8500305,Nadeera Binti Yusoff @ Jusop,nadeera.yusoff@fireflyz.com.my,,NON_MAB_STAFF,,016-9198675,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500310,Mohd Helmi Bin Ali,helmi.ali@fireflyz.com.my,,NON_MAB_STAFF,,019-4465353,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500314,Zeti Binti Mohamad Razali,zeti.razali@fireflyz.com.my,,NON_MAB_STAFF,,129128737,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500322,Erny Akma Binti Baharuddin,erny.baharuddin@fireflyz.com.my,,NON_MAB_STAFF,,017-3740207,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500341,Naleni A/P Subramaniam,naleni.subramaniam@fireflyz.com.my,,NON_MAB_STAFF,,016-2300843,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500345,Hazamie Bin Hassan,hazamie.hassan@fireflyz.com.my,,NON_MAB_STAFF,,016-9605650,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500348,Azmi Bin Jusoh,azmi.jusoh@fireflyz.com.my,,NON_MAB_STAFF,,012-6306290,1,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500358,Siti Amira Binti Mustafar,amira.mustafar@fireflyz.com.my,,NON_MAB_STAFF,,010-4264911,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500365,Mohd Izham Bin Ibrahim,izham.ibrahim@fireflyz.com.my,,NON_MAB_STAFF,,012-2228416,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500367,Valinetina Lanan Anak Je-Eb,valentina.jeeb@fireflyz.com.my,,NON_MAB_STAFF,,016-8984420,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500369,Hussain Ishan,hussain.ishan@fireflyz.com.my,,NON_MAB_STAFF,,017-3370484,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500377,Md Kasim Bin Md Afandi,kassim.afandi@fireflyz.com.my,,NON_MAB_STAFF,,019-3307169,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500389,Amar Alif Bin Alias,amar.alias@fireflyz.com.my,,NON_MAB_STAFF,,012-4875130,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500391,Tengku Shahridan Fariq Bin Tengku Shibli,shahridan.shibli@fireflyz.com.my,,NON_MAB_STAFF,,013-9691435,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500392,Noor Hisyam Bin Sabralmulisi,hisyam.sabramulisi@fireflyz.com.my,,NON_MAB_STAFF,,193887619,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500407,Hemavathy A/P Subramaniam,hemavathy.subramaniam@fireflyz.com.my,,NON_MAB_STAFF,,019-6196326,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500409,Muhamad Shazeli Bin Mohamet Sharif,shazeli.sharif@fireflyz.com.my,,NON_MAB_STAFF,,012-6262907,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500411,Zal Zaery Bin Zainal Abidin,zal.zaery@fireflyz.com.my,,NON_MAB_STAFF,,017-6619136,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500416,Jafri Bin Mohamad Amin,jafri.amin@fireflyz.com.my,,NON_MAB_STAFF,,012-9034617,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500418,Mohd Shakif Bin Nordin,shakif.nordin@fireflyz.com.my,,NON_MAB_STAFF,,019-2304252,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500419,Mohd Hafiz Bin Ab Rahim,hafiz.abrahim@fireflyz.com.my,,NON_MAB_STAFF,,017-2292324,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500420,Mohd Hairi Bin Mohd Yusof,hairi.yusof@fireflyz.com.my,,NON_MAB_STAFF,,013-6401042,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500424,Mohd Faiz Bin Mohd Akhbar,faiz.akhbar@fireflyz.com.my,,NON_MAB_STAFF,,011 3900 2012,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500426,Samuel Rajiv A/L Ramani,samuel.ramani@fireflyz.com.my,,NON_MAB_STAFF,,102924912,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500429,Muhammad Ibrahim Bin Ruseli,ibrahim.rusely@fireflyz.com.my,,NON_MAB_STAFF,,019-9999479,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500435,Zalina Binti Abdullah,zalina.abdullah@fireflyz.com.my,,NON_MAB_STAFF,,012-6844857,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500447,Mohd Raffei Bin Hamzah,raffei.hamzah@fireflyz.com.my,,NON_MAB_STAFF,,012-4990509,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500464,Huzaimah Binti Alwe,huzaimah.alwe@fireflyz.com.my,,NON_MAB_STAFF,,0111 0090881,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500471,Fauziezudin Bin Noordin,fauziezudin.noordin@fireflyz.com.my,,NON_MAB_STAFF,,013-7736002,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500474,Aida Farhana Binti H.A. Rashid,aidafarhana.rashid@fireflyz.com.my,,NON_MAB_STAFF,,019-2139553,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500476,Zuraidah Binti Ismail,zuraidah.ismail@fireflyz.com.my,,NON_MAB_STAFF,,010-4208610,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500484,Mohd Nasrullah Bin Nazri,nasrullah.nazri@fireflyz.com.my,,NON_MAB_STAFF,,60195708206,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500491,Ahmad Syafiq Bin Ismail,ahmadsyafiq.ismail@fireflyz.com.my,,NON_MAB_STAFF,,166648217,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500492,Tanalehcimi A/P Jayaveloo,tanalehcimi.jayaveloo@fireflyz.com.my,,NON_MAB_STAFF,,60164519700,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500501,Anuwar Bin Abdul Hamid,anuwar.abdhamid@fireflyz.com.my,,NON_MAB_STAFF,,017-4407577,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500504,Ejah @ Saeron Binti Sappal,ejah.sappal@fireflyz.com.my,,NON_MAB_STAFF,,011-39833696,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500511,Mohd Nadzari Bin Haron,nadzari.haron@fireflyz.com.my,,NON_MAB_STAFF,,012-4050547,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500530,Nur Farhanah Binti Azimi,nurfarhana.azimi@fireflyz.com.my,,NON_MAB_STAFF,,019-9162116,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500535,Wan Mohd Irfan Bin Mohd Zahari,wanirfan.zahari@fireflyz.com.my,,NON_MAB_STAFF,,192371978,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500540,Ahmad Fauze Bin Fariduddin,fauze.fariduddin@fireflyz.com.my,,NON_MAB_STAFF,,164996629,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500545,Nur Hidayah Bt Kasim,nurhidayah.kassim@fireflyz.com.my,,NON_MAB_STAFF,,162153460,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500547,Yeap Bee Lee,beelee.yeap@fireflyz.com.my,,NON_MAB_STAFF,,017-5003317,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500551,Mohd Akmar Bin Azmi,akmar.azmi@fireflyz.com.my,,NON_MAB_STAFF,,127287967,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500552,Khairul Anuar Bin Khalid,khairulanuar.khalid@fireflyz.com.my,,NON_MAB_STAFF,,019-3886249,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500553,Khairun Nasir Bin Abu Hassan,khairunnasir.hassan@fireflyz.com.my,,NON_MAB_STAFF,,019-6891269,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500558,Farahanim Binti Abu Khori,farahanim.abukhori@fireflyz.com.my,,NON_MAB_STAFF,,016-2173752,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500562,Mohd Nashriq Bin Azmi,mohdnashriq.azmi@fireflyz.com.my,,NON_MAB_STAFF,,012-7700510,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500566,Chng Wei Chee,weichee.chng@fireflyz.com.my,,NON_MAB_STAFF,,019-5281234,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500567,Muhammad Arrif Bin Roslan,arrif.roslan@fireflyz.com.my,,NON_MAB_STAFF,,6.01E+11,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500574,Che Rostam Bin Che Hasim,rostam.hasim@fireflyz.com.my,,NON_MAB_STAFF,,012-9679021,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500582,Tham Wei Fun,weifun.tham@fireflyz.com.my,,NON_MAB_STAFF,,019-4136869,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500587,Azhar Husaini B. Ghazali,azhar.ghazali@fireflyz.com.my,,NON_MAB_STAFF,,012-6617912,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500596,Khairunnisa Bt Abdul Hamid,khairunnisa.hamid@fireflyz.com.my,,NON_MAB_STAFF,,016-2322716,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500606,Theevitra A/P Subramaniam,theevitra.subramaniam@fireflyz.com.my,,NON_MAB_STAFF,,162804437,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500608,Mohd Shukri Bin Ahmad,shukri.ahmad@fireflyz.com.my,,NON_MAB_STAFF,,60149249464,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500611,Farah Angelina Wong Binti Abdullah,farah.wong@fireflyz.com.my,,NON_MAB_STAFF,,010-2722699,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500617,Serein Ghandi A/P Mogana Ghandi,serein.mogana@fireflyz.com.my,,NON_MAB_STAFF,,016-3134717,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500627,Mohd Azim Bin Musa @ Azmi,azim.musa@fireflyz.com.my,,NON_MAB_STAFF,,012-3247032,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500630,Khairil Hazri Bin Zulkafli,hazri.zulkafli@fireflyz.com.my,,NON_MAB_STAFF,,019-2143400,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500639,Fendy Ikhwan Ismail,fendyikhwan.ismail@fireflyz.com.my,,NON_MAB_STAFF,,017-6833048,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500643,Shaidatul Ashikin Binti Mohd Sabrie,ashikin.sabrie@fireflyz.com.my,,NON_MAB_STAFF,,012-5772225,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500653,Akmar Binti Kamaruddin,Akmar.Kamaruddin@fireflyz.com.my,,NON_MAB_STAFF,,013-3706685,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500657,Ung Sing Hoe,singhoe.ung@fireflyz.com.my,,NON_MAB_STAFF,,016-8551733,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500665,Nor Suhaili Binti Sazali,suhaili.sazali@fireflyz.com.my,,NON_MAB_STAFF,,163319434,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500667,Sallina Binti Saleh,sallina.salleh@fireflyz.com.my,,NON_MAB_STAFF,,012-6611566,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500684,Mas Ayu Arreyany Binti Mohd Aini,mas.ariffin@fireflyz.com.my,,NON_MAB_STAFF,,016-2222705,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500695,Muhammad Roslani Bin Omar,roslani.omar@fireflyz.com.my,,NON_MAB_STAFF,,014-6226106,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500702,Mohd Fairuz Bin Mohd Rafi Affandi,fairuz.rafi@fireflyz.com.my,,NON_MAB_STAFF,,013-6926748,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500705,Mohd Norsyahir Bin Sazali,norsyahir.sazali@fireflyz.com.my,0a9c6e9e276244f34f1319e2012d75d2,NON_MAB_STAFF,,188724001,0,2020-12-14 15:37:00,,,2021-06-16 15:29:28
+8500707,Mohd Hafiz Bin Abdul Kadir,hafiz.kadir@fireflyz.com.my,,NON_MAB_STAFF,,018-2989897,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500708,Syaiful Rizlan Bin Radzi,syaifulrizlan.radzi@fireflyz.com.my,,NON_MAB_STAFF,,017-5789334,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500718,Mohd Ridhuan Bin Nawawi,ridhuan.nawawi@fireflyz.com.my,,NON_MAB_STAFF,,012-6855419,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500730,Anil A/L Aravindakshan Nair,anil.nair@fireflyz.com.my,,NON_MAB_STAFF,,017-8888377,1,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500731,Hamaria Binti Mohamad Harun,hamaria.harun@fireflyz.com.my,,NON_MAB_STAFF,,018-3101775,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500741,Nik Ahmad Faza Bin Mohd Rohaizad,faza.rohaizad@fireflyz.com.my,,NON_MAB_STAFF,,019-9333048,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500745,Nik Fariz Bin Nik Haizam @ Affandi,fariz.haizam@fireflyz.com.my,,NON_MAB_STAFF,,188711499,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500747,Mohd Shahrul Nizam Bin Rosli,shahrul.rosli@fireflyz.com.my,,NON_MAB_STAFF,,012-6295129,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500750,Muhammad Hafiz Bin Adnan,hafiz.adnan@fireflyz.com.my,,NON_MAB_STAFF,,017-6503579,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500752,Aizat Bin Ab Karim,aizat.karim@fireflyz.com.my,,NON_MAB_STAFF,,013-3534578,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500756,Muhamad Hilmi Bin Abu Bakar,hilmi.bakar@fireflyz.com.my,,NON_MAB_STAFF,,012-5664621,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500758,Norliyana Binti Azmi,norliyana.azmi@fireflyz.com.my,,NON_MAB_STAFF,,018-9576244,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500761,Julia Binti Arifin,julia.arifin@fireflyz.com.my,,NON_MAB_STAFF,,012-6908343,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500779,Muhammad Nazman Bin Abd Fatah,nazman.fatah@fireflyz.com.my,,NON_MAB_STAFF,,108418804,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500782,Mohd Yusrizal Bin Idris,yusrizal.idris@fireflyz.com.my,,NON_MAB_STAFF,,013-9926788,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500783,Zaity Ariza Binti Abd Karim,zaity.karim@fireflyz.com.my,,NON_MAB_STAFF,,193823374,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500787,Mohd Izani Bin Mohd Taher,izani.taher@fireflyz.com.my,,NON_MAB_STAFF,,017-3431960,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500855,Mohd Ali Bin Hasan @ Ibrahim,ali.hasan@fireflyz.com.my,,NON_MAB_STAFF,,173430305,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500859,Audrey Goh Tze Lin,audrey.goh@fireflyz.com.my,fe2c76343ba70e37b637a748bbc098ce,NON_MAB_STAFF,,125769407,0,2020-12-14 15:37:00,,,2021-06-16 14:46:11
+8500860,Erna Waheeda Binti Othman,erna.othman@fireflyz.com.my,,NON_MAB_STAFF,,013-4105666,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500868,Nurul Sapinas Binti Hassan,sapinas.hassan@fireflyz.com.my,,NON_MAB_STAFF,,013-3879124,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500876,Mohd Yazid Bin Keria,yazid.keria@fireflyz.com.my,,NON_MAB_STAFF,,019-7486177,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500882,Muhammad Abdillah Bin Endut,abdillah.endut@fireflyz.com.my,,NON_MAB_STAFF,,019-993 5453,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500893,Patrick Tan Cheng Tuan,patrick.tan@fireflyz.com.my,,NON_MAB_STAFF,,019-2831306,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500898,Mohd Azhari Bin Mat Lwi,azhari.lwi@fireflyz.com.my,,NON_MAB_STAFF,,017-9110997,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500907,Julia Hafiza Binti Mohd,julia.mohd@fireflyz.com.my,,NON_MAB_STAFF,,012-2727788,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500914,Zuraidah Binti Abdul Rahman,zuraidah.rahman@fireflyz.com.my,,NON_MAB_STAFF,,013-3204713,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500922,Noreen Binti Rozells,noreen.rozells@fireflyz.com.my,,NON_MAB_STAFF,,012-5624519,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500927,Wan Syairul Rizal Bin Wan Abu Bakar,rizal.abubakar@fireflyz.com.my,,NON_MAB_STAFF,,137676290,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500930,Putera Azim Syafiq Bin Azmi,syafiq.azmi@fireflyz.com.my,,NON_MAB_STAFF,,1123774181,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500967,Mohd Redzuan Ismail,redzuan.ismail@fireflyz.com.my,,NON_MAB_STAFF,,142274213,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500982,Mohamad Roshahimi Bin Roslan,roshahmi.roslan@fireflyz.com.my,,NON_MAB_STAFF,,196000802,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8500999,Muhammad Izhan Bin Yusoff,izhan.yusoff@fireflyz.com.my,,NON_MAB_STAFF,,019-7272355,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501000,Iskandar Bin Omar,iskandar.omar@fireflyz.com.my,,NON_MAB_STAFF,,019-6415207,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501008,Muhammad Ridzwan Bin Zahani,ridzwan.zahani@fireflyz.com.my,,NON_MAB_STAFF,,012-2284323,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501010,Tengku Ahmad Faiz Bin Tengku Yahaya,faiz.yahaya@fireflyz.com.my,,NON_MAB_STAFF,,017-4235490,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501013,Naresh Kumar A/L Nathan,naresh.nathan@fireflyz.com.my,,NON_MAB_STAFF,,016-6884381,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501052,Bryan R. Lukaylukay,bryan.lukaylukay@fireflyz.com.my,,NON_MAB_STAFF,,173029448,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501058,Koh Mit Sang,eline.koh@fireflyz.com.my,,NON_MAB_STAFF,,016-7228850,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501080,Mohamed Tajuddin Bin Arsath Ali,tajuddin.arsath@fireflyz.com.my,,NON_MAB_STAFF,,012-9360786,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501086,Nor Shahkiena Bt Hj Abd Manan,shahkiena.manan@fireflyz.com.my,,NON_MAB_STAFF,,012-5100156,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501087,Nurhasyikin Binti Mohamed Razali,nurhasyikin.razali@fireflyz.com.my,,NON_MAB_STAFF,,182479868,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501093,Auni Rafhanah Binti Abdul Aziz,auni.aziz@fireflyz.com.my,,NON_MAB_STAFF,,1114545477,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501099,Mohd Rizal Bin Othman,rizal.othman@fireflyz.com.my,,NON_MAB_STAFF,,011-39328660,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501115,Nor Azlah Bt Mohd Tab,norazlah.mohdtab@fireflyz.com.my,,NON_MAB_STAFF,,012-7759957,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501116,Vong Su Kun,sukun.vong@fireflyz.com.my,,NON_MAB_STAFF,,016-2771633,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501123,Mansour Bin Mohamad,mansour.mohamad@fireflyz.com.my,,NON_MAB_STAFF,,012-7834247,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501124,Nur Ashikin Binti Mohammad Ariff,ashikin.ariff@fireflyz.com.my,,NON_MAB_STAFF,,013-3023808,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501145,Mohd Norhalimie Bin Mohd Halid,norhalimie.halid@fireflyz.com.my,,NON_MAB_STAFF,,017-3369165,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501151,Muhammad Suzaiman Helmi Bin Mohd Mansor,suzaiman.mansor@fireflyz.com.my,,NON_MAB_STAFF,,012-7960661,0,2020-12-14 15:37:00,MzFkZDgyOWJkNzQzMGVlODdiOTFkMjI1NTRjNmIzNTY4NTAxMTUxMTYyMzgyNTk5NQ==,2021-06-16 14:46:35,2020-12-14 15:55:00
+8501155,Jimmy Tan Thiam Hin,jimmy.tan@fireflyz.com.my,67a720b2cb0b7d3d54e162153e514a94,NON_MAB_STAFF,,012-2797106,0,2021-12-14 15:37:00,,,2021-06-30 12:48:41
+8501172,Lim Yoke Foong,jass.lim@fireflyz.com.my,,NON_MAB_STAFF,,012-2849806,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501190,Shaza Azlin Binti Mohd Shafiai,shaza.shafiai@fireflyz.com.my,,NON_MAB_STAFF,,019-4262838,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501205,Nur Hafiza Enani Binti Yamin,nurhafiza.yamin@fireflyz.com.my,,NON_MAB_STAFF,,013-3919453,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501212,Mohd Khairi Ridzuan Bin Mohd Bahrin,khairiridzuan.bahrin@fireflyz.com.my,,NON_MAB_STAFF,,017-3026343,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501214,Mohd Saiful Badri Bin Mohd Saleh,saifulbadri.saleh@fireflyz.com.my,29cf423afe9f31b22494f74d053ea14d,NON_MAB_STAFF,,019-3207442,0,2020-12-14 15:37:00,,,2021-06-16 15:20:46
+8501233,Azley Bin Wahid,azley.wahid@fireflyz.com.my,,NON_MAB_STAFF,,018-2426095,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501236,Ahmad Saiful Bin Mohamad,saiful.mohamad@fireflyz.com.my,,NON_MAB_STAFF,,017-2506971,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501239,See Hui Ping,huiping.see@fireflyz.com.my,,NON_MAB_STAFF,,019-3860829,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501243,Mohd Aideel Bin Ismail,aideel.ismail@fireflyz.com.my,,NON_MAB_STAFF,,019-3826630,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501244,Mohd Fauzi Bin Mukhtar,fauzi.mukhtar@fireflyz.com.my,,NON_MAB_STAFF,,019-3907718,0,2020-12-14 15:37:00,NGQ5MjU1M2M2OGNkMjEzOWJjNzA4YmZhZjFkNzI5ZTE4NTAxMjQ0MTYyMzgyNzQwMA==,2021-06-16 15:10:00,2020-12-14 15:55:00
+8501254,Tan Yi Fei,yifei.tan@fireflyz.com.my,,NON_MAB_STAFF,,016-5059046,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501264,Basharuddin Bin Shuwaimi,basharuddin.shuwaimi@fireflyz.com.my,,NON_MAB_STAFF,,143897642,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501265,Mohd Syahid Bin Abd Wahab,syahid.wahab@fireflyz.com.my,,NON_MAB_STAFF,,012-3427870,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501271,Koo Kee Wai,keewai.koo@fireflyz.com.my,,NON_MAB_STAFF,,016-2657820,1,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501283,Chen Pik Yee,pikyee.chen@fireflyz.com.my,,NON_MAB_STAFF,,012-3520893,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501297,Nur Nadia Binti Hassan,nadia.hassan@fireflyz.com.my,,NON_MAB_STAFF,,016-7268156,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501298,Mohd Nor Akmal Bin Hussin,norakmal.hussin@fireflyz.com.my,,NON_MAB_STAFF,,018-7789581,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501301,Mohd Saifful Helmi Bin Mohd Ali,saiffulhelmi.ali@fireflyz.com.my,,NON_MAB_STAFF,,1164435344,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501340,Syafeeza Binti Abdul Rahman,syafeeza.rahman@fireflyz.com.my,,NON_MAB_STAFF,,012-3443889,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501342,Emma Binti Kamarudin,emma.kamarudin@fireflyz.com.my,,NON_MAB_STAFF,,019-2104272,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501344,Noor Aslinda Binti Md Nor,aslinda.nor@fireflyz.com.my,,NON_MAB_STAFF,,017-3294705,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501356,Jasmin Syuhada Binti Shamsuddin,jasmin.shamsuddin@fireflyz.com.my,,NON_MAB_STAFF,,017-6139870,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501363,Azween Syakira Binti Azalan,azween.azalan@fireflyz.com.my,,NON_MAB_STAFF,,019-2905705,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501371,Mohd Ismail Hamdi Bin Ku Shaari,hamdi.kushaari@fireflyz.com.my,,NON_MAB_STAFF,,019-2385000,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501390,Wan Mohd Arif Bin Wan Hassan,arif.hassan@fireflyz.com.my,,NON_MAB_STAFF,,011-33449109,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501430,Mohd Azhar Bin Che Anuar,azhar.anuar@fireflyz.com.my,,NON_MAB_STAFF,,011-28702726,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501463,Muhammad Solihin Bin Shafie,solihin.shafie@fireflyz.com.my,,NON_MAB_STAFF,,013-6424150,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501464,Muhd Ashraf Bin Zulkarnain,ashraf.zulkarnain@fireflyz.com.my,,NON_MAB_STAFF,,013-6274255,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501465,Muhammad Riduwan Bin Gafar,riduwan.gafar@fireflyz.com.my,,NON_MAB_STAFF,,012-3130681,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501467,Masliyana Binti Mohd Najib,masliyana.najib@fireflyz.com.my,,NON_MAB_STAFF,,012-4443043,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501481,Benedict Johnny Anjemeh,benedict.johnny@fireflyz.com.my,,NON_MAB_STAFF,,016-8018414,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501495,Ahmad Zhafri Bin Zulkifli,zhafri.zulkifli@fireflyz.com.my,,NON_MAB_STAFF,,013-6027383,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501508,Shafariza Binti Ariffin,shafariza.ariffin@fireflyz.com.my,,NON_MAB_STAFF,,017-2657900,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501518,Muhammad Riza Bin Rozali,riza.rozali@fireflyz.com.my,479d784d1605460e01f06c2c8d4591b3,NON_MAB_STAFF,,019-7740019,0,2020-12-14 15:37:00,,,2021-06-16 15:34:07
+8501543,Siti Farah Binti Mohamed Ismail,farah.ismail@fireflyz.com.my,,NON_MAB_STAFF,,017-4339653,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501545,Mohd Zulfadhli Bin Abdul Rahim,zulfadhli.rahim@fireflyz.com.my,194bb22cc16bcf4b25e002232f86fdba,NON_MAB_STAFF,,012-6295022,0,2020-12-14 15:37:00,,,2021-06-16 15:23:14
+8501547,Azlan Bin Khairuddin,azlan.khairuddin@fireflyz.com.my,,NON_MAB_STAFF,,126900134,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501561,Zainal Ikramullah Bin Zainal Abbidin,zainal.ikramullah@fireflyz.com.my,,NON_MAB_STAFF,,012-6796454,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501562,Mohd Norazlan Bin Mohd Nasir,norazlan.nasir@fireflyz.com.my,,NON_MAB_STAFF,,019-4502216,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501564,Mohd Huzair Bin Abdul Aziz,huzair.aziz@fireflyz.com.my,,NON_MAB_STAFF,,014-6295385,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501572,Chor Chee Hoe,cheehoe.chor@fireflyz.com.my,,NON_MAB_STAFF,,017-3585576,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501588,Ramachandran Perumal @ Kannabran,ramachandran.perumal@fireflyz.com.my,,NON_MAB_STAFF,,012-3444839,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501591,Ahmad Najmuddin Bin Jaaffar,najmuddin.jaaffar@fireflyz.com.my,,NON_MAB_STAFF,,019-5730414,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501592,Mohamad Pahrurradzi Bin Saedon,pahrurradzi.saedon@fireflyz.com.my,,NON_MAB_STAFF,,019-2631640,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501593,Mohd Najib Bin Mohd Aris,najib.aris@fireflyz.com.my,,NON_MAB_STAFF,,012-6949860,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501596,Mohammad Nasiruddin Bin Ismail,nasiruddin.ismail@fireflyz.com.my,,NON_MAB_STAFF,,019-2321704,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501597,Muhammad Faizal Bin Ariffin,faizal.ariffin@fireflyz.com.my,,NON_MAB_STAFF,,132069089,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501599,Amiludin Bin Awang,amiludin.awang@fireflyz.com.my,,NON_MAB_STAFF,,135644199,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501601,Wan Azhar Bin Wan Hassan,azhar.hassan@fireflyz.com.my,,NON_MAB_STAFF,,014-8386881,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501604,Norazlin Binti Bukhari,norazlin.bukhari@fireflyz.com.my,,NON_MAB_STAFF,,016-2780488,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501605,Amizuddin Bin Mohd Azmi,amizuddin.azmi@fireflyz.com.my,,NON_MAB_STAFF,,60122900740,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501615,Kalithasan A/L Pulanthiran,kalithasan.pulanthiran@fireflyz.com.my,,NON_MAB_STAFF,,146386479,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501621,Mariatul Haniza Binti Zainal Abiddin,mariatul.abiddin@fireflyz.com.my,,NON_MAB_STAFF,,017-4595729,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501622,Mohammad Affzall Bin Nasir,affzal.nasir@fireflyz.com.my,,NON_MAB_STAFF,,129998060,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501627,Ong Xin Jue,xinjue.ong@fireflyz.com.my,,NON_MAB_STAFF,,016-4578759,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501631,Ramchandran A/L Shanmuganathan,ramchandran.shanmuganathan@fireflyz.com.my,,NON_MAB_STAFF,,60176953713,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501636,Noor Azhar Bin Mohd Din,noorazhar.mohddin@fireflyz.com.my,,NON_MAB_STAFF,,012-7521696,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501645,Rafidatul Wahida Binti Mah Alim,wahida.alim@fireflyz.com.my,,NON_MAB_STAFF,,129246389,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501652,Budiman Bin Mamat,budiman.mamat@fireflyz.com.my,,NON_MAB_STAFF,,1139384669,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501653,Engku Hussen Sabry Bin Engku Mansor,hussen.mansor@fireflyz.com.my,,NON_MAB_STAFF,,193764995,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501654,Hisamuddin Bin Abdullah Shani,hisamuddin.shani@fireflyz.com.my,,NON_MAB_STAFF,,102251605,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501655,Ahmad Rafeuddin Bin Mat Da'ae,refeuddin.daae@fireflyz.com.my,,NON_MAB_STAFF,,013-3307005,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501663,Siti Nurafiza Binti Othman,nurafiza.othman@fireflyz.com.my,c5b780b7d81cdce3b1a685c6653cc7fa,NON_MAB_STAFF,,017-4196313,0,2020-12-14 15:37:00,,,2021-06-19 16:12:06
+8501667,Siti Rohayu Binti Mohd Faizal Lim,rohayu.faizal@fireflyz.com.my,,NON_MAB_STAFF,,017-3565181,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501674,Sumayyah Binti Muhamad Shamsudin,sumayyah.shamsudin@fireflyz.com.my,,NON_MAB_STAFF,,017-8809792,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501675,Muhamad Haffiz Bin Zainalabidin,haffiz.abidin@fireflyz.com.my,,NON_MAB_STAFF,,011-13077412,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501680,Rusydi Bin Zahari,rusydi.zahari@fireflyz.com.my,,NON_MAB_STAFF,,018-2233753,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501686,Mccluchskey Bin Minchu,mccluchskey.minchu@fireflyz.com.my,,NON_MAB_STAFF,,010-2321051,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501688,Hafizah Binti Abdullah,hafizah.abdullah@fireflyz.com.my,,NON_MAB_STAFF,,019-9500890,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501702,Siti Arisha Binti Zainal,arisha.zainal@fireflyz.com.my,,NON_MAB_STAFF,,183560477,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501703,Tan Hoi Ling,hoiling.tan@fireflyz.com.my,,NON_MAB_STAFF,,014-3218733,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501717,Nur Nazihah Binti Zakariah,nazihah.zakaria@fireflyz.com.my,,NON_MAB_STAFF,,178464142,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501718,Mohd Fairul Bin Mohd Hanapi,fairul.hanapi@fireflyz.com.my,,NON_MAB_STAFF,,013-3284520,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501719,Zainal Abiddin Bin Othman,zainal.othman@fireflyz.com.my,,NON_MAB_STAFF,,019-2521420,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501720,Mohd Shaifull Azlimi Bin Abd Shofar,shaifull.shofan@fireflyz.com.my,,NON_MAB_STAFF,,019-8795399,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501721,Mohd Nor Akmal Bin Noh @ Mat Noh,akmal.noh@fireflyz.com.my,,NON_MAB_STAFF,,013-3065620,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501723,Ruhaidah Binti Mohd Waidin,ruhaidah.waidin@fireflyz.com.my,,NON_MAB_STAFF,,60193672107,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501727,Nor Azura Binti Md Mokhtar,azura.mokhtar@fireflyz.com.my,,NON_MAB_STAFF,,60146127355,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501733,Zulfadzli Bin Zamri,zulfadli.zamri@fireflyz.com.my,,NON_MAB_STAFF,,017-3560262,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501734,Noorhairi bin Hashim,noorhairi.hashim@fireflyz.com.my,,NON_MAB_STAFF,,019-5989231,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501737,Mohamad Asyraf Bin Zainudin,asyraf.zainudin@fireflyz.com.my,,NON_MAB_STAFF,,016-9000744,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501748,Raja Ahmad Riduan Bin Raja Omar,riduan.omar@fireflyz.com.my,,NON_MAB_STAFF,,185734609,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501749,Ismail Fahmi Bin Abdul Rahman,ismailfahmi.abdulrahman@fireflyz.com.my,,NON_MAB_STAFF,,019-2350205,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501750,Jevetha A/P Rajamony,jevetha.rajamony@fireflyz.com.my,,NON_MAB_STAFF,,016-9815041,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501753,Mohamad Azhafi Bin Kamalul Azam,azhafi.azam@fireflyz.com.my,,NON_MAB_STAFF,,011-21122678,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501754,Md. Khairol Bin Syafii,khairol.syafii@fireflyz.com.my,,NON_MAB_STAFF,,011-23788210,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501757,Mohamad Rasyidan Bin Mahat,rasyidan.mahat@fireflyz.com.my,,NON_MAB_STAFF,,012-3490210,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501758,Mohd Syahdam bin Hamzah,syahdam.hamzah@fireflyz.com.my,,NON_MAB_STAFF,,013-3128214,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501759,Mohd Shahril Isham Bin Ishak,shahril.ishak@fireflyz.com.my,,NON_MAB_STAFF,,199177374,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501761,Anis Fadhilah Binti Hassan,anis.hassan@fireflyz.com.my,,NON_MAB_STAFF,,011-19941139,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501762,Junainah Binti Abu Hassan,junainah.hassan@fireflyz.com.my,,NON_MAB_STAFF,,012-2956769,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501770,Nor Mimi Suzita Binti Sapiae,suzita.sapiae@fireflyz.com.my,,NON_MAB_STAFF,,016-2125851,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501774,Mohamad Hariz Hilmi Bin Mohd Mustafa,hariz.mustafa@fireflyz.com.my,,NON_MAB_STAFF,,012-2731785,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501781,Wan Mohd Amir Farid Bin Wan Mohammad Nor,wanamir.nor@fireflyz.com.my,,NON_MAB_STAFF,,123819846,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501785,Tuan Azlee B Tuan Mohamad,azlee.mohamad@fireflyz.com.my,,NON_MAB_STAFF,,019-7653256,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501787,Mahsuri Binti Sabtu,mahsuri.sabtu@fireflyz.com.my,,NON_MAB_STAFF,,60136780324,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501790,Muhammad Najmi Bin Abdul Malek,najmi.malek@fireflyz.com.my,,NON_MAB_STAFF,,162779840,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501795,Muhammad Aiman Bin Esa,aiman.esa@fireflyz.com.my,,NON_MAB_STAFF,,017-2922749,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501804,Navesegaran A/L Gnanasakaran,navesegaran.gnanasakaran@fireflyz.com.my,,NON_MAB_STAFF,,176934540,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501805,Molyono Bin Ahmad,molyono.ahmad@fireflyz.com.my,,NON_MAB_STAFF,,017-2324327,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501808,Mohd Shahrir Bin Harun,shahrir.harun@fireflyz.com.my,,NON_MAB_STAFF,,1111722754,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501816,Muhammad Shafiq Aduka Bin Mazlan,aduka.mazlan@fireflyz.com.my,,NON_MAB_STAFF,,-3870622,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501817,Mohamad Khairul Azrin Bin Maton,azrin.maton@fireflyz.com.my,,NON_MAB_STAFF,,016-7502208,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501819,Mohamad Nazrul Bin Che Ani,nazrul.ani@fireflyz.com.my,,NON_MAB_STAFF,,182457357,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501820,Mohd Hider Bin Mohd Noor,hider.noor@fireflyz.com.my,,NON_MAB_STAFF,,011-28146363,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501832,Nik Aziah Binti Nik Abdul Aziz,nikaziah.aziz@fireflyz.com.my,,NON_MAB_STAFF,,013-3411774,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501834,Nik Azleen Bin Nik Hassan Shuhaimi,azleen.shuhaimi@fireflyz.com.my,,NON_MAB_STAFF,,019-7531106,1,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501836,Mohamad Roshaizu Bin Mohd Rozali,roshaizu.rozali@fireflyz.com.my,,NON_MAB_STAFF,,013-3643364,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501838,Muhammad Hakimi Bin Zarime,hakimi.zarime@fireflyz.com.my,,NON_MAB_STAFF,,145151915,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501839,Wan Emran Shafiee Bin Wan Mohamad,emran.mohamad@fireflyz.com.my,495c94905a20ad3d63ad90cfd1aa6296,NON_MAB_STAFF,,019-9449399,0,2020-12-14 15:37:00,,,2021-06-16 15:30:35
+8501841,Mokhzani Bin Ibrahim,mokhzani.ibrahim@fireflyz.com.my,,NON_MAB_STAFF,,012-5819656,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501844,Edmund Lai Wei Kang,weikang.lai@fireflyz.com.my,,NON_MAB_STAFF,,016-3915931,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501847,Devakisri A/P Kunasekaran,devakisri.kunasekaran@fireflyz.com.my,,NON_MAB_STAFF,,0111-6699175,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501855,Bahanudin Bin Osman,bahanudin.osman@fireflyz.com.my,,NON_MAB_STAFF,,013 - 3488083,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501856,Jalil Bin Che Had,jalil.had@fireflyz.com.my,,NON_MAB_STAFF,,012-2406347,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501861,Muhammad Irsyad Bin Zakaria,irsyad.zakaria@fireflyz.com.my,,NON_MAB_STAFF,,012-2405685,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501863,Mohd Fadzli Bin Che Wan,fadzli.wan@fireflyz.com.my,,NON_MAB_STAFF,,012-5439811,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501864,Muhammad Firdauz Bin Abdul Shukor,firdauz.shukor@fireflyz.com.my,,NON_MAB_STAFF,,012-3412321,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501867,Mohd Termizi Bin Hashim,termizi.hashim@fireflyz.com.my,,NON_MAB_STAFF,,013-3272065,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501883,Sofia Maisarah Binti Aminuddin,sofia.aminuddin@fireflyz.com.my,,NON_MAB_STAFF,,017-2084008,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501888,Bibi Natasha Binti Mohd Afendi,natasha.afendi@fireflyz.com.my,,NON_MAB_STAFF,,019-6587198,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501891,Muhammad Nur Izwan Bin Zamri,izwan.zamri@fireflyz.com.my,,NON_MAB_STAFF,,012-3203407,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501898,Mohd Sahri Bin Jamil,shahri.jamil@fireflyz.com.my,,NON_MAB_STAFF,,012-2463041,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501903,Jane Florise Cia Anak Jewis,jane.jewis@fireflyz.com.my,,NON_MAB_STAFF,,019-8179589,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501912,Nor Suhardi Bin Abdul Rahman,suhardi.rahman@fireflyz.com.my,,NON_MAB_STAFF,,010 2859596,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501917,Deffie Sistrawati Binti Mahfud,deffie.mahfud@fireflyz.com.my,,NON_MAB_STAFF,,014-7189313,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501925,Mardalina Binti Idris,mardalina.idris@fireflyz.com.my,46156df232f667fe3ebb59007015a03c,NON_MAB_STAFF,,013-3364672,0,2020-12-14 15:37:00,,,2021-06-16 15:10:55
+8501927,Saifullizan Bin Kamal,saifullizan.kamal@fireflyz.com.my,,NON_MAB_STAFF,,017-2933774,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501929,Nur Suhaila Binti Sallehudin,suhaila.sallehudin@fireflyz.com.my,,NON_MAB_STAFF,,011-23555017,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501931,Muhammad Faisal Hakim Bin Shuhaimi,faisal.shuhaimi@fireflyz.com.my,,NON_MAB_STAFF,,013-3929805,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501934,Muhamad Aizuddin Bin Bahtiar,aizuddin.bahtiar@fireflyz.com.my,,NON_MAB_STAFF,,012-9456860,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501936,See Boon Ping,boonping.see@fireflyz.com.my,,NON_MAB_STAFF,,016-3479773,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501937,Segar A/L Sokalingam,segar.sokalingam@fireflyz.com.my,,NON_MAB_STAFF,,017-3824481,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501942,Nur Fairuz Binti Muhamad Fauzi,fairuz.fauzi@fireflyz.com.my,,NON_MAB_STAFF,,018-3504569,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501943,Mohd Al-Amin Bin Razali,alamin.razali@fireflyz.com.my,,NON_MAB_STAFF,,133027627,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501944,Mohd Fareez Bin Rosli,fareez.rosli@fireflyz.com.my,,NON_MAB_STAFF,,013-5178366,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501948,Muhammad Rizuan Bin Muhammad Ramli,rizuan.ramli@fireflyz.com.my,e37c37c80e75badd87291f50d7d0cb72,NON_MAB_STAFF,,017-2648914,0,2020-12-14 15:37:00,NWY4NzRkMjM2MGMyZTA5NzFiMmRjOTc1ZjU2ZWFkZjc4NTAxOTQ4MTY0ODk1MDQ4Nw==,2022-04-03 09:48:07,2021-06-19 15:38:34
+8501953,Surenther Raaj A/L Supermanion @ Superumaniam,surenther.supermanion@fireflyz.com.my,,NON_MAB_STAFF,,012-2544305,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501954,Mohd Azlan Shah Bin Ghazali,azlan.ghazali@fireflyz.com.my,,NON_MAB_STAFF,,012-6691354,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501955,Muhammad Hafiz Bin Mustaffa,hafiz.mustaffa@fireflyz.com.my,,NON_MAB_STAFF,,014-5115030,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501961,Muhamad Zulhilmi Bin Ab Malek,zulhilmi.malek@fireflyz.com.my,,NON_MAB_STAFF,,018-4040583,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501964,Muhammad Hazim Bin Kamaruzaman,hazim.kamaruzaman@fireflyz.com.my,,NON_MAB_STAFF,,014-5424688,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501970,Sean Kok Keang,kokkeang.sean@fireflyz.com.my,,NON_MAB_STAFF,,011-16360841,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501971,Syarul Fizree Bin Shabri,fizree.shabki@fireflyz.com.my,,NON_MAB_STAFF,,019-2697188,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501972,Fakhzan Bin Ismail,fakhzan.ismail@fireflyz.com.my,,NON_MAB_STAFF,,019-3120128,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501973,Mohd Noor Ikhwan Bin Mohd Radzi,ikhwan.radzi@fireflyz.com.my,,NON_MAB_STAFF,,019-8161662,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501978,Abdul Fattah Bin Abdul Latiff,fattah.latiff@fireflyz.com.my,,NON_MAB_STAFF,,014-9676297,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501980,Kamaruzaman Bin Hussin,kamaruzaman.hussin@fireflyz.com.my,,NON_MAB_STAFF,,013-6784721,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501984,Mohd Nazlisham Bin Nordin,nazlisham.nordin@fireflyz.com.my,,NON_MAB_STAFF,,012-3058182,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8501986,Shuhaimi Bin Ibrahim,shuhaimi.ibrahim@fireflyz.com.my,c50931725c4c6b28764b24be486068c2,NON_MAB_STAFF,,-9964213,0,2020-12-14 15:37:00,,,2021-06-16 15:38:48
+8501992,Mohd Tajudin Bin Zakaria,tajudin.zakaria@fireflyz.com.my,,NON_MAB_STAFF,,164764251,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502000,Zufinaz Binti Abdul Hamid,zufinaz.hamid@fireflyz.com.my,,NON_MAB_STAFF,,012-5900949,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502002,Mohd Fadzlee Bin Mohd Yasin,fadzlee.yasin@fireflyz.com.my,fc31a026b613dd9b1e3263d732dc2240,NON_MAB_STAFF,,017-3155136,0,2020-12-14 15:37:00,,,2021-06-16 14:54:45
+8502011,Muhd Haikal Bin Hasrom,haikal.hasrom@fireflyz.com.my,,NON_MAB_STAFF,,012-6147660,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502013,Mohd Amsyar Bin Che Rus,amsyar.cherus@fireflyz.com.my,,NON_MAB_STAFF,,013-4223624,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502014,Muhammad Fauzi Bin Shukri,fauzi.shukri@fireflyz.com.my,,NON_MAB_STAFF,,173137897,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502015,Vijeyaraj A/L Nachimuthu,vijeyaraj.nachimuthu@fireflyz.com.my,,NON_MAB_STAFF,,017-3436089,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502021,Murni Amira Binti Radzli,amira.radzli@fireflyz.com.my,,NON_MAB_STAFF,,016-7580693 ,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502022,Siti Nor Izumi Binti Salleh,izumi.salleh@fireflyz.com.my,,NON_MAB_STAFF,,193735371,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502023,Hazwan Bin Ahahary,hazwan.ahahary@fireflyz.com.my,,NON_MAB_STAFF,,014-5108198,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502025,Yap Boon Kin,boonkin.yap@fireflyz.com.my,,NON_MAB_STAFF,,173829392,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502027,Fatin Syairah Binti Muh Puzi,fatin.puzi@fireflyz.com.my,,NON_MAB_STAFF,,012-6659017,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502028,Abas Bin Hassan,abas.hassan@fireflyz.com.my,,NON_MAB_STAFF,,019-2344860,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502030,Zaidi Syawali Firdaus Bin Fauzi,zaidi.fauzi@fireflyz.com.my,,NON_MAB_STAFF,,012-3977589,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502031,Zaki Uddin,zaki.uddin@fireflyz.com.my,,NON_MAB_STAFF,,017-2811285,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502032,Mohd Suhailin Bin Mohd Ramli,suhailin.ramli@fireflyz.com.my,,NON_MAB_STAFF,,019-6838520,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502036,Mohamad Aqiff Bin Khori,aqiff.khori@fireflyz.com.my,,NON_MAB_STAFF,,013-3139014,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502042,Muhammed Fadzly Bin Muhammed Reduan,fadzly.reduan@fireflyz.com.my,,NON_MAB_STAFF,,012-8486335,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502053,Nur Hafizah Binti Mohamad Yunus,hafizah.yunus@fireflyz.com.my,,NON_MAB_STAFF,,012-2752289,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502058,Siti Nor Fatitah Syuhadah Binti Haziz,syuhadah.haziz@fireflyz.com.my,,NON_MAB_STAFF,,012-6813265,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502062,Sharifah Shazlinee Binti Syed Sheh,shazlinee.sheh@fireflyz.com.my,,NON_MAB_STAFF,,012-6849991,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502069,Chandrasekhar Natarajan,chandrasekhar.natarajan@fireflyz.com.my,,NON_MAB_STAFF,,019-3151753,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502070,Marlina Anis Binti Mahidin,marlina.mahidin@fireflyz.com.my,,NON_MAB_STAFF,,013-6044290,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502075,Mohamad Affendi Bin Zulkifli,affendi.zulkifli@fireflyz.com.my,,NON_MAB_STAFF,,011-31204263,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502080,Mohammad Anuar Bin Abd Hamid,anuar.hamid@fireflyz.com.my,,NON_MAB_STAFF,,163177863,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502084,Muhammad Farhan Bin Fadzilah,farhan.fadzilah@fireflyz.com.my,,NON_MAB_STAFF,,012-9301925,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502087,Khairul Helmi Bin Mohd Nudin,helmi.nudin@fireflyz.com.my,,NON_MAB_STAFF,,123383826,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502088,Ahmad Fathuddin Bin Mohamad,fathuddin.mohamad@fireflyz.com.my,,NON_MAB_STAFF,,013-9496014,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502090,Mohd Azman Bin Ya'acob,azman.yaacob@fireflyz.com.my,,NON_MAB_STAFF,,019-9995406,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502091,Enny Azuvilla Binti Othman,azuvilla.othman@fireflyz.com.my,,NON_MAB_STAFF,,010-7662907,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502092,Shahrin Bin Saiful Mulok,shahrin.saiful@fireflyz.com.my,,NON_MAB_STAFF,,011-21077005,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502093,Mohd Firdaus Bin Yusof,firdaus.yusof@fireflyz.com.my,,NON_MAB_STAFF,,010-9177505,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502095,Mohd Fadzil Adha Bin Shuib,adha.shuib@fireflyz.com.my,,NON_MAB_STAFF,,012-4004455,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502097,Mohd Rafique Bin Tahir,rafique.tahir@fireflyz.com.my,,NON_MAB_STAFF,,013-2009360,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502100,Nur Liyana Binti Alias,liyana.alias@fireflyz.com.my,,NON_MAB_STAFF,,125488443,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502101,Muhammad Danial Bin Abu Bakar,danial.bakar@fireflyz.com.my,,NON_MAB_STAFF,,017-2820 577,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502115,Suzanna Donia Mogunsal,donia.mogunsal@fireflyz.com.my,,NON_MAB_STAFF,,012-5150927,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502122,Nik Naquin Binti Nik Norzlan,naquin.norzlan@fireflyz.com.my,,NON_MAB_STAFF,,017-3315230,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502124,Afiq Danial Bin Ab Rahaman,afiq.rahaman@fireflyz.com.my,,NON_MAB_STAFF,,012-2392343,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502125,Ahmad Hudzaifah Bin Mohamed Shukri,hufzaifah.shukri@fireflyz.com.my,,NON_MAB_STAFF,,017-3191885,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502126,Dafle Syarazi Bin Darusalam,dafle.darusalam@fireflyz.com.my,,NON_MAB_STAFF,,013-4137233,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502128,Muhammad Esqandar Dzulqarnain Bin Azman,esqandar.azman@fireflyz.com.my,,NON_MAB_STAFF,,017-3548897,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502129,Muhammad Farhan Bin Abdul Wahid,farhan.wahid@fireflyz.com.my,,NON_MAB_STAFF,,012-3757652,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502131,Muhammad Izzuddin Bin Hashim,izzuddin.hashim@fireflyz.com.my,,NON_MAB_STAFF,,019-3779575,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502132,Tee Kok Yaw,kokyaw.tee@fireflyz.com.my,,NON_MAB_STAFF,,122323519,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502133,Sharvinvarman A/L Selvakumar,sharvinvarman.selvakumar@fireflyz.com.my,,NON_MAB_STAFF,,010-2483709,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502135,Sunny Sarbjit Singh A/L Karam Singh,sunny.karam@fireflyz.com.my,,NON_MAB_STAFF,,010-2122043,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502137,Muhammad Hanafi Bin Abdul Ghani,hanafi.ghani@fireflyz.com.my,24344e76ee040c67268b9688a562c3d3,NON_MAB_STAFF,,017-6821010,0,2020-12-14 15:37:00,,,2021-06-16 14:48:02
+8502140,Mohd Syafiq Nazren Bin Rosli,syafiq.rosli@fireflyz.com.my,,NON_MAB_STAFF,,011-12869061,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502141,Muhamad Shahidan Bin Abdul Kadir,shahidan.kadir@fireflyz.com.my,,NON_MAB_STAFF,,182884136,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502143,Ahmad Syahir Bin Othman,syahir.othman@fireflyz.com.my,,NON_MAB_STAFF,,60107022788,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502147,Khairul Anwar Bin Kamal,khairul.kamal@fireflyz.com.my,,NON_MAB_STAFF,,012-4006847,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502148,Mohamad Zulhafizi Bin Zulkifli Ahmad,zulhafizi.ahmad@fireflyz.com.my,,NON_MAB_STAFF,,017-4471582,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502150,Wan Salimah Binti Wan Ismail,salimah.ismail@fireflyz.com.my,,NON_MAB_STAFF,,012-2843922,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502151,Muhamad Danial Husaini Bin Razif,husaini.razif@fireflyz.com.my,,NON_MAB_STAFF,,016-5365161,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502152,Salwa Binti Fauzi,salwa.fauzi@fireflyz.com.my,,NON_MAB_STAFF,,017-4798379,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502153,Mohamad Adam Bin Othman,adam.othman@fireflyz.com.my,,NON_MAB_STAFF,,019-3209405,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502154,Mohd Fathiuddin Bin Mohd Hajiman,fathiuddin.hajiman@fireflyz.com.my,,NON_MAB_STAFF,,011-26844405,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502157,Nurfarahain Binti Abd Kadir,farahain.kadir@fireflyz.com.my,,NON_MAB_STAFF,,011-36179794,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502158,Nik Muhammad Syafiq Bin Nik Azman,syafiq.azman@fireflyz.com.my,,NON_MAB_STAFF,,017-6260292,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502159,Ng Kuan Hoong,kuanhoong.ng@fireflyz.com.my,,NON_MAB_STAFF,,016-3538854,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502160,Mohd Mustakim Bin Kahadin,mustakim.kahadin@fireflyz.com.my,,NON_MAB_STAFF,,019-3078166,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502174,Nora Iwana Binti Mohd Rakis,iwana.rakis@fireflyz.com.my,,NON_MAB_STAFF,,017-5480057,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502175,Norismarisyhal Binti Ibrahim,norismarisyhal.ibrahim@fireflyz.com.my,,NON_MAB_STAFF,,018-9872216,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502177,Ameer Faez Bin Rahmad,faez.rahmad@fireflyz.com.my,,NON_MAB_STAFF,,017-6411761,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502178,Nurul Nabila Binti Abdul Razak,nabila.razak@fireflyz.com.my,,NON_MAB_STAFF,,012-3827454,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502179,Norddin Bin Othman,norddin.othman@fireflyz.com.my,,NON_MAB_STAFF,,012-3030359,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502182,Michael Chai Yiin Kiong,michael.chai@fireflyz.com.my,dda200ccac53f2edea3ab01c7dce92db,NON_MAB_STAFF,,016-8652850,0,2020-12-14 15:37:00,,,2021-06-16 14:45:54
+8502190,Nurul Shakina Aliah Binti Mohd Khaizul,shakina.khaizul@fireflyz.com.my,,NON_MAB_STAFF,,019-3486959,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502192,Sharifah Nur Afiffah Binti Wan Saadie,afiffah.saadie@fireflyz.com.my,,NON_MAB_STAFF,,014-3919326,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502194,Hetty Suraya Binti Zulkifli,hetty.zulkifli@fireflyz.com.my,,NON_MAB_STAFF,,195911727,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502202,Mohd Radhi Bin Arshad,radhi.arshad@fireflyz.com.my,,NON_MAB_STAFF,,017-4547909,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502203,Mohamad Azuar Bin Abdul Rahman,azuar.rahman@fireflyz.com.my,,NON_MAB_STAFF,,017-5722799,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502210,Muhamad Faris Bin Othman,faris.othman@fireflyz.com.my,,NON_MAB_STAFF,,011-36830784,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502211,Mohd Ripduan Bin Abdul Sharip,ripduan.sharip@fireflyz.com.my,,NON_MAB_STAFF,,017-6148026,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502212,Noor Asriq Bin Mohamad,asriq.mohamad@fireflyz.com.my,,NON_MAB_STAFF,,019-3629148,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502213,Noor Azizy Bin Ahmad,azizy.ahmad@fireflyz.com.my,,NON_MAB_STAFF,,014-9339791,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502214,Zulkifli Bin Mohd Tahir,zulkifli.tahir@fireflyz.com.my,,NON_MAB_STAFF,,012-6551963,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502217,Chong Choe Lim,venice.chong@fireflyz.com.my,,NON_MAB_STAFF,,010-2261013,1,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502219,Raja Azfar Bin Raja Azlan,azfar.azlan@fireflyz.com.my,,NON_MAB_STAFF,,014-2624970,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502220,Faris Bin Ibrahim,faris.ibrahim@fireflyz.com.my,,NON_MAB_STAFF,,014-7207070,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502221,Mohd Ghazali Bin Zan,ghazali.zan@fireflyz.com.my,,NON_MAB_STAFF,,019-2146007,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502222,Ahmad Bin Ali,ahmad.ali@fireflyz.com.my,,NON_MAB_STAFF,,012-5710207,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502226,Mohd Hafizi Bin Daud,hafizi.daud@fireflyz.com.my,,NON_MAB_STAFF,,019-3361039,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502230,Muhammad Salleh Bin Mohamed,salleh.mohamed@fireflyz.com.my,,NON_MAB_STAFF,,019-3153588,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502231,Muhamad Syafiq Naimullah Bin Mat Zali,syafiq.zali@fireflyz.com.my,,NON_MAB_STAFF,,013-6369486,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502232,Mohd Shafizan Bin Senafi,shafizan.senaf@fireflyz.com.my,,NON_MAB_STAFF,,019-6117226,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502235,Afiq Afandi Bin Adnan,affandi.adnan@fireflyz.com.my,,NON_MAB_STAFF,,014-5419765,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502237,Muhammad Zamir Bin Abdul Hadi,zamir.hadi@fireflyz.com.my,,NON_MAB_STAFF,,019-3055768,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502242,Irnie Idayu Binti Azroie,idayu.azroie@fireflyz.com.my,,NON_MAB_STAFF,,012-2600315,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502246,Dimple Darshini A/P Sures,dimple.sures@fireflyz.com.my,,NON_MAB_STAFF,,124191102,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502249,Minarni Deswina Binti Maslun,minarni.maslun@fireflyz.com.my,,NON_MAB_STAFF,,012-3714585,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502250,Farid Aziz Bin Kamal,farid.kamal@fireflyz.com.my,,NON_MAB_STAFF,,010-2215742,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502251,Muhammad Shahir Bin Azmi,shahir.azmi@fireflyz.com.my,,NON_MAB_STAFF,,012-7906325,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502253,Saisundary A/P Sundra Kumar,saisundary.kumar@fireflyz.com.my,,NON_MAB_STAFF,,016-4123346,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502255,Mohd Saiful Asyraf Bin Mohamed Shukri,saiful.shukri@fireflyz.com.my,3725fac42c5eb0d9f266acdb1a2744b3,NON_MAB_STAFF,,163097743,0,2020-12-14 15:37:00,,,2021-06-16 21:28:55
+8502256,Khoo Sian Chun,sianchun.khoo@fireflyz.com.my,,NON_MAB_STAFF,,019-7837307,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502264,Lee Shaun Quan Xiong,quanxiong.leeshaun@fireflyz.com.my,,NON_MAB_STAFF,,013-9830883,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502269,Abdul Hakim Bin Yusoff,hakim.yusoff@fireflyz.com.my,,NON_MAB_STAFF,,011-37755291,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502270,Muhamad Aiman Harith Bin Mohd Rasadi,aiman.rasadi@fireflyz.com.my,,NON_MAB_STAFF,,017-3718312,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502271,Adam Boey B. Muhammad Naqiuddin Boey,adam.naqiuddin@fireflyz.com.my,,NON_MAB_STAFF,,017-9988963,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502273,Sri Masliza Binti Samat,masliza.samat@fireflyz.com.my,,NON_MAB_STAFF,,018- 374 9220,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502277,Haneezah Binti Abdul Hamid,haneezah.hamid@fireflyz.com.my,,NON_MAB_STAFF,,018-28953995,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502279,Shahul Hamid Bin Maideen,hamid.maideen@fireflyz.com.my,,NON_MAB_STAFF,,011-24221513,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502282,Muhammad Akmal Fikri Bin Abdul Khodir,akmal.khodir@fireflyz.com.my,,NON_MAB_STAFF,,017-2729438,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502284,Azahar Bin Jamlus,azahar.jamlus@fireflyz.com.my,,NON_MAB_STAFF,,012-9743824,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502285,Muhammad Farhan Bin Hamdan,farhan.hamdan@fireflyz.com.my,,NON_MAB_STAFF,,011-23014169,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502286,Muhammad Amirul Syafiq Bin Nasaruddin,amirul.nasaruddin@fireflyz.com.my,,NON_MAB_STAFF,,017-6106259,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502287,Shahrul Ezani Bin Kamarudin,ezani.kamarudin@fireflyz.com.my,,NON_MAB_STAFF,,199305979,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502290,Muhammad Noor Firdaus Bin Mohd Ariffin,firdaus.ariffin@fireflyz.com.my,,NON_MAB_STAFF,,017-6718578,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502292,Wira Kharma Bin Zainal Osman,wira.zainal@fireflyz.com.my,,NON_MAB_STAFF,,011-27592875,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502294,Abdul Latif Bin Mohamed,latif.mohamed@fireflyz.com.my,,NON_MAB_STAFF,,182583774,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502304,Nik Fauzie Bin Nik Ismail,fauzie.ismail@fireflyz.com.my,,NON_MAB_STAFF,,012-9340060,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502305,Mohammad Asyraf Bin Abdul Karim,asyraf.karim@fireflyz.com.my,,NON_MAB_STAFF,,017-6552571,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502307,Amelia Tan See Hwa,seehwa.tan@fireflyz.com.my,,NON_MAB_STAFF,,012-2221938,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502310,Agnes Yap @ Yap Peik Wai,peikwai.yap@fireflyz.com.my,,NON_MAB_STAFF,,012-3132111,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502314,Farah Wahidah Binti Azli,farah.azli@fireflyz.com.my,,NON_MAB_STAFF,,1112246488,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502316,Noor Aziyah Binti Abd Latiff,aziyah.latif@fireflyz.com.my,,NON_MAB_STAFF,,017-6055688,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502319,Sherlina Anak Niponi,sherlina.niponi@fireflyz.com.my,,NON_MAB_STAFF,,016-8942488,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502320,Liza Binti Zainal Kharib,liza.zainal@fireflyz.com.my,,NON_MAB_STAFF,,019-2109972,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502323,Chiew Pui Yen,puiyen.chiew@fireflyz.com.my,,NON_MAB_STAFF,,016-9236774,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502331,Aziah Binti Mat Robi,aziah.matrobi@fireflyz.com.my,,NON_MAB_STAFF,,019-3886563,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502332,Farid Wajidee Bin Omar,farid.omar@fireflyz.com.my,,NON_MAB_STAFF,,010-2453458,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502335,Zainal Amir Bin Zakaria,zainal.zakaria@fireflyz.com.my,,NON_MAB_STAFF,,012-3294536,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502336,Semarjeet Singh A/L Gurdial Singh,semarjeet.gurdial@fireflyz.com.my,,NON_MAB_STAFF,,019-9477369,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502344,Mohd Aminor Fadzli Bin Amiruddin,aminor.amiruddin@fireflyz.com.my,,NON_MAB_STAFF,,017-2675363,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502345,Mohd Rizal Bin Mansor,rizal.mansor@fireflyz.com.my,,NON_MAB_STAFF,,018-2699117,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502346,Mackarl Jervis Salang Anak Lanyau,mackarl.lanyau@fireflyz.com.my,,NON_MAB_STAFF,,014-8851731,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502347,Mohamad 'Atif 'Izzat Bin Ajizi,izzat.ajizi@fireflyz.com.my,,NON_MAB_STAFF,,013-2364050,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502348,Mohamad Haikal Fadhlan Bin Omor,haikal.omor@fireflyz.com.my,,NON_MAB_STAFF,,014-8164661,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502351,Enny Azura Binti Othman,enny.othman@fireflyz.com.my,,NON_MAB_STAFF,,019-3042984,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502357,Raja Putri Nur Afiqah Binti Raja Azali,afiqah.azali@fireflyz.com.my,,NON_MAB_STAFF,,017-3441601,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502376,Johan Ariff Bin Ismail,johan.ismail@fireflyz.com.my,,NON_MAB_STAFF,,147267476,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502380,Ahmad Syabil Bin Ahmad Zorin,syabil.zorin@fireflyz.com.my,,NON_MAB_STAFF,,014-9669408,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502382,Muhamad Husaini Bin Md Shukor,husaini.shukor@fireflyz.com.my,,NON_MAB_STAFF,,017-4407364,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502391,Muhammad Firdaus Bin Mohamad Zarafi,firdaus.zarafi@fireflyz.com.my,,NON_MAB_STAFF,,017-8178600,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502392,'Abdul Hazim Bin Mohd Nadzeri,hazim.nadzeri@fireflyz.com.my,,NON_MAB_STAFF,,019-3476227,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502393,Syazza Binti Mohd Rafiq,syazza.rafiq@fireflyz.com.my,,NON_MAB_STAFF,,174009631,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502394,Danial Warith Bin Abu Bakar,warith.bakar@fireflyz.com.my,,NON_MAB_STAFF,,016=8817356,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502395,Shazrul Izran Bin Salehuddin,shazrul.salehuddin@fireflyz.com.my,,NON_MAB_STAFF,,012-2311424,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502396,Abdullah Zubair Bin Abdullah Sani,zubair.sani@fireflyz.com.my,,NON_MAB_STAFF,,176462337,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502397,Mohamad Muzamil Bin Shafee,muzamil.shafee@fireflyz.com.my,,NON_MAB_STAFF,,013-3090121,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502399,Muhammad Khairul Azizi Bin Mat Alias,azizi.alias@fireflyz.com.my,,NON_MAB_STAFF,,139682729,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502403,Ahmad Kamil Bin Zailani Kamarudin,kamil.zailani@fireflyz.com.my,,NON_MAB_STAFF,,019-2405702,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502404,Nor Ariff Imran Bin Norazman,ariff.norazman@fireflyz.com.my,,NON_MAB_STAFF,,012-2412216,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502406,Tan Yong Jiat,yongjiat.tan@fireflyz.com.my,,NON_MAB_STAFF,,016-9668822,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502407,Muhammad Hanafiah Bin Mohsin,hanafiah.mohsin@fireflyz.com.my,,NON_MAB_STAFF,,012-2967426,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502408,Mohamad Hilman Bin Mohamad Roslan,hilman.roslan@fireflyz.com.my,,NON_MAB_STAFF,,010-2324951,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502409,Mohamad Naqqash Bin Mohamad Nasrudin,naqqash.nasrudin@fireflyz.com.my,,NON_MAB_STAFF,,012-9845002,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502410,Aliff Bin Khairi,aliff.khairi@fireflyz.com.my,,NON_MAB_STAFF,,013-4725412,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502411,Phang Wai Ping,waiping.phang@fireflyz.com.my,,NON_MAB_STAFF,,012-8668876,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502412,Daniel Bin Jufri Khor,daniel.jufri@fireflyz.com.my,,NON_MAB_STAFF,,016-2198649,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502413,Choo Jianwei,jianwei.choo@fireflyz.com.my,,NON_MAB_STAFF,,010-2327426,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502414,Amirul Adli Bin Shaipuddin,amirul.shaipuddin@fireflyz.com.my,,NON_MAB_STAFF,,012-2297603,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502415,Thayallan A/L Sadasivam,thayallan.sadasivam@fireflyz.com.my,,NON_MAB_STAFF,,012-9132110,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502416,Ahmed Naim Bin Azli,naim.azli@fireflyz.com.my,,NON_MAB_STAFF,,019-3100333,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502418,Ikram Shahidi Bin Abdullah,ikram.abdullah@fireflyz.com.my,,NON_MAB_STAFF,,012-6262304,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502419,Gan Kem Fuei,kemfuei.gan@fireflyz.com.my,,NON_MAB_STAFF,,60163714137,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502420,Dinie Bin Abdul Malik,dinie.malik@fireflyz.com.my,,NON_MAB_STAFF,,018-4054044,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502421,Annis Ammaniena Binti Kamal Baharin,annis.kamal@fireflyz.com.my,,NON_MAB_STAFF,,019-7732607,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502422,Jayraj A/L Nadarajan,jayraj.nadarajan@fireflyz.com.my,,NON_MAB_STAFF,,016-5027641,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502426,Ellishia Nicole Harumal,ellishia.harumal@fireflyz.com.my,,NON_MAB_STAFF,,016-8139605,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502428,Nur Ezureen Binti Mohd Yunus,ezureen.yunus@fireflyz.com.my,,NON_MAB_STAFF,,016-6288111,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502429,Ooi Boon Chen,boonchen.ooi@fireflyz.com.my,,NON_MAB_STAFF,,012-2282297,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502430,Yong Ciow Hui,ciowhui.yong@fireflyz.com.my,,NON_MAB_STAFF,,012-2899332,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502431,Nurun Kesuma Aqeelah Binti Ahmad,aqeelah.ahmad@fireflyz.com.my,,NON_MAB_STAFF,,013-6817805,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502432,Raveena Lakshmi A/P Vinayagan,raveena.vinayagan@fireflyz.com.my,,NON_MAB_STAFF,,0111-6347998,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502435,Muhammad Zuhri Bin Mohsin,zuhri.mohsin@fireflyz.com.my,,NON_MAB_STAFF,,019-2751107,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502436,Hidayana Binti Mardi,hidayana.mardi@fireflyz.com.my,,NON_MAB_STAFF,,010-3195679,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502437,Muhammad Aidil Bin Jafferi,aidil.jafferi@fireflyz.com.my,,NON_MAB_STAFF,,102611600,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502438,Pawitraa Nair A/P Rajendran,pawitraa.rajendran@fireflyz.com.my,,NON_MAB_STAFF,,173220422,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502439,Muhammad Asyraf Bin Mohd Radzuan,asyraf.radzuan@fireflyz.com.my,,NON_MAB_STAFF,,019-6100642,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502440,Mohamad Farhan Bin Mohamad Hussin,farhan.hussin@fireflyz.com.my,,NON_MAB_STAFF,,016-6481045,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502441,Teoh Keah Yong,keahyong.teoh@fireflyz.com.my,,NON_MAB_STAFF,,017-5366388,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502442,Muhammad Hafiz Bin Hisham,hafiz.hisham@fireflyz.com.my,,NON_MAB_STAFF,,013-9515720,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502444,Nurul Farhaana Binti Md Yusoff,farhaana.yusuff@fireflyz.com.my,,NON_MAB_STAFF,,012-2553037,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502446,Mohamad Fahim Bin Mohamad Adab@Mohamad Adib,fahim.adab@fireflyz.com.my,,NON_MAB_STAFF,,010-4265699,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502447,Muhammad Idzuddin Bin Jusoh,idzuddin.jusoh@fireflyz.com.my,,NON_MAB_STAFF,,013-9793041,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502448,Muhammad Hanis Bin Mohd Jamidi,hanis.jamidi@fireflyz.com.my,,NON_MAB_STAFF,,137820420,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502450,Sajratul 'Aida Binti Md Ibrahim,aida.ibrahim@fireflyz.com.my,,NON_MAB_STAFF,,193891714,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502468,Ahmad Fareez Bin Ahmad Fauzi,fareez.fauzi@fireflyz.com.my,,NON_MAB_STAFF,,019-2709972,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502469,Heidi Binti Ahmad Sazali,heidi.sazali@fireflyz.com.my,,NON_MAB_STAFF,,013-3464724,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502470,Aisya Binti Azli,aisya.azli@fireflyz.com.my,,NON_MAB_STAFF,,178769692,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502480,Muhammad Mokhlis Bin Abd Samad,mokhlis.samad@fireflyz.com.my,,NON_MAB_STAFF,,016-4226604,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502486,Amir Zharif Bin Ahmad,zharif.ahmad@fireflyz.com.my,,NON_MAB_STAFF,,012-3727410,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502489,Nadiah Binti Abdul Razzak,nadiah.abdrazzak@fireflyz.com.my,d00f5d5217896fb7fd601412cb890830,NON_MAB_STAFF,,0126602122,1,2021-04-27 15:37:00,,,2021-04-27 15:55:00
+8502491,Amirul Asyraf Bin Azmi,amirul.azmi@fireflyz.com.my,,NON_MAB_STAFF,,013-7773260,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502493,Haansel Ananth Boss,haansel.boss@fireflyz.com.my,,NON_MAB_STAFF,,013-5121489,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502494,Muhammad Syafiq Uzair Bin Mohd. Saifuddin,syafiq.saifuddin@fireflyz.com.my,,NON_MAB_STAFF,,019-3532695,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502495,Nazar Fizri Bin Shaiful Yazan,nazar.shaiful@fireflyz.com.my,,NON_MAB_STAFF,,019-2793028,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502497,Mahesh Kumar A/L Nadarajan,mahesh.nadarajan@fireflyz.com.my,,NON_MAB_STAFF,,012-5016420,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502498,Wong Jing Han,jinghan.wong@fireflyz.com.my,,NON_MAB_STAFF,,016-9737000,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502504,Jazmil Bin Jalal,jazmil.jalal@fireflyz.com.my,,NON_MAB_STAFF,,012-9769150,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502505,Naaimah Binti Abd Rahim,naaimah.rahim@fireflyz.com.my,,NON_MAB_STAFF,,019-9107232,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502507,Zul Hazmi Bin Mohd Zulkifli,zulhazmi.zulkifli@fireflyz.com.my,,NON_MAB_STAFF,,012-3642282,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502508,Hamzah Bin Ariffin,hamzah.ariffin@fireflyz.com.my,,NON_MAB_STAFF,,013-3561455,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502510,Izhar Zulhisham Bin Ibrahim,izhar.ibrahim@fireflyz.com.my,,NON_MAB_STAFF,,019-4454336,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502511,Mohd Ashril Bin Saidun,ashril.saidun@fireflyz.com.my,,NON_MAB_STAFF,,012-2143469,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502512,Muhammad Asyraf Bin Abd Rahman,asyraf.rahman@fireflyz.com.my,,NON_MAB_STAFF,,019-2663065,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502513,Keith Jonathan Charles,keith.charles@fireflyz.com.my,,NON_MAB_STAFF,,014-3312874,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502515,Mohd  Amin Adha Bin Shaari,amin.shaari@fireflyz.com.my,,NON_MAB_STAFF,,019-3675916,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502518,Rabiatul Adawiyah Binti Razali,rabiatuladawiyah.razali@fireflyz.com.my,,NON_MAB_STAFF,,192340961,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502519,Nurul Azna Binti Azhar,azna.azhar@fireflyz.com.my,,NON_MAB_STAFF,,+60 19 285 5337,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502520,Tanesvare A/P Karabyah,tanesvare.karabyah@fireflyz.com.my,,NON_MAB_STAFF,,014-6273884,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502521,Noorashikin Binti Ibrahim,noorashikin.ibrahim@fireflyz.com.my,,NON_MAB_STAFF,,019-3803326,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502525,Tachaini A/P Sangkar,tachaini.sangkar@fireflyz.com.my,,NON_MAB_STAFF,,010-3875548,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502526,Syarafana Aida Binti M.Shuhaimi,syarafana.shuhaimi@fireflyz.com.my,,NON_MAB_STAFF,,012-8572283,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502527,Iliana Izzaty Binti Mahmood,iliana.mahmood@fireflyz.com.my,,NON_MAB_STAFF,,012-3457142,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502530,Nurhanisah Binti Khir Johari,nurhanisah.johari@fireflyz.com.my,,NON_MAB_STAFF,,016-6607561,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502531,Nor Amni Amirah Binti Abdullah,noramni.abdullah@fireflyz.com.my,,NON_MAB_STAFF,,016-3160901,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502532,Naomi Orai Semuel,naomi.semuel@fireflyz.com.my,,NON_MAB_STAFF,,60178565964,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502533,Puteri Sharmin Binti Mohd Azmi,sharmin.azmi@fireflyz.com.my,,NON_MAB_STAFF,,019-6593956,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502542,Ahmad Hanan Hakeem Bin Ahmad Nahar,hanan.nahar@fireflyz.com.my,,NON_MAB_STAFF,,017-8899629,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502543,Lusnok Yong Gin Cheong,yong.gincheong@fireflyz.com.my,,NON_MAB_STAFF,,016-8362292,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502545,Alvin Boey Yeng Eu,alvin.boey@fireflyz.com.my,,NON_MAB_STAFF,,017-4591728,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502546,Syaiful Azuan Bin Abdul Fatah,syaiful.fatah@fireflyz.com.my,,NON_MAB_STAFF,,012-7270351,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502547,Rosli Bin Ahmad,rosli.ahmad@fireflyz.com.my,,NON_MAB_STAFF,,018-2164927,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502548,Valerina Aren Anak Alfred,valerina.alfred@fireflyz.com.my,,NON_MAB_STAFF,,014-3955977,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502549,Nur Diyana Binti Ahmad,nurdiyana.ahmad@fireflyz.com.my,,NON_MAB_STAFF,,60178898780,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502550,Choo Yung Yee,yungyee.choo@fireflyz.com.my,,NON_MAB_STAFF,,169322030,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502551,Siti Aishah Binti Jamaluddin,aishah.jamaludin@fireflyz.com.my,,NON_MAB_STAFF,,017- 9558655,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502552,Nursuffiyah Binti Abdul Rashid,nursuffiyah.rashid@fireflyz.com.my,,NON_MAB_STAFF,,012-4242610,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502553,Nisyanthini A/P Sivakumar,nisyanthini.sivakumar@fireflyz.com.my,,NON_MAB_STAFF,,1136790708,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502554,Batrisyia Afiqah Binti Haji Hardi,batrisyia.hardi@fireflyz.com.my,,NON_MAB_STAFF,,122729004,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502556,Tan Cong Yi,congyi.tan@fireflyz.com.my,,NON_MAB_STAFF,,016-2887313,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502558,Nurathikah Binti Abdul Aziz Halim,nurathikah.aziz@fireflyz.com.my,,NON_MAB_STAFF,,172258284,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502560,Nadzreen Haziq Bin Mohd Yazid,nadzreen.yazid@fireflyz.com.my,,NON_MAB_STAFF,,017-3446569,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502562,Ahmad Shakeer Haniff Bin Ghazali,shakeer.ghazali@fireflyz.com.my,,NON_MAB_STAFF,,017-8700797,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502563,Mohd Nur Asnawi Bin Kasani,asnawi.kasani@fireflyz.com.my,,NON_MAB_STAFF,,019-2788781,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502564,Amira Nuria Anuar,amira.anuar@fireflyz.com.my,,NON_MAB_STAFF,,019-3990747,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502565,Fauzan Azmi Bin Zulkeflee,fauzan.zulkeflee@fireflyz.com.my,,NON_MAB_STAFF,,014-7113085,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502566,Mohamad Ashraaf Bin Fakarudin,ashraaf.fakarudin@fireflyz.com.my,,NON_MAB_STAFF,,013-4874270,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502567,Nazrul Muazzin Bin Abd Aziz,nazrul.aziz@fireflyz.com.my,,NON_MAB_STAFF,,016-9492987,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502568,Nurfaiz Binti Mohamad Arbe,nurfaiz.arbe@fireflyz.com.my,,NON_MAB_STAFF,,012-6723655,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502569,Mohd Saddam Bin Mahdzir,saddam.mahdzir@fireflyz.com.my,,NON_MAB_STAFF,,012-6146537,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502570,Akmal Hakim Bin Ramlee @ Hajiman,akmal.ramlee@fireflyz.com.my,,NON_MAB_STAFF,,017-2173619,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502571,Nur Syafiqah Binti Bisnu,syafiqah.bisnu@fireflyz.com.my,,NON_MAB_STAFF,,016-8733738,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502572,Shara Azlin Binti Jalil,azlin.jalil@fireflyz.com.my,,NON_MAB_STAFF,,012-6096292,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502573,Mohd Ikmal Bin Ahmad,ikmal.ahmad@fireflyz.com.my,,NON_MAB_STAFF,,012-2757153,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502574,Yeow Jian How,jianhow.yeow@fireflyz.com.my,,NON_MAB_STAFF,,60169799994,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502575,Shahreil Rezza Bin Mohamed Shafi,rezza.shafi@fireflyz.com.my,,NON_MAB_STAFF,,019-2253709,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502576,Jeyaprakash A/L Tharmalingam,jeyaprakash.tharmalingam@fireflyz.com.my,391871d55cc71362257b64993325e6f1,NON_MAB_STAFF,,010-2697662,0,2020-12-14 15:37:00,,,2021-06-16 15:21:02
+8502577,Hassan Bin Abu Bakar,hassan.abubakar@fireflyz.com.my,,NON_MAB_STAFF,,013-2888320,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502578,Muhammad Asraff Bin Halim,asraff.halim@fireflyz.com.my,,NON_MAB_STAFF,,014-3430438,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502579,Mohamad Shazri Akmal Bin Maruli,"shazri.maruli@fireflyz.com,my",,NON_MAB_STAFF,,017-5871448,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502580,Asyraf Bin Sulaiman,asyraf.sulaiman@fireflyz.com.my,,NON_MAB_STAFF,,012-3411281,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502581,Humayun Bin Mohd Hussein,humayun.hussein@fireflyz.com.my,,NON_MAB_STAFF,,019-32006877,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502583,Tan Zhu Sie,zhusie.tan@fireflyz.com.my,,NON_MAB_STAFF,,017-6967519,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502584,Janice Lau Woan Ni,woanni.lau@fireflyz.com.my,,NON_MAB_STAFF,,016-8966079,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502585,Ann Zaira Binti Mohd Faisal,zaira.faisal@fireflyz.com.my,,NON_MAB_STAFF,,011-10231435,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502586,Muhammad Danial Haizree Bin Mohd Azil,danial.azil@fireflyz.com.my,,NON_MAB_STAFF,,019-7935653,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502587,Mohd Amirul Ashraf Bin Razali,amirul.razali@fireflyz.com.my,,NON_MAB_STAFF,,012-7680973,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502588,Mohammad Hazmi Farizal Bin Shamsuddin,hazmi.shamsuddin@fireflyz.com.my,,NON_MAB_STAFF,,011-10152612,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502589,Farid Hakim Bin Khairi,farid.khairi@fireflyz.com.my,,NON_MAB_STAFF,,013-3260012,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502590,Saufi Qahhar Bin Mt Amin,saufi.amin@fireflyz.com.my,,NON_MAB_STAFF,,014-9386330,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502591,Amirol Bin Kashrin,amirol.kashrin@fireflyz.com.my,,NON_MAB_STAFF,,014-6701049,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502592,Mohd Khairul Anwar Bin Che Mohd Ariffin,khairul.ariffin@fireflyz.com.my,,NON_MAB_STAFF,,019-9537123,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502593,Maayakrishnar Rao A/L Rajandrarau,maayakrishnar.rajanrarau@fireflyz.com.my,,NON_MAB_STAFF,,011-35226209,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502594,Muhammad Ameer Haniff Bin Mohamad Hairudin,ameer.hairudin@fireflyz.com.my,,NON_MAB_STAFF,,010-4073747,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502595,Muhamad Afiq Aizat Bin Mansor,afiq.mansor@fireflyz.com.my,,NON_MAB_STAFF,,017-4740885,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502596,Laksmikaantan A/L Babalji,laksmikaantan.babalji@fireflyz.com.my,,NON_MAB_STAFF,,010-3939581,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502597,Muhd Yazid Busthami Bin Zulkifli,yazid.zulkifli@fireflyz.com.my,,NON_MAB_STAFF,,013-9812503,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502598,Muhammad Aniq Danial Bin Yuzree,aniq.yuzree@fireflyz.com.my,,NON_MAB_STAFF,,014-8361740,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502599,Muhammad Adib Bin Abdullah,adib.abdullah@fireflyz.com.my,,NON_MAB_STAFF,,012-6239234,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502600,Siti Nur Hamidatul Nazihah Binti Mohd Zahari,nazihah.zahari@fireflyz.com.my,,NON_MAB_STAFF,,011-28835979,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502601,Muhammad Alif Asyraaf Bin Mohd Ainuddin,alif.ainuddin@fireflyz.com.my,,NON_MAB_STAFF,,012-2165068,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502602,Aizat Najmi Bin Mohd Nasri,aizat.nasri@fireflyz.com.my,,NON_MAB_STAFF,,011-33300344,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502603,Amin Nasrin Bin Mohd Nazir,amin.nazir@fireflyz.com.my,,NON_MAB_STAFF,,011-19326791,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502605,Rais Arief Bin Rusli,rais.rusli@fireflyz.com.my,,NON_MAB_STAFF,,012 7180804,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502607,Muhammad Nursyahidin Bin Ampandi,nursyahidin.ampandi@fireflyz.com.my,,NON_MAB_STAFF,,199286904,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502608,Alif Afham Bin Alias,alif.alias@fireflyz.com.my,,NON_MAB_STAFF,,010-9259591,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502611,Amin Khalili Bin Azami,amin.azami@fireflyz.com.my,,NON_MAB_STAFF,,013-4292961,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502613,Rosli Bin Hamzah,rosli.hamzah@fireflyz.com.my,,NON_MAB_STAFF,,013-3442219,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502614,Ghazali Bin Yayah,ghazali.yayah@fireflyz.com.my,,NON_MAB_STAFF,,019-4572208,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502615,Mohamad Firdaus Bin Mohamed Azmi,firdaus.azmi@fireflyz.com.my,,NON_MAB_STAFF,,013-2572717,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502630,Nurul Asyikin Binti Ismail,asyikin.ismail@fireflyz.com.my ,,NON_MAB_STAFF,,014-8202355,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502631,Norehan Binti Alias,norehan.alias@fireflyz.com.my,,NON_MAB_STAFF,,017-6071220,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502632,Noor Amira Binti Mohamed Nawi,amira.nawi@fireflyz.com.my,,NON_MAB_STAFF,,014-862 3096,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502633,Lim Hoay Chieng,hoaychieng.lim@fireflyz.com.my,9a498a6fdcbdbc9f58c77e1861e26bdf,NON_MAB_STAFF,,164988575,0,2020-12-14 15:37:00,,,2021-06-29 13:45:28
+8502634,Hanniezan Binti Khalid,hanniezan.khalid@fireflyz.com.my,,NON_MAB_STAFF,,019-2819973,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502635,Ridzuan Bin Mohd Amin,ridzuan.amin@fireflyz.com.my,,NON_MAB_STAFF,,019-2095051,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502636,Rapidi Bin Ismail,rapidi.ismail@fireflyz.com.my,2882f576818e7486c112d2c25880d782,NON_MAB_STAFF,,012-3786007,0,2020-12-14 15:37:00,,,2021-06-17 11:58:25
+8502637,Tina Azura Binti Ahmad Tajudin,tina.tajudin@fireflyz.com.my,,NON_MAB_STAFF,,012-2178174,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502638,Ong Mei Ling,meiling.ong@fireflyz.com.my,,NON_MAB_STAFF,,014-3052325,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502639,Ranjita A/P Ganesan,ranjita.ganesan@fireflyz.com.my,,NON_MAB_STAFF,,013-7721109,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502640,Mohmad Haironeze Bin Hassan,haironeze.hassan@fireflyz.com.my,,NON_MAB_STAFF,,017-2838858,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502641,Chew Su Juin,sujuin.chew@fireflyz.com.my,,NON_MAB_STAFF,,017-9666192,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502642,Romi Effenddy Bin Abdul Rahman,romi.rahman@fireflyz.com.my,,NON_MAB_STAFF,,011-63522323,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502643,Nazim Goon Bin Abdullah,nazim.abdullah@fireflyz.com.my,,NON_MAB_STAFF,,012-2036699,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502644,Marlina Binti Mohd Khalid,marlina.khalid@fireflyz.com.my,,NON_MAB_STAFF,,011-65602100,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502645,Intan Derwini Binti Mohamed Khalid,derwini.khalid@fireflyz.com.my,,NON_MAB_STAFF,,016-2297079,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502646,Neezha Qarmila Binti Nazarudin,neezha.nazarudin@fireflyz.com.my,,NON_MAB_STAFF,,012-8645232,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502647,Nurul Asyila Binti Muhamad Anuar Chin,asyila.anuar@fireflyz.com.my,,NON_MAB_STAFF,,013-9368793,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502651,Darsyhini A/P R. Chandra Kandan,darsyhini.chandra@fireflyz.com.my,,NON_MAB_STAFF,,016-8639374,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502652,Roziani Binti Bakar,roziani.bakar@fireflyz.com.my,,NON_MAB_STAFF,,019-5751001,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502653,Low May Yee,mayyee.low@fireflyz.com.my,,NON_MAB_STAFF,,012-9115111,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502654,Ooi Chu Hui,chuhui.ooi@fireflyz.com.my,,NON_MAB_STAFF,,012-4873693,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502655,Atiqah Nabihah Binti Ahmad Kamal,atiqah.kamal@fireflyz.com.my,,NON_MAB_STAFF,,018-3594451,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502656,Cherie Jeally A/P Eh Chan,cherie.chan@fireflyz.com.my,,NON_MAB_STAFF,,012-3149980,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502657,Atiqah Binti Abdul Rahman,atiqah.rahman@fireflyz.com.my,,NON_MAB_STAFF,,013-3990602,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502658,Farah Atiqah Binti Rasol,atiqah.rasol@fireflyz.com.my,,NON_MAB_STAFF,,017-3349452,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502659,Foo Pei Ting,peiting.foo@fireflyz.com.my,,NON_MAB_STAFF,,012-998 0313,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502660,Shameem Anwar Bin Ahamed Ibrahim,shameem.ibrahim@fireflyz.com.my,5913072ee6de81d9d858f25334b6b608,NON_MAB_STAFF,,019-3633071,0,2020-12-14 15:37:00,,,2021-06-16 15:03:04
+8502661,How Shu Yee,shuyee.how@fireflyz.com.my,,NON_MAB_STAFF,,012-6415695,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502662,Goh Sye Hui,syehui.goh@fireflyz.com.my,,NON_MAB_STAFF,,018-4024318,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502663,Vadivukarasi A/P Sukumaran,vadivukarasi.sukumaran@fireflyz.com.my,,NON_MAB_STAFF,,016-9883081,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502664,Zulhilmi Bin Zainal Abidin,zulhilmi.zainal@fireflyz.com.my,,NON_MAB_STAFF,,012-9148407,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502665,Nur Irdina Binti Roslan,irdina.roslan@fireflyz.com.my,,NON_MAB_STAFF,,017-4508991,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502669,Angely Chang Siong Peng,siongpeng.chang@fireflyz.com.my,,NON_MAB_STAFF,,012-8337139,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502671,Intan Raihana Binti Imran,raihana.imran@fireflyz.com.my,,NON_MAB_STAFF,,012-693 9551,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502672,Jim Binti Mohd Satar,jim.satar@fireflyz.com.my,,NON_MAB_STAFF,,019-2129629,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502673,Marilyn Valeria Rasiah,marilyn.rasiah@fireflyz.com.my,,NON_MAB_STAFF,,014-6994160,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502674,Filinie Anak Friddy,filinie.friddy@fireflyz.com.my,,NON_MAB_STAFF,,011-39162445,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502675,Chau Khai Huei,khaihuei.chau@fireflyz.com.my,,NON_MAB_STAFF,,014-9011900,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502676,Muhamad Habri Bin ABdul Rhani,habri.rhani@fireflyz.com.my,,NON_MAB_STAFF,,010-9683256,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502678,Juita Anak Johnny,juita.johnny@fireflyz.com.my,,NON_MAB_STAFF,,014-9949069,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502679,Nurshareen Eliana Binti Abdul Hamid,eliana.hamid@fireflyz.com.my,,NON_MAB_STAFF,,016-4470420,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502680,Nurha Aisha Binti Abdul Ghani,aisha.ghani@fireflyz.com.my,,NON_MAB_STAFF,,019-7273791,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502681,Nurul Amira Binti Mohd Rapi,amira.rapi@fireflyz.com.my,,NON_MAB_STAFF,,012-9165119,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502682,Sharon Chang,sharon.chang@fireflyz.com.my,,NON_MAB_STAFF,,017-9420131,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502683,Syahira Safni Binti Nisaruddin,syahira.nisaruddin@fireflyz.com.my,,NON_MAB_STAFF,,012-9091980/011-10321809,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502684,Nur Anis Atikah Binti Yusree Amirullah,atikah.amirullah@fireflyz.com.my,,NON_MAB_STAFF,,011-36675154,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502685,Nik Hafizi Izwan Bin Wan Hussin,hafizi.hussin@fireflyz.com.my,,NON_MAB_STAFF,,019-3174347,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502686,Nik Mohamad Izat Eizlan Bin Nik Mohammed Nazaruddeen,izat.nazaruddeen@fireflyz.com.my,,NON_MAB_STAFF,,019-9107322,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502687,Shamyl Bin Yasri Hisham,shamyl.hisham@fireflyz.com.my,,NON_MAB_STAFF,,176875932,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502688,Mohamed Daniel Mansor,daniel.mansor@fireflyz.com.my,,NON_MAB_STAFF,,1110182041,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502689,Redwan Bin Shamsuddin,redwan.shamsuddin@fireflyz.com.my,,NON_MAB_STAFF,,012-6018443,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502690,Muhammad Nazmi Bin Dzulkifli,nazmi.dzulkifli@fireflyz.com.my,,NON_MAB_STAFF,,017-2458990,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8502691,Madihah Binti Mazlizam,madihah.mazlizam@fireflyz.com.my ,,NON_MAB_STAFF,,019-3433542,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8510020,Abdullah,abdullah.yacob@fireflyz.com.my,,NON_MAB_STAFF,,6.28E+12,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8510027,Syahwira Danuddin,syahwira.danuddin@fireflyz.com.my,,NON_MAB_STAFF,,6.29E+12,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8510056,Afifah Muharir,afifah.muharir@fireflyz.com.my,,NON_MAB_STAFF,,82165069009,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8520002,Salim Bin Mohamed,salim.mohamed@fireflyz.com.my,,NON_MAB_STAFF,,6590685336,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8520003,Khairul Anuar Bin Ibni,khairulanuar.ibni@fireflyz.com.my,b5b8e3bea1d0dbf9bfd8b84ea7896f7f,NON_MAB_STAFF,,91449393,0,2020-12-14 15:37:00,,,2021-06-16 15:27:52
+8520004,Mohamed Taufiq Bin Mohamed Sarip,taufiq.sarip@fireflyz.com.my,,NON_MAB_STAFF,,90106241,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8520005,Mohamad Syafiq Bin Abdul Rahim,syafiq.rahim@fireflyz.com.my,,NON_MAB_STAFF,,6591780551,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8520006,Toh Lay Phang,jocelyn.toh@fireflyz.com.my,,NON_MAB_STAFF,,93871191,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8520008,Shariffa Amira Aisha Bte Syed Hashim,shariffa.hashim@fireflyz.com.my,,NON_MAB_STAFF,,87422743,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+8520011,Latiffah Binte Zainol Abidin,latiffah.zainol@fireflyz.com.my,,NON_MAB_STAFF,,6587544067,0,2020-12-14 15:37:00,,,2020-12-14 15:55:00
+D101456,Azrul Azwar Muhamad,azrulazwar.muhamad@malaysiaairlines.com,,NON_MAB_STAFF,,,0,2020-12-14 15:37:00,,,2020-12-15 13:30:00
+V101561,Srikanth Kankara,ext_srikanth.kankara@malaysiaairlines.com,d275142c050c11ecd9b09aef8481ad8b,NON_MAB_STAFF,,,0,2020-12-14 15:37:00,,,2022-03-16 13:50:56
+V101623,Ashish Baghel,ext_ashish.baghel@malaysiaairlines.com,d00f5d5217896fb7fd601412cb890830,NON_MAB_STAFF,,,0,2020-12-14 15:37:00,,,2022-03-16 13:59:09

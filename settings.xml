@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd"> 
+
+	<servers>
+		<server>
+		  <id>central</id>
+		</server>
+		<server>
+		  <id>snapshots</id>
+		</server>
+	</servers>
+  
+  <profiles>
+    <profile>
+      <repositories>
+	  
+		<repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central-release-local</id>
+          <name>libs-release-local</name>
+          <url>http://10.224.4.26:8081/artifactory/libs-release-local</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots-snapshot-local</id>
+          <name>libs-snapshot-local</name>
+          <url>http://10.224.4.26:8081/artifactory/libs-snapshot-local</url>
+        </repository>
+	  
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central-libs-release</id>
+          <name>libs-release</name>
+          <url>http://10.224.4.26:8081/artifactory/libs-release</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots-libs-snapshot</id>
+          <name>libs-snapshot</name>
+          <url>http://10.224.4.26:8081/artifactory/libs-snapshot</url>
+        </repository>
+		
+		<repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central-ext-release-local</id>
+          <name>ext-release-local</name>
+          <url>http://10.224.4.26:8081/artifactory/ext-release-local/</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots-ext-snapshot-local</id>
+          <name>ext-snapshot-local</name>
+          <url>http://10.224.4.26:8081/artifactory/ext-snapshot-local/</url>
+        </repository>
+		
+		
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>plugins-release</name>
+          <url>http://10.224.4.26:8081/artifactory/plugins-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>plugins-snapshot</name>
+          <url>http://10.224.4.26:8081/artifactory/plugins-snapshot</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>artifactory</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
+  
+    </settings> 
