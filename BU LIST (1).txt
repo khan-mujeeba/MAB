@@ -1,0 +1,55 @@
+
+BU: CHG0022965 
+
+1)iHrms-           nurazniyati.abdwahid@malaysiaairlines.com (done)
+
+2)Masgo-           Muhammad Azzam Nizam (done)
+
+3)Masters-         shuhaizan.shuib@malaysiaairlines.com (done)
+
+4)Mastro-          shuhaizan.shuib@malaysiaairlines.com (done)
+
+5)SCVService-      yazam.andut@malaysiaairlines.com
+
+6)MHVIP -         yazam.andut@malaysiaairlines.com
+
+7)SCVService-     yazam.andut@malaysiaairlines.com
+
+8)MHSSP-          yazam.andut@malaysiaairlines.com
+            
+9)PDD-            Nik Hayati Nik Hasan
+
+10)FSIS -         Nik Hayati Nik Hasan
+
+11)MHCLRS-        rodzlin.ramli@malaysiaairlines.com
+
+12)RTMM-          Nik Hayati Nik Hasan
+
+13)EVR            Mohd Jaafar Abdul Rahman @ Aman
+
+14)IDVS-          Suriati Abdul Manaf
+
+15)Mhmessenger    @Salleh Mustafa,
+
+15)SPRP-          Suriati Abdul Manaf
+
+16)ITCB-          Sim Lay Hui (layhui.sim@malaysiaairlines.com)
+
+17)SMS DASHBOARD  - FARID
+
+18)MHLDB            Farid ajir
+
+19)clist -          Wong Sou Chiet
+
+20) Gats-           azizah.said@malaysiaairlines.com
+
+Please find below details for Production deployment.
+ 20:00 to 22:00 MYT  27-APRIL-2022
+
+CHG0020730-CTASK0025496
+
+MASG-1MFMIGAPP1       1mfmigapp1.mas.net
+/tmp/CHG0020730_CTASK0025496/MABMAS.war
+
+
+https://github.com/dikshapatidar257/poc/tree/master
