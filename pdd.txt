@@ -1,0 +1,48 @@
+azure me login
+time set manually
+manually pipeline - 22->44
+
+
+Job rerun
+
+1scvapp2.mas.net
+putty login apne id pass se
+command 
+password
+jar - paste - enter
+
+Command-su appadmn
+Password -- > 8URm8FFs
+java -jar /home/appadmn/scvjob/pdd/bin/AMAD_DCS_PDD_VIEWER.jar
+java -jar /home/appadmn/scvjob/pdd/bin/PDD_RE_RUN.jar
+8URm8FFs
+
+
+jobs timing -
+9.30
+12.30
+3.30
+6.30
+9.30
+12.30
+3.30
+6.30
+
+9.30 - 12.30
+10.30 pr data aaya
+11.30 pr pipeline(22) chlegi - 21 min - data external table me load hoga
+12.30 - 12.40 pr job chlega - external se main table
+12.40 - 1.30 - jo manually data load kr skte hai
+
+
+job query to be run every 3 hrs
+
+SELECT extract(hour from end_time) hrs,count(1) FROM pdd.execution_time_record
+where date(end_time)=current_date group by extract(hour from end_time)
+
+call AMAD_DCS_PDD_VIEWER.load_dcs_txn_data()
+
+call AMAD_DCS_PDD_VIEWER.main_program_ends() 
+
+
+Select * from pdd.execution_time_record order by end_time DESC;

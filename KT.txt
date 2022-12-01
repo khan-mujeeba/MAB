@@ -1,0 +1,316 @@
+
+14 March
+
+PDD(Post Departure Data) Viewer KT
+BU- Nik Hayati
+
+PDD 
+movement of the passenger from source to dest, whole info of the passenger
+
+app dev hui hai java me Struts framework me
+
+Mahnom Sujak ko contact krna hai
+
+common inc - no data available in table - phle date ki query se data table hai ki nhi 
+
+acklg krn hai - noted we will update u as soon as possible
+
+azure pipeline pr jaana hai iska bhi access hona chaiye
+22 pipielines - external se main table me load hoti hai
+
+pipeline run every 3 hrs...cant load in between this duration
+har 3 hrs me delete hoti hai
+external tables me data temp store hota hai
+main tables me load hoga fir pipeline me se delete ho jaega
+
+java job - putty se login kro - procedures ko internally call krta hai - ext table se main tab me load krta hai
+
+mails generate - Started - Success - Completion
+
+ui pr details generate ho jaegi 
+ss le kr client ko bhj dena 
+kindly validate the data
+main table me aa gaya ki ui pr load kr dena 
+
+
+pdd me passenger dikh nhi rha hai coz of any of the data in column missing
+
+pipeline failed hui - connection prob
+data type mismatching - ss le kr data broker ko send kr do kindly
+
+
+17 March
+
+MH - CLRS (Crew Leave Reconcilation System)
+
+BU - Roselin, Nurazniyati
+BIT - Khamisa
+
+manage the attendance of MAB users(staff)
+
+NCMS crew leave data real time me store
+
+verify pulsera and ncms data
+
+EAI interface sends data from one app to other app 
+
+Pulsera system - to apply leaves
+
+NCMS - leave le li pr Pulsera pr apply nhi ki to wo trigger send krta hai
+
+CLRS_RW (db) - 30 days ka data hi store krta tha
+
+ab pura data store krna hai to delete ko comment out hi kr diya  - change kiya hai
+
+job schedule - 11 bje file read hogi -11.30 chlta hai job for NCMS and Pulsera data ke liye
+
+missed out ko alert send krta hai ki leave apply ki nhi 
+
+monthly it will run and update bu , bit for those users who hv not regularise their attendance
+
+-- bu will give us the file aur wo fir hume manually job se load krni padegi
+resolution - job ka time chng kro ya manually code me chng kro
+
+job - run once a day
+
+filezilla me pulsera aur ncms ki files dikh jaegi
+
+daatbase se connect krne ke liye credential file lgegi
+without ssl db wont be connected
+
+leave type pulsera aur ncms me alg alg hai
+param name - pulsera me leaves hai
+param value - ncms me leaves hai to unhe mapped krna hai 
+
+file load fail hota hai to use archive me send kr dete hai
+
+file not available
+
+latest CR hai - leave mapping wali jo KK ne solve ki hai
+leaves me discrepancy identify hui hai
+
+ncms  - leave aati hai (time off)
+pulsera - attendance lgti hai (time sheet)
+
+app access - url se check kro
+db access, server access - nhi hai
+
+GD - group distribution
+
+
+21 March
+
+FSIS - Flight Schedule Info System
+tracking of flights - arrival departure
+
+NMHLinks
+
+MH - Malaysian airlines
+FY - FOCA - foreign carriers
+
+BU - Farida, Nik hayati
+
+delay cn be updated...
+
+data aa rha hai Aodb(source db) se aur apn data reflect kra rhe hai ui pr
+
+mh/fy fis  - pura flight schedule - flight status - cancellation 
+only for airport employees/users or authorities update the info here
+
+EAI - T@TS - Turn arround tracking system
+
+incd - bay - gate mismatch
+
+
+incd - patching issues
+user 
+unable to download report (time difference) - aodb me data nhi aa rha tha
+not able to login - add user into app
+parking bay not captured in fsis - check with our source team - Tats and Eia
+
+recently log 4j get implemented
+
+contact Syed
+
+data download hi nhi ho rha tha aur time bahut lg rha tha
+aodb - applicaion objects me procedures - fsis rpt mh- related to db - for generating bulky data in pdf
+
+
+25 March
+
+netstat -ano | findstr 8007
+
+pdd incidents - 
+
+On a daily basis, PDD Viewer receives 8 files, but few files not received from Databroker end.
+
+clrs
+
+Warning in CLRS : Files doesn't exist
+Error in CLRS: Error in File Processing.
+
+28 March
+
+KT on MHVIP
+
+SCV - MHVIP, RTMM, PDD
+
+used for booking the flights for VIP users
+
+db - PostgreSQL
+
+maven project
+sso integration
+
+used to identify the valid VIP/VVIP bookings and 
+valid enrich platinum member’s bookings
+
+BU - Yazam Andut
+
+ldap phle use krte hai
+iske thru access krte the
+
+phle sso se integrate hoga fir ldap pr id check hogi then u can login
+
+CR  -tomcat upgradation, log 4j vulnerability
+
+
+
+incd - unable to login, access - resolve  - cache cleaning
+
+tomcat server - 131scvapp
+
+
+for VIP users
+we dont use this app
+
+
+RTMM (Real time messaging service)
+
+BU - Nik Hayati
+
+upstream - aodb 
+msg sent krti hai sita dcs ko
+aodb se data pick krna hai aur sita dcs ko bhjna hai
+
+cron job run every 1 min
+xml format me data send hoga (request)
+
+response rtmm me save hoga jo xml ke form me aaega
+
+3scv  -uat
+1scv prod
+
+every year certificate got chnged
+cert ko rtmm me app me hi relosd krna hai
+
+4 msgs will be sent as a request
+
+NoPnL  -  18 hrs phle departure time ke ye msg send krna hai
+Ci , ccl ccf - jb flight take off
+
+yhi 4 ke response bhi ssenge
+
+background service
+
+flight open krna hai aur close krna hai 
+
+delay me shayad CI ka msg dikhe hi nhi utne time ke liye
+delay ko sita handle krega
+
+2-3 cron job chlenge parallely
+
+FLT closed - flight 
+
+in case of need initialize - flight fail hoti hai - to manually mail send krna padta hai
+
+Real time messaging service - send NO PNL message to SITA DCS system, 
+so that SITA can initiate the flights in the NO PNL messages. 
+
+B2B intreface use krta hai 
+
+Out message - closing msg
+
+2 codes hai - rtmm, scvapp
+
+4 cron jobs
+
+table me se station add/remove kr skte hai
+
+in case of need initialize - flight fail hoti hai - to manually mail send krna padta hai
+when certificate got expired - 
+when patching activities are going on  -
+table me station add/remove kr skte hai
+
+
+
+---------------create Raja-------------------------------------------
+keytool -genkey -alias importkey -keyalg RSA -keystore "D:\SCV_RTMM\prod.jks" -keysize 2048 -validity 365
+
+
+
+-------------------------------------------------- Export Raja ---------------------------------------------
+keytool -export -alias importkey -file "D:\SCV_RTMM\prod.der" -keystore "D:\SCV_RTMM\prod.jks" -validity 365
+
+
+N = MHURREPROD
+OU = SWS2020
+O = MH
+L = KLIA
+S = SELANGOR
+C = MY
+
+ye details Nik Hayati se leni padegi
+
+patching actv me mail daalna hai waise
+and then it will be on sita to load some scripts from their side
+
+cert expire - mail refer krna hai..waise mail krna hai..fir nik hayati se agent code lena hai aur use code me update krna hai
+cert generate krna hai
+
+CR - sita certification chnge
+
+incid - flight not auto initialize in sita - db me check kro - logs me check kro 
+
+Link: http://3nmhlinksapp1.mas.net:8080/Deploymanager/html
+User ID: tomcatusr   Password: 86tLcetd
+
+Link: http://3srasjavaapp1.mas.net:8080/Deploymanager/html
+User Name: tomcatusr    Password: 4tY9cGYQ
+
+Link: http://3scvapp2.mas.net:8080/Deploymanager/html
+User ID – tomcatusr   Password -- wcChvbQy
+
+Link: http://3mobapp.mas.net:8080/Deploymanager/html 
+User ID – tomcatusr   Password -- pp5vV9Nq
+
+
+07-04
+
+Replica db
+
+database me file load krna hai
+
+user sends a csv, xlsx file GD_AMS_SCV Team need to load into 
+MABCRANE_PROD.temp_load table. 
+
+1scvpgdb.mas.net (scvp) 
+(mabcrane_prod@masg-1scvpgdb1 + b7f#HDg@Ge]UL)
+
+csv ya xml file hoti hai
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+
+
+
+http://3mobapp.mas.net:8080/Deploymanager/html
+tomcatusr
+pp5vV9Nq
+
+https://uat-mhmessenger.malaysiaairlines.com/mhmessenger/logout
+
+
+
+Dear Mujeeba,
+
+Kindly find the below credentials for MH-Messenger UAT database, 
+
+Server name : MASG-3MOBDB-LX\ 10.221.14.12
+User name :  V104244
+Password : uq9HryQEN82B
+DB name: mhmobile_dev
+Port no : 3036
+
+
+Kindly find the below credentials for CLRS UAT and PROD database,
+
+UAT:
+
+Server name : MASG-3SRASJAVADB1\ 10.221.14.26
+User name :  V104244
+Password : JndxUPsak9ty
+DB name: CLRS_TEST
+Port no : 3036
+
+PROD:
+
+Server name : MASG-1SRASJAVADB1\ 10.221.6.22
+User name :  V104244
+Password : 2RT4bbZxzwrK
+DB name: CLRS
+Port no : 3036
+
+
+Prod URLS
+
+clrs - http://clrs.mas.net/clrs/
+pdd - http://pddviewer.mas.net/pddviewer/
+mhmessenger - http://3mobapp.mas.net:8080/mhmessenger 
+mhvip - http://mhvip.mas.net/mhvip/
+fsis - https://mhmessenger.malaysiaairlines.com/fsis/
+rtmm  -  http://scv.mas.net:8080/rtmm/
+mhldb - http://mhldbridge.mas.net/mhldbridge
+evr - http://evr.mas.net/EVR_CCF/JSP/LoginForm.jsp
+       http://evr.mas.net/EVR_TCF/JSP/LoginForm.jsp
+idvs - http://idvs.mas.net
+itcb - http://itcb.mas.net/itcb/
+sms dashboard - http://smsdashboard.mas.net/SMSDashboard
+
+
+
+
+1mobdb.mas.net + 10.221.6.15 (mhmobile) (mobadm +mobadm@456 )
+(SSL certificates needed)
+

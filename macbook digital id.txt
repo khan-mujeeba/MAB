@@ -1,0 +1,17 @@
+digital id
+ek hi code ko ios, android, desktop teeno pr chlana hai - ionic.config.json
+
+url-
+http://masg-1svnap1.mh.corp.net/svn/SRAS/BPM_BizCard/MobileSRC
+
+war ka size zaaada hoga- 
+sudo ionic cordova build ios
+
+for prod - proper war size
+sudo ionic cordova build ios --prod --release
+
+Mac book password : Password99
+
+
+Tunnel/Local IP : 10.244.32.26/192.168.0.106
+mhconnect.malaysiaairlines.com : 112.137.172.106

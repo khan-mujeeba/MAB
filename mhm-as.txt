@@ -1,0 +1,787 @@
+aircraft status - open for all - sb dekh skte hai ye
+want to map this user wise-  hv to apply the filter
+
+analysis - aircraft ka status 
+
+MEL - registration no. - mil
+
+All details available on screen as per need.
+
+CHG0023251 : MEL - Fuel Order Form - Aircraft Status
+To filter the MEL aircraft data by the Tech Crew duty roster
+
+BU require the MEL display to be filtered (filter the aircraft data using the duty roaster - this is the new requirement which has been discussed during the demo and will go with minor CR without cost).
+
+RITM0167427 - CHG0023251 MHMESSENGER UAT server start request
+
+http://localhost:8085/MobileApp/MobileApp/
+
+
+List<FlightRosterVO> rosterVoList = getRosterOtherGroundHandlingStaff(String userId, String queryType, String queryOrProcToRun);
+for(int i=0;i<rosterVoList.size();i++)
+{
+	FlightRosterVO rosterVo = rosterVoList.get(i);
+	String REGNO = rosterVo.getAircraftRegNum();
+}
+
+
+public FormVO[] getAllFormsByUser(String staffID) 
+{
+		logger.debug(" Inside getAllFormsByUser in GetFormNotificationService:" + staffID);
+		ArrayList<FormVO> formList = null;
+		ArrayList<FormVO> formList1 = null;
+		FormVO[] vos = null;
+		try {
+
+			if (staffID != null) 
+			{
+//				if(staffID.equals("MEL_INFO"))
+				if(staffID.contains("MEL_INFO"))
+				{
+					String STAFF_ID = staffID.split("#").get(0);
+					AirCraftStatusService airCrfatSrvc=new AirCraftStatusService();
+					
+					//getting REGNO on the basis of staff id 
+					
+					List<FlightRosterVO> rosterVoList = getActiveFlightRosterListForUser(STAFF_ID);
+					for(FlightRosterVO rosterVo : rosterVoList)
+					{
+						String REGNO = rosterVo.getAircraftRegNum();
+						formList=airCrfatSrvc.getAircrfatStatusList(REGNO);
+						
+						//form list me forms add krna hai with multiple regno.s
+						
+						formList1.addAll(formList);
+					}
+			
+				}else
+				{
+					formList = formDao.getAllFormsByUserService(staffID);
+					formList1.addAll(formList);					
+				}
+				
+			} else {
+				return null;
+			}
+		} catch (Exception e) {
+			logger.error(e);
+		}
+
+		if (formList1 != null && formList1.size() > 0) {
+			vos = formList1.toArray(new FormVO[formList1.size()]);
+		}
+		logger.debug(" Return getAllFormsByUser in GetFormNotificationService:" + vos);
+		return vos;
+	}
+}
+
+10.244.33.152
+
+
+
+public List<FlightRosterVO> getActiveFlightRosterListForUser (String userId) throws Exception {
+		logger.debug("Inside getActiveFlightDetailsForUser in FlightInformationService");
+		
+		List<FlightRosterVO> rosterVoList = new ArrayList<FlightRosterVO>();
+		
+		Map<String, String> userRosterQueryDetailsMap = new HashMap<String, String>();
+		List<FlightDataResultSetVO> activeFlightWithDetailsList = null;
+		FlightDataResultSetVO[] activeFlightWithDetailsArray = null;
+		
+		try{
+			
+			userRosterQueryDetailsMap = transitActivityDAO.getUserQueryDetails(userId);
+
+			if(!userRosterQueryDetailsMap.isEmpty()) {
+				
+				String groupName = userRosterQueryDetailsMap.get("group_name");
+				
+				if((groupName != null) && (!groupName.isEmpty()) && !GroupConstant.MHOPS_SUPERVISOR_MANAGEMENT.equalsIgnoreCase(groupName)) {
+					
+					if(GroupConstant.MHOPS_CABIN_CREW.equalsIgnoreCase(groupName) || GroupConstant.MHOPS_TECH_CREW.equalsIgnoreCase(groupName)) {
+						
+						rosterVoList = transitActivityAodbDAO.getRosterCabinCrew(userId, userRosterQueryDetailsMap.get("query_type"), userRosterQueryDetailsMap.get("query_or_proc_to_run"));
+					} else {
+						
+						rosterVoList = transitActivityAodb2DAO.getRosterOtherGroundHandlingStaff(userId, userRosterQueryDetailsMap.get("query_type"), userRosterQueryDetailsMap.get("query_or_proc_to_run"));
+					}
+			}catch(Exception e){
+			logger.error("An exception occurred while fetching active flight details for user "+userId+": "+e);
+			throw e;
+		}
+		logger.debug(" Return FlightRosterList by staffid - "+userId);
+		return rosterVoList;
+	}
+
+
+UserVo user = new UserVo();
+if(user.getRole().equalsIgnoreCase("admin"))
+
+
+
+we need to apply admin filter on staff id
+if(staffid == admin)
+{
+	REGNO = null;
+	jo abhi tk ho rha hai
+}
+else
+{
+	REGNO = value needed;
+	jo ab naya logic apply hoga
+}
+			
+			
+public static final String GET_ADMIN_STAFF_ID = "select DISTINCT(STAFF_ID) from admin_staff_id";
+		//	+ " where ROLE=?";
+
+CommonSQLC.GET_ADMIN_STAFF_ID		
+
+
+Feature - FOF, Aircraft Status
+
+
+INSERT INTO admin_staff_id(`STAFF_ID`,`ROLE`,`FEATURE`,`Active`)
+VALUES ('2101508','Admin','Aircraft_status',1),
+('2101642','Admin','Aircraft_status',1),
+('2105778','Admin','Aircraft_status',1),
+('2350524','Admin','Aircraft_status',1),
+('2101301','Admin','Aircraft_status',1),
+('2114168','Admin','Aircraft_status',1),
+('2101712','Admin','Aircraft_status',1),
+('2100734','Admin','Aircraft_status',1),
+('2101632','Admin','Aircraft_status',1),
+('2100309','Admin','Aircraft_status',1),
+('2101277','Admin','Aircraft_status',1),
+('2104404','Admin','Aircraft_status',1),
+('2354508','Admin','Aircraft_status',1),
+('2354568','Admin','Aircraft_status',1),
+('2101642','Admin','Aircraft_status',1),
+('2105778','Admin','Aircraft_status',1),
+('2100913','Admin','Aircraft_status',1),
+('2101508','Admin','Aircraft_status',1),
+('2113983','Admin','Aircraft_status',1),
+('2104053','Admin','Aircraft_status',1),
+('2352137','Admin','Aircraft_status',1),
+('2102266','Admin','Aircraft_status',1),
+('2101341','Admin','Aircraft_status',1),
+('2101268','Admin','Aircraft_status',1),
+('2101256','Admin','Aircraft_status',1),
+('2102314','Admin','Aircraft_status',1),
+('2104374','Admin','Aircraft_status',1),
+('2104129','Admin','Aircraft_status',1),
+('2104214','Admin','Aircraft_status',1),
+('2104370','Admin','Aircraft_status',1),
+('2102310','Admin','Aircraft_status',1),
+('2105288','Admin','Aircraft_status',1),
+('2102311','Admin','Aircraft_status',1),
+('2101364','Admin','Aircraft_status',1),
+('2104092','Admin','Aircraft_status',1),
+('2107780','Admin','Aircraft_status',1),
+('2101396','Admin','Aircraft_status',1),
+('2103280','Admin','Aircraft_status',1),
+('2101301','Admin','Aircraft_status',1),
+('2104199','Admin','Aircraft_status',1),
+('2102181','Admin','Aircraft_status',1),
+('2101362','Admin','Aircraft_status',1),
+('2101521','Admin','Aircraft_status',1),
+('2108103','Admin','Aircraft_status',1),
+('2102249','Admin','Aircraft_status',1),
+('2352782','Admin','Aircraft_status',1),
+('2200953','Admin','Aircraft_status',1),
+('2353138','Admin','Aircraft_status',1),
+('2102260','Admin','Aircraft_status',1),
+('2200994','Admin','Aircraft_status',1),
+('2104167','Admin','Aircraft_status',1),
+('2200952','Admin','Aircraft_status',1),
+('2102263','Admin','Aircraft_status',1),
+('2111179','Admin','Aircraft_status',1),
+('2102191','Admin','Aircraft_status',1),
+('2350481','Admin','Aircraft_status',1),
+('2102268','Admin','Aircraft_status',1),
+('2350507','Admin','Aircraft_status',1),
+('2104090','Admin','Aircraft_status',1),
+('2100309','Admin','Aircraft_status',1),
+('2105207','Admin','Aircraft_status',1),
+('2350524','Admin','Aircraft_status',1),
+('2101231','Admin','Aircraft_status',1),
+('2114168','Admin','Aircraft_status',1),
+('2106594','Admin','Aircraft_status',1),
+('2101277','Admin','Aircraft_status',1),
+('2114254','Admin','Aircraft_status',1),
+('2350205','Admin','Aircraft_status',1),
+('2355798','Admin','Aircraft_status',1),
+('2355798','Admin','Aircraft_status',1),
+('2106451','Admin','Aircraft_status',1),
+('2356202','Admin','Aircraft_status',1),
+('2356203','Admin','Aircraft_status',1),
+('2356204','Admin','Aircraft_status',1),
+('2356205','Admin','Aircraft_status',1);
+
+
+	String STAFF_ID = "2103538";	//	not present in admin_staff_id table
+	8500327
+	
+	//String STAFF_ID = "2101642";
+	//String STAFF_ID = "2355009";
+	//String STAFF_ID = "2103538"; 
+	//String STAFF_ID = "2112504"; - for others
+	
+	2104198 - Capt. Jaafar
+	2101394
+	
+	2354544
+	
+	
+	
+	
+	try {
+
+			if (staffID != null) {
+			
+						// admin filter
+						
+						String feature = FlightDetailsConstants.ADMIN_FEATURE;  //feature = FOF
+						HashSet<String> set = formDao.getAdminStaffId(feature);
+						if(set.contains(staffID)) 
+						{
+							vos = noti.getAllFormsByUser(null);
+						}
+						else
+						{
+							vos = noti.getAllFormsByUser(staffID);
+						}
+				
+			} else {
+				return null;
+			}
+		} catch (Exception e) {
+			logger.error(e);
+		}
+
+"Link: http://3mobapp.mas.net:8080/Deploymanager/html 
+User ID – tomcatusr   Password -- MN7XwPFd"
+
+http://10.221.12.15:8080/mhmessenger/ - uat
+
+http://localhost:8085/MobileApp/MobileApp/
+
+CHG0023251 : MEL - Fuel Order Form - Aircraft Status
+To filter the MEL aircraft data by the Tech Crew duty roster
+
+
+Hello Naveen,
+
+I am facing this issue ki I am not able to connect uat database in dbeaver though the hostname for the same is getting pinged..which shows uat server is up
+
+Hostname : 3mobdb.mas.net
+
+2356351
+
+MASG-3MOBDB-LX
+
+MHMessenger Application is used for notifying users regarding Flights Details and also notify users regarding 
+Fuel Order forms.
+
+
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><getAllFormsByUserResponse xmlns="http://web.mas.net"><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXD</title><updates xsi:nil="true"/></getAllFormsByUserReturn></getAllFormsByUserResponse></soapenv:Body></soapenv:Envelope>
+
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><getAllFormsByUserResponse xmlns="http://web.mas.net"><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A380 - 9MMNF</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTZ</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXM</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMUD</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTX</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLT</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTM</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MFFF</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A380 - 9MMNC</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLM</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXX</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMUA</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A350 - 9MMAG</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTF</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTV</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXR</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLH</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMSG</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLO</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMUB</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTA</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXI</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTC</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXS</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLU</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXY</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLI</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A380 - 9MMND</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLV</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXO</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLN</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXL</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A380 - 9MMNA</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A350 - 9MMAB</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTL</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTN</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMSB</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLK</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLP</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTB</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXG</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXA</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXK</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLS</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A350 - 9MMAD</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXF</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMSE</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXC</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXU</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTU</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXD</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTY</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A350 - 9MMAE</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXV</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTD</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLR</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLF</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A380 - 9MMNB</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLG</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLJ</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A350 - 9MMAF</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTO</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTH</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMXH</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMSA</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A330 - 9MMTK</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>B73NG - 9MMLQ</title><updates xsi:nil="true"/></getAllFormsByUserReturn><getAllFormsByUserReturn><createdBy xsi:nil="true"/><creationTime xsi:type="xsd:date">2022-05-30</creationTime><flightType xsi:nil="true"/><formID>0</formID><formName>MEL_INFO</formName><formStatus xsi:nil="true"/><groupName xsi:nil="true"/><htmlContent xsi:nil="true"/><jsonContent xsi:nil="true"/><messageID>0</messageID><title>A380 - 9MMNE</title><updates xsi:nil="true"/></getAllFormsByUserReturn></getAllFormsByUserResponse></soapenv:Body></soapenv:Envelope>
+
+
+INC0240754-
+has been resolved - We are deploying this CR - CHG0023251 which will improve the performance of the application. And will sort out these kind of issues.
+
+INC0241329- resolved
+Please ensure the network is available while signing on and your password should not contain special characters '&,$'.
+This is due to the apps does not accept '&,$' character.
+We have asked user to change password and not to use &,$ .
+
+
+AircraftList - 408
+selectefFormInfo.regNo = formInfoData.regNo
+
+405-  + 'MEL_INFO' ->  + 'MEL_INFO_DETAILS'
+470, 472
+
+ $("#formListCell"+index).on("click", function(evt){
+
+                                                                                       var curentID = evt.currentTarget;
+
+                                                                                       var formInfoData= $(evt.currentTarget).data("forminfo");
+                                                                                       selectedFormInfo.formName = formInfoData.formName;
+                                                                                       selectedFormInfo.RegNo=formInfoData.regNo;
+                                                                                       self.fetchSelectedFormData();
+                                                                                       });
+
+                                                           });
+
+2354071
+String STAFF_ID = "2105087";
+
+Aircraft status	
+	Admin -> list of all aircrafts -> along with MEL details	V104244
+	Not an admin -> aircraft detail as per REGNO -> along with MEL details	2354071
+		If details of that flight is not visible in AODB -> alert	2354345
+	
+Fuel Order Form	
+	Admin -> list of all FOF of that particular day		V104244
+		New -> Details + Updated By -> Submit
+		Submitted -> Details
+	Not an admin -> FOF as per staffid -> along with FOF details	2354071
+		New -> Details + Updated By -> Submit
+		If details of that flight is not visible in notification -> alert	2354345	
+		
+http://localhost:8085/MobileApp/MobileApp/
+
+Gunda Ravi Chander, Norhaya, Ramesh,Salleh,me,syed,rajendra,capt
+12 ist
+MHMessenger application - Fuel Order Form testing
+
+
+
+
+Implementation Plan-
+
+AMS team - Development, Unit testing, UAT deployment.
+AODB team - Will do their changes accordingly
+Infra DB team - Will create a new table as per below DDL script
+
+CREATE TABLE `admin_staff_id` (
+  `STAFF_ID` varchar(100) NOT NULL,
+  `Active` bit(1) NOT NULL,
+  `ROLE` varchar(100) NOT NULL,
+  `FEATURE` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='to get admin staff ids';
+
+BU-  Perform UAT verification.
+BU-   BU - sign off for UAT.
+AMS/MAB - Broadcast the production deployment date and time, application down time
+AMS team - generate the production war file and place war file under directory  /tmp/ProdBuild/.
+Infra Midrange team : Back up the war file in /tmp/backup. stop the tomcat and upload the new war file and start the tomcat.
+AMS team : will do post-production verification - Verify the application once the infra team done the deployment on prod
+MAB - BU sign off Prod change.
+
+1. To filter the MEL aircraft data by the Tech Crew duty roster.
+2. Performance improvement of MHMessenger application where instead of 77 users we will get only duty roster info in fuel order form from BPM/AODB.
+
+UAT :  01-JUNE-2022- 1000hrs - 2000 hrs.
+Post verification support team name and date/time: Mujeeba Zainab Khan, Krishnakant Bairagi and Rajashekarredddy  
+Post verification BU name and date/time: Mohd Jaafar Abdul Rahman @ Aman (01-JUNE-2022- 1000hrs - 2000 hrs.)
+
+Production:  10-JUNE-2022- 00:00 to 02:00 MYT.
+Post verification support team name and date/time: Mujeeba Zainab Khan, Krishnakant Bairagi and Rajashekarredddy  
+Post verification BU name and date/time: Mohd Jaafar Abdul Rahman @ Aman (10-JUNE-2022-  00:00 to 02:00 MYT.)
+
+SOD update : yes
+
+
+Test Plan-
+
+1. To filter the MEL aircraft data by the Tech Crew duty roster.
+2. Performance improvement of MHMessenger application where instead of 77 users we will get only duty roster info in fuel order form from BPM/AODB.
+UAT :  01-JUNE-2022- 1000hrs - 2000 hrs.
+Production:  10-JUNE-2022- 00:00 to 02:00 MYT.
+
+SPOC:
+AMS Team : : Mujeeba Zainab Khan, Krishnakant Bairagi & Rajashekarredddy  
+BU : Mohd Jaafar Abdul Rahman @ Aman
+
+
+DDL - for FOF user mapping 
+Create table for FOF user mapping
+2022-06-10 00:00:00
+2022-06-10 02:00:00
+
+CTASK0025852 - AODB
+CTASK0025853 - Infra DB
+
+Dear Hairy,
+
+Kindly involve this CR - CHG0023251 in the next CAB Review Meeting
+
+
+Fuel Order Form testing- meeting
+
+Fuel Order Form	
+	Admin -> list of all FOF of that particular day		V104244
+		New -> Details -> Submit
+		Submitted -> Details
+	Not an admin -> FOF as per staffid -> along with FOF details	2104198
+		New -> Details + Updated By -> Submit
+		If details of that flight is not visible in notification -> alert	V101652	
+		
+		
+"Link: http://3mobapp.mas.net:8080/Deploymanager/html 
+User ID – tomcatusr   Password -- MN7XwPFd"
+
+http://10.221.12.15:8080/mhmessenger/
+http://3mobapp.mas.net:8080/MELMobileApp/ - uat
+
+10.221.4.24  - prod
+
+http://localhost:8085/MobileApp/MobileApp/
+http://localhost:8085/MELMobileApp/
+
+CHG0023251 : MEL - Fuel Order Form - Aircraft Status
+To filter the MEL aircraft data by the Tech Crew duty roster
+
+
+
+https://install.appcenter.ms/orgs/Malaysia-Airlines-Berhad/apps/MHMessenger-1/ - for ios
+https://install.appcenter.ms/orgs/Malaysia-Airlines-Berhad/apps/MHMessenger/releases/33?source=email&tid=Ju2788U39O - for android
+
+https://mhmessenger.malaysiaairlines.com/mhmessenger/MHMessenger.apk - for android
+https://mhmessenger.malaysiaairlines.com/mhmessenger/MHmessenger.ipa - for ios
+
+
+ I believe what you mean is the MHM Fuel Apps. Below is the link for the installation.
+
+Android phone - https://install.appcenter.ms/orgs/malaysia-airlines-berhad/apps/mhmessenger/distribution_groups/mhmessenger%20-%20release%20internal/releases/41
+
+iOS phone - https://install.appcenter.ms/orgs/malaysia-airlines-berhad/apps/mhmessenger-1/distribution_groups/mhmessenger%20ios%20-%20release
+ 
+ 
+ 
+Hello All,
+
+Kindly use the respective Ctasks mentioned below and please be available during the downtime.
+
+CTASK0025853 – @GD_TCSDatabase  - for creation of the table
+
+CTASK0025852 – @GD_AMS_AODB – for your end deployment
+
+CTASK0025884 - @GD_TCSMidrange – for deployment of war file
+
+CTASK0025899 - @GD_AMS_BPM - Kindly stop FOF during downtime.
+ 
+Regards,
+Mujeeba Zainab Khan
+
+
+BPM - FOF stop
+AODB - their end deployment
+DB - table create
+AMS - data insert
+Midrange - war deploy 
+AMS - verify
+BPM  - resume FOF
+BU - verify from his end
+
+
+INSERT INTO admin_staff_id(`STAFF_ID`,`ROLE`,`FEATURE`,`Active`)
+VALUES ('2101508','Admin','Aircraft_status',1),
+('2101642','Admin','Aircraft_status',1),
+('2105778','Admin','Aircraft_status',1),
+('2350524','Admin','Aircraft_status',1),
+('2101301','Admin','Aircraft_status',1),
+('2114168','Admin','Aircraft_status',1),
+('2101712','Admin','Aircraft_status',1),
+('2100734','Admin','Aircraft_status',1),
+('2101632','Admin','Aircraft_status',1),
+('2100309','Admin','Aircraft_status',1),
+('2101277','Admin','Aircraft_status',1),
+('2104404','Admin','Aircraft_status',1),
+('2354508','Admin','Aircraft_status',1),
+('2354568','Admin','Aircraft_status',1),
+('2100913','Admin','Aircraft_status',1),
+('2113983','Admin','Aircraft_status',1),
+('2104053','Admin','Aircraft_status',1),
+('2352137','Admin','Aircraft_status',1),
+('2102266','Admin','Aircraft_status',1),
+('2101341','Admin','Aircraft_status',1),
+('2101268','Admin','Aircraft_status',1),
+('2101256','Admin','Aircraft_status',1),
+('2102314','Admin','Aircraft_status',1),
+('2104374','Admin','Aircraft_status',1),
+('2104129','Admin','Aircraft_status',1),
+('2104214','Admin','Aircraft_status',1),
+('2104370','Admin','Aircraft_status',1),
+('2102310','Admin','Aircraft_status',1),
+('2105288','Admin','Aircraft_status',1),
+('2102311','Admin','Aircraft_status',1),
+('2101364','Admin','Aircraft_status',1),
+('2104092','Admin','Aircraft_status',1),
+('2107780','Admin','Aircraft_status',1),
+('2101396','Admin','Aircraft_status',1),
+('2103280','Admin','Aircraft_status',1),
+('2101301','Admin','Aircraft_status',1),
+('2104199','Admin','Aircraft_status',1),
+('2102181','Admin','Aircraft_status',1),
+('2101362','Admin','Aircraft_status',1),
+('2101521','Admin','Aircraft_status',1),
+('2108103','Admin','Aircraft_status',1),
+('2102249','Admin','Aircraft_status',1),
+('2352782','Admin','Aircraft_status',1),
+('2200953','Admin','Aircraft_status',1),
+('2353138','Admin','Aircraft_status',1),
+('2102260','Admin','Aircraft_status',1),
+('2200994','Admin','Aircraft_status',1),
+('2104167','Admin','Aircraft_status',1),
+('2200952','Admin','Aircraft_status',1),
+('2102263','Admin','Aircraft_status',1),
+('2111179','Admin','Aircraft_status',1),
+('2102191','Admin','Aircraft_status',1),
+('2350481','Admin','Aircraft_status',1),
+('2102268','Admin','Aircraft_status',1),
+('2350507','Admin','Aircraft_status',1),
+('2104090','Admin','Aircraft_status',1),
+('2105207','Admin','Aircraft_status',1),
+('2101231','Admin','Aircraft_status',1),
+('2106594','Admin','Aircraft_status',1),
+('2114254','Admin','Aircraft_status',1),
+('2350205','Admin','Aircraft_status',1),
+('2355798','Admin','Aircraft_status',1),
+('2106451','Admin','Aircraft_status',1),
+('2356202','Admin','Aircraft_status',1),
+('2356203','Admin','Aircraft_status',1),
+('2356204','Admin','Aircraft_status',1),
+('2356205','Admin','Aircraft_status',1),
+('2102844','Admin','Aircraft_status',1),
+('V104244','Admin','Aircraft_status',1),
+('2101508','Admin','FOF',1),
+('2101642','Admin','FOF',1),
+('2105778','Admin','FOF',1),
+('2350524','Admin','FOF',1),
+('2101301','Admin','FOF',1),
+('2114168','Admin','FOF',1),
+('2101712','Admin','FOF',1),
+('2100734','Admin','FOF',1),
+('2101632','Admin','FOF',1),
+('2100309','Admin','FOF',1),
+('2101277','Admin','FOF',1),
+('2104404','Admin','FOF',1),
+('2354508','Admin','FOF',1),
+('2354568','Admin','FOF',1),
+('2100913','Admin','FOF',1),
+('2113983','Admin','FOF',1),
+('2104053','Admin','FOF',1),
+('2352137','Admin','FOF',1),
+('2102266','Admin','FOF',1),
+('2101341','Admin','FOF',1),
+('2101268','Admin','FOF',1),
+('2101256','Admin','FOF',1),
+('2102314','Admin','FOF',1),
+('2104374','Admin','FOF',1),
+('2104129','Admin','FOF',1),
+('2104214','Admin','FOF',1),
+('2104370','Admin','FOF',1),
+('2102310','Admin','FOF',1),
+('2105288','Admin','FOF',1),
+('2102311','Admin','FOF',1),
+('2101364','Admin','FOF',1),
+('2104092','Admin','FOF',1),
+('2107780','Admin','FOF',1),
+('2101396','Admin','FOF',1),
+('2103280','Admin','FOF',1),
+('2101301','Admin','FOF',1),
+('2104199','Admin','FOF',1),
+('2102181','Admin','FOF',1),
+('2101362','Admin','FOF',1),
+('2101521','Admin','FOF',1),
+('2108103','Admin','FOF',1),
+('2102249','Admin','FOF',1),
+('2352782','Admin','FOF',1),
+('2200953','Admin','FOF',1),
+('2353138','Admin','FOF',1),
+('2102260','Admin','FOF',1),
+('2200994','Admin','FOF',1),
+('2104167','Admin','FOF',1),
+('2200952','Admin','FOF',1),
+('2102263','Admin','FOF',1),
+('2111179','Admin','FOF',1),
+('2102191','Admin','FOF',1),
+('2350481','Admin','FOF',1),
+('2102268','Admin','FOF',1),
+('2350507','Admin','FOF',1),
+('2104090','Admin','FOF',1),
+('2105207','Admin','FOF',1),
+('2101231','Admin','FOF',1),
+('2106594','Admin','FOF',1),
+('2114254','Admin','FOF',1),
+('2350205','Admin','FOF',1),
+('2355798','Admin','FOF',1),
+('2106451','Admin','FOF',1),
+('2356202','Admin','FOF',1),
+('2356203','Admin','FOF',1),
+('2356204','Admin','FOF',1),
+('2356205','Admin','FOF',1),
+('2102844','Admin','FOF',1),
+('V104244','Admin','FOF',1);
+
+
+
+75
+
+
+MH 2664
+MH 2742
+
+3aodb2.mas.net - 10.225.6.27
+3mobdb.mas.net - 10.221.14.12
+
+DR - 10.222.4.10
+
+
+Tats - Veera Ashoka 
+Aodb - Syed
+
+Unable to login - Network issue
+ldap authentication error 
+passwrod issue - MH Messenger does not support these characters ‘&’, '<', '>', '(' and ')'
+in password field
+FOF unable to submit - contact AODB team
+
+
+https://mabitdept-my.sharepoint.com/personal/ext_mujeebazainab_khan_malaysiaairlines_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fext%5Fmujeebazainab%5Fkhan%5Fmalaysiaairlines%5Fcom%2FDocuments%2FMHMessenger%2Eipa&parent=%2Fpersonal%2Fext%5Fmujeebazainab%5Fkhan%5Fmalaysiaairlines%5Fcom%2FDocuments&ga=1
+
+
+
+
+
+Dear Captain,
+As per this snap, i have checked the logs and the deatils of this particular FOF is present correctly and even the data has been present in database table too. 
+
+2022-07-31 13:30:47 INFO  BPMFormNotificationService:167 - prepopulateMap{FP_ADJ_TAKEOFF_FUEL_HIDDEN=12351, FP_FUEL_SURPL_HIDDEN=0, FP_MAX_FUEL_AVBL=16711, FLT_DATE_UTC=31-JUL-2022 0630, FLT_ACFT_REGN=9MMSA, FP_REG_TAKE_OFF_WT=70711, FP_FUEL_OZFW=54000, FP_FUEL_BURN_TO_DEST=4351, MAX_FUEL_CAPA_TANK_HIDDEN=20298, ID=2223491, FP_FUEL_TAXI_HIDDEN=170, FP_FUEL_SURPL=0, FLT_NBR=MH 758, FP_FUEL_TAKEOFF=12351, FP_BLOCK_FUEL_REQ=12530, FP_MIN_SECT_FUEL=7100, SECTOR=KUL/SGN, FP_ADJ_TAKEOFF_FUEL=12351, MEL_DESCRIPTION=NOSE GEAR TAXI LIGHT U/S, MEL_REF=33-09-01   :  NOSE GEAR TAXI LIGHT U/S
+, FP_FUEL_TANKER=5325, FP_FUEL_TAXI=170, MAX_FUEL_CAPA_TANK=20298, FK_FLIGHT_SKED_ID=1685653, MEL_REF_HIDDEN=33-09-01   :  NOSE GEAR TAXI LIGHT U/S
+}
+
+
+
+Mh2616 - 2352562, 2103953
+
+Mh0758 - 2101394
+
+2022-08-01 12:40:09 INFO  BPMFormNotificationService:167 - prepopulateMap{FP_ADJ_TAKEOFF_FUEL_HIDDEN=9200, FP_FUEL_SURPL_HIDDEN=0, FP_MAX_FUEL_AVBL=16353, FLT_DATE_UTC=01-AUG-2022 0600, FLT_ACFT_REGN=9MMXR, FP_REG_TAKE_OFF_WT=72453, FP_FUEL_OZFW=56100, FP_FUEL_BURN_TO_DEST=6093, MAX_FUEL_CAPA_TANK_HIDDEN=20298, ID=2224144, FP_FUEL_TAXI_HIDDEN=170, FP_FUEL_SURPL=0, FLT_NBR=MH 2616, FP_FUEL_TAKEOFF=9127, FP_BLOCK_FUEL_REQ=9370, FP_MIN_SECT_FUEL=9200, SECTOR=KUL/BKI, FP_ADJ_TAKEOFF_FUEL=9200, MEL_DESCRIPTION=SEAT 6C |  24F & 27F â€“ WINDOW LIGHTS DO NOT ILLUMINATE.#RECLINE BUTTON STUCK AT SEAT 29E.#NOSE GEAR TAXI LIGHT INOPERATIVE#ONE GREEN WING TIP POSITION LIGHT INOPERATIVE#LEFT FIXED LANDING LIGHT INOP, MEL_REF=33-02-02   :  SEAT 6C |  24F & 27F â€“ WINDOW LIGHTS DO NOT ILLUMINATE.
+25-06-01B   :  RECLINE BUTTON STUCK AT SEAT 29E.
+33-09-01   :  NOSE GEAR TAXI LIGHT INOPERATIVE
+33-11-01A   :  ONE GREEN WING TIP POSITION LIGHT INOPERATIVE
+33-08-01A   :  LEFT FIXED LANDING LIGHT INOP
+, FP_FUEL_TANKER=0, FP_FUEL_TAXI=170, MAX_FUEL_CAPA_TANK=20298, FK_FLIGHT_SKED_ID=1686052, MEL_REF_HIDDEN=33-02-02   :  SEAT 6C |  24F & 27F â€“ WINDOW LIGHTS DO NOT ILLUMINATE.
+25-06-01B   :  RECLINE BUTTON STUCK AT SEAT 29E.
+33-09-01   :  NOSE GEAR TAXI LIGHT INOPERATIVE
+33-11-01A   :  ONE GREEN WING TIP POSITION LIGHT INOPERATIVE
+33-08-01A   :  LEFT FIXED LANDING LIGHT INOP
+}
+
+
+https://mabitdept-my.sharepoint.com/personal/ext_mujeebazainab_khan_malaysiaairlines_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fext%5Fmujeebazainab%5Fkhan%5Fmalaysiaairlines%5Fcom%2FDocuments%2FMHMessenger%2Eipa&parent=%2Fpersonal%2Fext%5Fmujeebazainab%5Fkhan%5Fmalaysiaairlines%5Fcom%2FDocuments&ga=1
+
+
+
+mh1432, 1148 n 1149 user 2104793 reported unable to submit FOF
+
+2022-08-03 07:35:12 INFO  BPMFormNotificationService:167 - prepopulateMap{FP_ADJ_TAKEOFF_FUEL_HIDDEN=9200, FP_FUEL_SURPL_HIDDEN=0, FP_MAX_FUEL_AVBL=15362, FLT_DATE_UTC=03-AUG-2022 0125, FLT_ACFT_REGN=9MFFF, FP_REG_TAKE_OFF_WT=67862, FP_FUEL_OZFW=52500, FP_FUEL_BURN_TO_DEST=2545, MAX_FUEL_CAPA_TANK_HIDDEN=20819, ID=2225040, FP_FUEL_TAXI_HIDDEN=160, FP_FUEL_SURPL=0, FLT_NBR=MH 1432, FP_FUEL_TAKEOFF=9200, FP_BLOCK_FUEL_REQ=9360, FP_MIN_SECT_FUEL=5000, SECTOR=KUL/LGK, FP_ADJ_TAKEOFF_FUEL=9200, MEL_DESCRIPTION=DURING SOC INSPECTION FOUND   SEAT 1DF  |  4AC ESCHUSHION CRACK  SEAT 1C  |  2D  |  2F  |  3D  |  4A  |  4C AUDIO JACK MISSING#FOUND L/H WING STROBE LIGHT INOPERATIVE#AFTER PUSHBACK & ENGINES START COMPLETED |  FWD ENTRY LIGHT ILLUMINATED. DOOR CYCLED AND THE LIGHT STLL ILLUMINATED. AT 7000 FT DURING CLIMB |  LIGHT EXTINGUISHED# , MEL_REF=25-10   :  DURING SOC INSPECTION FOUND   SEAT 1DF  |  4AC ESCHUSHION CRACK  SEAT 1C  |  2D  |  2F  |  3D  |  4A  |  4C AUDIO JACK MISSING
+33-05-01   :  FOUND L/H WING STROBE LIGHT INOPERATIVE
+52-03-01   :  AFTER PUSHBACK & ENGINES START COMPLETED |  FWD ENTRY LIGHT ILLUMINATED. DOOR CYCLED AND THE LIGHT STLL ILLUMINATED. AT 7000 FT DURING CLIMB |  LIGHT EXTINGUISHED
+52-03-01   :   
+, FP_FUEL_TANKER=4280, FP_FUEL_TAXI=160, MAX_FUEL_CAPA_TANK=20819, FK_FLIGHT_SKED_ID=1686571, MEL_REF_HIDDEN=25-10   :  DURING SOC INSPECTION FOUND   SEAT 1DF  |  4AC ESCHUSHION CRACK  SEAT 1C  |  2D  |  2F  |  3D  |  4A  |  4C AUDIO JACK MISSING
+33-05-01   :  FOUND L/H WING STROBE LIGHT INOPERATIVE
+52-03-01   :  AFTER PUSHBACK & ENGINES START COMPLETED |  FWD ENTRY LIGHT ILLUMINATED. DOOR CYCLED AND THE LIGHT STLL ILLUMINATED. AT 7000 FT DURING CLIMB |  LIGHT EXTINGUISHED
+52-03-01   :   
+}
+
+
+2022-08-03 12:15:02 INFO  BPMFormNotificationService:167 - prepopulateMap{FP_ADJ_TAKEOFF_FUEL_HIDDEN=5200, FP_FUEL_SURPL_HIDDEN=0, FP_MAX_FUEL_AVBL=13289, FLT_DATE_UTC=03-AUG-2022 0555, FLT_ACFT_REGN=9MFFF, FP_REG_TAKE_OFF_WT=67289, FP_FUEL_OZFW=54000, FP_FUEL_BURN_TO_DEST=1972, MAX_FUEL_CAPA_TANK_HIDDEN=20819, ID=2225217, FP_FUEL_TAXI_HIDDEN=170, FP_FUEL_SURPL=0, FLT_NBR=MH 1148, FP_FUEL_TAKEOFF=5116, FP_BLOCK_FUEL_REQ=5370, FP_MIN_SECT_FUEL=5200, SECTOR=KUL/PEN, FP_ADJ_TAKEOFF_FUEL=5200, MEL_DESCRIPTION=DURING SOC INSPECTION FOUND   SEAT 1DF  |  4AC ESCHUSHION CRACK  SEAT 1C  |  2D  |  2F  |  3D  |  4A  |  4C AUDIO JACK MISSING#FOUND L/H WING STROBE LIGHT INOPERATIVE#AFTER PUSHBACK & ENGINES START COMPLETED |  FWD ENTRY LIGHT ILLUMINATED. DOOR CYCLED AND THE LIGHT STLL ILLUMINATED. AT 7000 FT DURING CLIMB |  LIGHT EXTINGUISHED# , MEL_REF=25-10   :  DURING SOC INSPECTION FOUND   SEAT 1DF  |  4AC ESCHUSHION CRACK  SEAT 1C  |  2D  |  2F  |  3D  |  4A  |  4C AUDIO JACK MISSING
+33-05-01   :  FOUND L/H WING STROBE LIGHT INOPERATIVE
+52-03-01   :  AFTER PUSHBACK & ENGINES START COMPLETED |  FWD ENTRY LIGHT ILLUMINATED. DOOR CYCLED AND THE LIGHT STLL ILLUMINATED. AT 7000 FT DURING CLIMB |  LIGHT EXTINGUISHED
+52-03-01   :   
+, FP_FUEL_TANKER=0, FP_FUEL_TAXI=170, MAX_FUEL_CAPA_TANK=20819, FK_FLIGHT_SKED_ID=1686554, MEL_REF_HIDDEN=25-10   :  DURING SOC INSPECTION FOUND   SEAT 1DF  |  4AC ESCHUSHION CRACK  SEAT 1C  |  2D  |  2F  |  3D  |  4A  |  4C AUDIO JACK MISSING
+33-05-01   :  FOUND L/H WING STROBE LIGHT INOPERATIVE
+52-03-01   :  AFTER PUSHBACK & ENGINES START COMPLETED |  FWD ENTRY LIGHT ILLUMINATED. DOOR CYCLED AND THE LIGHT STLL ILLUMINATED. AT 7000 FT DURING CLIMB |  LIGHT EXTINGUISHED
+52-03-01   :   
+}
+
+
+2022-08-03 13:45:02 INFO  BPMFormNotificationService:167 - prepopulateMap{FP_ADJ_TAKEOFF_FUEL_HIDDEN=5700, FP_FUEL_SURPL_HIDDEN=0, FP_MAX_FUEL_AVBL=14788, FLT_DATE_UTC=03-AUG-2022 0730, FLT_ACFT_REGN=9MFFF, FP_REG_TAKE_OFF_WT=67488, FP_FUEL_OZFW=52700, FP_FUEL_BURN_TO_DEST=2171, MAX_FUEL_CAPA_TANK_HIDDEN=20819, ID=2225260, FP_FUEL_TAXI_HIDDEN=100, FP_FUEL_SURPL=0, FLT_NBR=MH 1149, FP_FUEL_TAKEOFF=5601, FP_BLOCK_FUEL_REQ=5800, FP_MIN_SECT_FUEL=5700, SECTOR=PEN/KUL, FP_ADJ_TAKEOFF_FUEL=5700, MEL_DESCRIPTION=FOUND L/H WING STROBE LIGHT INOPERATIVE#AFTER PUSHBACK & ENGINES START COMPLETED |  FWD ENTRY LIGHT ILLUMINATED. DOOR CYCLED AND THE LIGHT STLL ILLUMINATED. AT 7000 FT DURING CLIMB |  LIGHT EXTINGUISHED# #DURING SOC INSPECTION FOUND   SEAT 1DF  |  4AC ESCHUSHION CRACK  SEAT 1C  |  2D  |  2F  |  3D  |  4A  |  4C AUDIO JACK MISSING, MEL_REF=33-05-01   :  FOUND L/H WING STROBE LIGHT INOPERATIVE
+52-03-01   :  AFTER PUSHBACK & ENGINES START COMPLETED |  FWD ENTRY LIGHT ILLUMINATED. DOOR CYCLED AND THE LIGHT STLL ILLUMINATED. AT 7000 FT DURING CLIMB |  LIGHT EXTINGUISHED
+52-03-01   :   
+25-10   :  DURING SOC INSPECTION FOUND   SEAT 1DF  |  4AC ESCHUSHION CRACK  SEAT 1C  |  2D  |  2F  |  3D  |  4A  |  4C AUDIO JACK MISSING
+, FP_FUEL_TANKER=0, FP_FUEL_TAXI=100, MAX_FUEL_CAPA_TANK=20819, FK_FLIGHT_SKED_ID=1686555, MEL_REF_HIDDEN=33-05-01   :  FOUND L/H WING STROBE LIGHT INOPERATIVE
+52-03-01   :  AFTER PUSHBACK & ENGINES START COMPLETED |  FWD ENTRY LIGHT ILLUMINATED. DOOR CYCLED AND THE LIGHT STLL ILLUMINATED. AT 7000 FT DURING CLIMB |  LIGHT EXTINGUISHED
+52-03-01   :   
+25-10   :  DURING SOC INSPECTION FOUND   SEAT 1DF  |  4AC ESCHUSHION CRACK  SEAT 1C  |  2D  |  2F  |  3D  |  4A  |  4C AUDIO JACK MISSING
+}
+
+
+
+Dear Captain,
+I have analysed the issue, there is no error as such at the application end. Kindly ask the user to reinstall the app using below link. It will resolve the issue.
+For Android user-
+https://install.appcenter.ms/orgs/malaysia-airlines-berhad/apps/mhmessenger/distribution_groups/mhmessenger%20-%20release%20internal 
+
+MH 195H
+
+{"MHM":{"FORM_ID":"75272743","MSG_ID":"5272744","FORM_NAME":"FuelOrderForm","ASSIGNED_BY":"BPMTrigger","SUBMITTED_BY":"2355604","FORM_VALUES":[{"FLT_NBR":"MH 2609","FLT_ACFT_REGN":"9MMXG","SECTOR":"LBU/KUL","FLT_DATE_UTC":"08-AUG-2022 0340","FP_FUEL_BURN_TO_DEST":"5120","FP_REG_TAKE_OFF_WT":"71480","FP_FUEL_OZFW":"49243","FP_MAX_FUEL_AVBL":"20298","FP_MIN_SECT_FUEL":"8100","FP_FUEL_TANKER":"0","FP_FUEL_TAKEOFF":"8007","FP_FUEL_SURPL":"300","FP_FUEL_SURPL_HIDDEN":"300","FP_ADJ_TAKEOFF_FUEL":"8400","FP_ADJ_TAKEOFF_FUEL_HIDDEN":"8100","FP_FUEL_TAXI":"100","FP_FUEL_TAXI_HIDDEN":"100","FP_BLOCK_FUEL_REQ":"8500","MAX_FUEL_CAPA_TANK_HIDDEN":"20298","fuel_remarks":"remarks 2/5 crew","MEL_REF_HIDDEN":"33-09-01   :  TAXI LIGHT INOPERATIVE.\n","MEL_REF":"33-09-01   :  TAXI LIGHT INOPERATIVE.\n"}]}}
+
+
+
+Yes they are getting mismatched, but data is received from AODB end and there these values only get stored so that got populated in MHM.
+
+
+
+
+
+Yes they are getting mismatched, but data is received from AODB end and there these values only get stored so that got populated in MHM.
+
+Dear Captain,
+
+I have analysed the issue, MHMessenger application receives data from AODB so I have checked with them and they have got the same fuel figures in FOF as being displayed in MHMessenger application. The data MHM received is that only.
+
+Hello @Syed Shahabuddin,
+ 
+Captain Jaafar again reported this issue that fuel figures in FOF for the flight – MH1209 in MH Messenger application are getting mismatched with the actual values which he received in manual FOF. Kindly let us know whether the data we received in MHMessenger is correct or not. Below are the snapshots for your reference.
+
+
+
+tech crew check their duty rosters like which flight they are suppose to fly on that particular day and update fuel order forms.
+FPM->AODB in every 5 min sends data to BPM->BPM sends data to MHM via BPMNotifcationService wsdl
+
+FOF is accessible only by tech crew members and admin
+Transit check list data is received from AODB and TATS flight roster - TATS db
+Aircraft status - getting displayed via procedure which is getting called on Aodb
+
+nodal subset - PUSH notification functionality
+
+wsdl service format - input, methods, response
+so if in case a new requirement comes for mobile app we need to create wsdl service
+once it is created u need to map it in server-config.wsdd
+getting the data in the form of json content from BPM and displaying it in html form in MHM
+
+GetFormNotificationService
+ViewFormNotificationService
+BPMNotifcationService
+SaveFormNotificationService
+
+notification table me data save hua -> mails, sms -> Amadeus me data save hua -> and then thru a procedure it will agn get saved in AODB.
+
+cordova platform - backbone.js
+
+once the form is submitted then it get saved in the form of json content in notification.
+
+these special characters are not supported by web services of MHM thats why FOFs are not getting submitted - MEL info consisted of ( and )
+
+latest 10 hrs data get populated in MHM so basically notification table stores the data of 10 days
+
+Integration points
+
+while any deployment BPM has to stop the flow
+
+
+https://install.appcenter.ms/orgs/malaysia-airlines-berhad/apps/mhmessenger-1/distribution_groups/mhmessenger%20ios%20-%20release
+
+https://mabitdept-my.sharepoint.com/:u:/r/personal/ext_mujeebazainab_khan_malaysiaairlines_com/Documents/MHMessenger.apk?csf=1&web=1
+
+latest version of MHM app
+	android - 5.2
+	ios - 5.4
+	
+MHOPS - RAMP AHU
+MHOPS - ENGINEERING
+MHOPS - GH PAX
+MHOPS - CABIN CREW
+MHOPS - TECH CREW - for FOF 
+MHOPS - SUPERVISOR/MANAGEMENT
+NON-MHOPS - external users/non MAB staff
+
+listSenderGroups

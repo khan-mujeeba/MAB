@@ -1,0 +1,45 @@
+Claim Shifts 
+
+14 April - MHMessenger - sso deployment on prod
+
+4 May - Holiday shift
+5 May - MHMessenegr DB upgrade on prod
+16 May - Holiday shift
+18-19 May - MHM  - wildcard certificate, tomcat apache upgrade
+19 May - SRAS java apps - tomcat apache upgrade
+24 May - MHSMS - Apache upgrade & Wildcard certificate renewal --PROD-MHSMS
+25 May - SCV - Apache & Tomcat upgrade --Prod--SCV
+
+3 June - SPRP - Patching
+4 June - Weekend shift
+5 June - Weekend shift
+9 June - MHM CHG0023251 PROD deployment
+22 June - IDVS CHG0023469 Prod Deployment
+
+2 july - Weekend shift
+3 july - Weekend shift
+
+1 Aug - Q3 2022 Patching - PROD - IDVS 
+3 Aug - Q3 2022 Patching - PROD - FSIS 
+6 Aug - Weekend shift
+7 Aug - Weekend shift
+8 Aug - Q3 2022 Patching - PROD - MHMessenger 
+17 Aug - MySQL Minor Version Upgrade from 8.0.28 to 8.0.29--IDVS PROD
+30 Aug - MySQL Minor Version Upgrade from 8.0.28 to 8.0.29--SPRP PROD DR
+
+14 Sept - FSIS CHG0023908 PROD deployment CTASK0026860
+17 Sept - Weekend shift
+18 Sept - Weekend shift
+
+19 Oct - MySQL Minor Version Upgrade from 8.0.29 to 8.0.30-MH-Messenger PROD CTASK0026860
+29 Oct - Weekend shift
+30 Oct - Weekend shift
+
+8 Nov - Q4 2022 - Patching PROD - SPRP
+14 Nov -  Q4 2022 - Patching PROD - MOBILITY
+16 Nov -  Q4 2022 - Patching PROD - FSIS
+18 Nov - Client holiday
+20 Nov - Weekend shift
+20 Nov - Q4 2022 - Patching PROD - MHLDB
+22 Nov - Q4 2022 - Patching PROD - EVR
+25 Nov - Q4 2022 - Patching PROD - SRAS JAVA

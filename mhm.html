@@ -1,0 +1,240 @@
+<html>
+ <head></head>
+ <body>
+  <form class="form-horizontal"> 
+   <script>
+	document.getElementById('MEL_REF').value=document.getElementById('MEL_REF_HIDDEN').value;		function surplOnChange() {
+
+				var surplusFuelVal = document.getElementById('FP_FUEL_SURPL').value;
+
+				if (surplusFuelVal == "") {
+					document.getElementById('FP_FUEL_SURPL').value = "0";
+				}
+
+				if (!calculateAdjTakeOFfFuel()) {
+					var taxiFuelVal = document.getElementById('FP_FUEL_TAXI').value;
+
+					if (taxiFuelVal.length != 0) {
+
+						calculateBlockRequestedFuel(true);
+
+					}
+				} else {
+					alert("Calculated block fuel request value is greater than FUEL TANK CAPACITY");
+					document.getElementById('FP_FUEL_SURPL').value = document
+							.getElementById('FP_FUEL_SURPL_HIDDEN').value;
+				}
+
+			}
+
+			function onTaxiFuelChange() {
+
+				var taxiVal = document.getElementById('FP_FUEL_TAXI').value;
+
+				if (taxiVal == "") {
+					document.getElementById('FP_FUEL_TAXI').value = "0";
+				}
+				calculateBlockRequestedFuel(false);
+
+			}
+
+			function calculateAdjTakeOFfFuel() {
+
+				var isAdjTakOffMoreThanMax = false;
+				//added takerinfg also for 28 DEC MHM Phase 2 UAT
+				var surplFuelVal = document.getElementById('FP_FUEL_SURPL').value;
+
+				var estFuelVal = document.getElementById('FP_FUEL_TAKEOFF').value;
+				
+				var minSectFuelVal = document
+						.getElementById('FP_MIN_SECT_FUEL').value;
+
+				var tankering = document.getElementById('FP_FUEL_TANKER').value;
+				
+				var adjTakeOff = document.getElementById('FP_ADJ_TAKEOFF_FUEL').value;
+				
+				var adjTakeOffHidden = document.getElementById('FP_ADJ_TAKEOFF_FUEL_HIDDEN').value;
+				
+				var result = parseFloat(surplFuelVal) + parseFloat(adjTakeOffHidden);
+				
+
+				//var result =  parseFloat(surplFuelVal) + 
+
+				if (!isNaN(result)) {
+					// checking if the calculated value is greater than max fuel value available.
+					if (result > document.getElementById('MAX_FUEL_CAPA_TANK_HIDDEN').value) {
+						isAdjTakOffMoreThanMax = true;
+					} else {
+						document.getElementById('FP_ADJ_TAKEOFF_FUEL').value = result;
+					}
+
+				}
+				return isAdjTakOffMoreThanMax;
+			}
+
+			function calculateBlockRequestedFuel(isSurplusChange) {
+
+				var adjTakeOffFuelVal = document
+
+				.getElementById('FP_ADJ_TAKEOFF_FUEL').value;
+				
+				var adjTakeOffFuelValHidden = document
+
+				.getElementById('FP_ADJ_TAKEOFF_FUEL_HIDDEN').value;
+
+
+				var taxiFuelVal = document.getElementById('FP_FUEL_TAXI').value;
+
+				var result = parseFloat(adjTakeOffFuelVal)
+
+				+ parseFloat(taxiFuelVal);
+
+				//result = Math.round(result / 10) * 10;
+
+				result = (result % 10) != 0 ? parseInt(result / 10) * 10 + 10
+						: result;
+
+				//alert(result);
+
+				if (!isNaN(result)) {
+
+					// checking if result is greater than max fuel value available
+					if (result > document.getElementById('FP_MAX_FUEL_AVBL').value) {
+						confirm("Do you confirm Calculated block fuel request value is greater than MAX FUEL AVBL");
+
+}
+					// checking if result is greater than fuel tank capacity value available
+
+					if (result > document.getElementById('MAX_FUEL_CAPA_TANK_HIDDEN').value) {
+
+						alert("Calculated block fuel request value is greater than TANK CAPACITY");
+						if (isSurplusChange) {
+							document.getElementById('FP_FUEL_SURPL').value = document
+									.getElementById('FP_FUEL_SURPL_HIDDEN').value;
+							document.getElementById('FP_ADJ_TAKEOFF_FUEL').value = document
+									.getElementById('FP_ADJ_TAKEOFF_FUEL_HIDDEN').value;
+						} else {
+							document.getElementById('FP_FUEL_TAXI').value = document
+									.getElementById('FP_FUEL_TAXI_HIDDEN').value;
+						}
+
+					} else {
+						document.getElementById('FP_BLOCK_FUEL_REQ').value = result;
+						document.getElementById('FP_FUEL_SURPL_HIDDEN').value = document
+								.getElementById('FP_FUEL_SURPL').value;
+						document.getElementById('FP_FUEL_TAXI_HIDDEN').value = document
+								.getElementById('FP_FUEL_TAXI').value;
+/* 						document.getElementById('FP_ADJ_TAKEOFF_FUEL_HIDDEN').value = document
+								.getElementById('FP_ADJ_TAKEOFF_FUEL').value; */
+					}
+
+				}
+
+			}
+		</script> 
+   <fieldset> 
+    <!-- Form Name --> 
+    <legend>FUEL ORDER FORM</legend> 
+    <!-- FLIGHT DETAILS --> 
+    <!-- <legend>FLIGHT DETAILS</legend> --> 
+    <!-- FLIGHT NO --> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FLT_NBR">FLIGHT NO</label></td> 
+       <!-- <td><label class="col-md-4 control-label" for="FLT_DATE_UTC">DATE
+
+
+
+						(UTC)</label></td> --> 
+       <td><label class="col-md-4 control-label" for="FLT_ACFT_REGN">ACFT REGN</label></td> 
+       <td><label class="col-md-4 control-label" for="SECTOR">SECTOR</label></td> 
+       <td><label class="col-md-4 control-label" for="DEP_TIME_UTC">DEPARTURE (UTC)</label></td> 
+      </tr> 
+      <tr> 
+       <td><input id="FLT_NBR" name="FLT_NBR" type="text" class="form-control input-md" disabled value="MH 2634"></td> 
+       <!-- <td><input id="FLT_DATE_UTC" name="FLT_DATE_UTC" type="text"
+
+
+
+					class="form-control input-md" disabled="disabled"></td> --> 
+       <td><input id="FLT_ACFT_REGN" name="FLT_ACFT_REGN" type="text" class="form-control input-md" disabled value="9MMLN"></td> 
+       <td><input id="SECTOR" name="SECTOR" type="text" class="form-control input-md" disabled value="KUL/LBU"></td> 
+       <td><input id="FLT_DATE_UTC" name="FLT_DATE_UTC" type="text" class="form-control input-md" disabled value="08-JUL-2022 0640"></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <!-- FUEL ANALYSIS --> 
+    <legend>FUEL ANALYSIS</legend> 
+    <table> 
+     <tbody> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_FUEL_BURN_TO_DEST">TRIP FUEL</label></td> 
+       <td><input id="FP_FUEL_BURN_TO_DEST" readonly name="FP_FUEL_BURN_TO_DEST" type="number" class="form-control input-md" value="null" style="text-align: right;"></td> 
+      </tr> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_REG_TAKE_OFF_WT">LOWER(A),(B) or (C) </label></td> 
+       <td><input id="FP_REG_TAKE_OFF_WT" readonly name="FP_REG_TAKE_OFF_WT" type="number" class="form-control input-md" style="text-align: right;" value="72154"></td> 
+      </tr> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_FUEL_OZFW">EST ZFW</label></td> 
+       <td><input id="FP_FUEL_OZFW" readonly name="FP_FUEL_OZFW" type="number" class="form-control input-md" style="text-align: right;" value="null"></td> 
+      </tr> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_MAX_FUEL_AVBL">MAX FUEL AVBL</label></td> 
+       <td><input id="FP_MAX_FUEL_AVBL" readonly value="null" name="FP_MAX_FUEL_AVBL" type="number" class="form-control input-md" style="text-align: right;"></td> 
+      </tr> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_MIN_SECT_FUEL">MINIMUM SECTOR FUEL</label></td> 
+       <td><input id="FP_MIN_SECT_FUEL" readonly value="null" name="FP_MIN_SECT_FUEL" type="number" class="form-control input-md" style="text-align: right;"></td> 
+      </tr> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_FUEL_TANKER">TANKERING</label></td> 
+       <td><input id="FP_FUEL_TANKER" readonly name="FP_FUEL_TANKER" type="number" class="form-control input-md" value="null" placeholder="O" style="text-align: right;"></td> 
+      </tr> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_FUEL_TAKEOFF">EST TAKEOFF FUEL</label></td> 
+       <td><input id="FP_FUEL_TAKEOFF" readonly name="FP_FUEL_TAKEOFF" type="number" class="form-control input-md" value="null" style="text-align: right;"></td> 
+      </tr> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_FUEL_SURPL">SURPL</label></td> 
+       <td><input id="FP_FUEL_SURPL" name="FP_FUEL_SURPL" type="number" step="any" class="form-control input-md" onchange="surplOnChange()" value="0" style="text-align: right;"></td> 
+       <td><input id="FP_FUEL_SURPL_HIDDEN" name="FP_FUEL_SURPL_HIDDEN" type="hidden" step="any" class="form-control input-md" value="0"></td> 
+      </tr> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_ADJ_TAKEOFF_FUEL">ADJ TAKEOFF FUEL</label></td> 
+       <td><input id="FP_ADJ_TAKEOFF_FUEL" readonly name="FP_ADJ_TAKEOFF_FUEL" type="number" step="any" class="form-control input-md" value="null" style="text-align: right;"></td> 
+       <td><input id="FP_ADJ_TAKEOFF_FUEL_HIDDEN" readonly name="FP_ADJ_TAKEOFF_FUEL_HIDDEN" type="hidden" step="any" class="form-control input-md" value="null"></td> 
+      </tr> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_FUEL_TAXI">TAXI FUEL</label></td> 
+       <td><input id="FP_FUEL_TAXI" name="FP_FUEL_TAXI" type="number" step="any" class="form-control input-md" onchange="onTaxiFuelChange()" value="null" style="text-align: right;"></td> 
+       <td><input id="FP_FUEL_TAXI_HIDDEN" name="FP_FUEL_TAXI_HIDDEN" type="hidden" step="any" class="form-control input-md" value="null"></td> 
+      </tr> 
+      <tr> 
+       <td><label class="col-md-4 control-label" for="FP_BLOCK_FUEL_REQ">BLOCK FUEL REQUESTED</label></td> 
+       <td><input id="FP_BLOCK_FUEL_REQ" name="FP_BLOCK_FUEL_REQ" readonly type="number" step="any" class="form-control input-md" value="null" style="text-align: right;"></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <input id="MAX_FUEL_CAPA_TANK_HIDDEN" name="MAX_FUEL_CAPA_TANK_HIDDEN" type="hidden" value="20298"> 
+    <!-- REMARKS --> 
+    <d"v class="form-group"> 
+     <label class="col-md-4 control-label" for="fuel_remarks">REMARKS</label> 
+     <div class="col-md-4"> 
+      <textarea class="form-control" id="fuel_remarks" name="fuel_remarks">remarks</textarea> 
+     </div>  
+     <d"v class="form-group">
+      <label class="col-md-4 control-label" for="mel_ref">MEL-REF</label>
+      <div class="col-md-4">
+       <input id="MEL_REF_HIDDEN" name="MEL_REF_HIDDEN" type="hidden" value="NIL   :  NIL
+"> 
+       <textarea class="form-control" readonly id="MEL_REF" name="MEL_REF" value="NIL   :  NIL
+"></textarea>
+      </div> 
+     </d"v>
+    </d"v>
+   </fieldset> 
+  </form> 
+ </body>
+</html>

@@ -1,0 +1,149 @@
+
+
+INC0241756- mhm - closed
+INC0241765- sprp - infra midrange
+
+"Link: http://3mobapp.mas.net:8080/Deploymanager/html 
+User ID – tomcatusr   Password -- MN7XwPFd"
+
+http://10.221.12.15:8080/mhmessenger/
+http://3mobapp.mas.net:8080/MELMobileApp/ - uat
+
+
+INC0241677 - closed - GATS
+
+YI1012513LT
+
+INC0241832 - closed - MHM
+
+INC0241992 - FIDS - waiting for url. - hardware issue - closed
+	10.221.4.57 fids prod
+
+INC0241942 - MHM - on hold - closed - CR got deployed
+
+10.221.4.24  - prod
+D:\MAB\App server logs\MhMessenger_Log_20220605-4.log.gz\ - staff id - 2104645
+No entry in logs - not able to login	- staff id - 2108415
+D:\MAB\App server logs\MhMessenger_Log_20220603-6.log.gz\	- staff id - 2354721
+
+INC0242194  - GATS - closed
+
+RITM0097542 - Java 11 installation
+
+INC0242895 - GATS - closed
+
+INC0242964 - GATS - closed
+
+INC0243016 - GATS - closed
+
+INC0243151 - GATS - closed
+INC0243115 - GATS - closed
+INC0243182 - GATS - closed
+
+INC0243253 - MHM - user add - got wrongly assigned to MHM
+
+INC0243334 - GATS - closed
+
+
+Best Regards,
+Mujeeba Zainab Khan
+ATOS - AMS
+Malaysia Airlines Berhad
+ext_mujeebazainab.khan@malaysiaairlines.com
+
+
+
+CHG0023469  -IDVS CR for users list display
+
+INC0243472 - GATS - closed
+
+CHG0022905 - CTASK0025627 - APP - ODRM 
+
+
+INC0244337 - for vpn connection issue
+
+2355701
+
+10.223.0.47:- terminal server IP
+
+
+INC0244896 - MHM - authentication issue
+
+2022-07-07 16:45:14 ERROR ActiveDirectoryLdapService:85 - java.lang.RuntimeException: javax.naming.AuthenticationException: 
+LDAP: error code 49 - 80090308: LdapErr: DSID-0C09044E, comment: AcceptSecurityContext error, data 52e, v2580
+
+Dear @IDADM,
+
+Kindly check whether some changes has been made with respect to this Staff id - 2106451 as the user is unable to login into the MHMessenger application due to LDAP issue.
+
+
+INC0244881 || Re: CLRS Data Download - closed
+CHG0023605
+
+https://mabitdept-my.sharepoint.com/personal/ext_krishnakant_bairagi_malaysiaairlines_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fext%5Fkrishnakant%5Fbairagi%5Fmalaysiaairlines%5Fcom%2FDocuments%2FMHMessenger%2Eipa&parent=%2Fpersonal%2Fext%5Fkrishnakant%5Fbairagi%5Fmalaysiaairlines%5Fcom%2FDocuments&ga=1
+
+https://mabitdept-my.sharepoint.com/personal/ext_krishnakant_bairagi_malaysiaairlines_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fext%5Fkrishnakant%5Fbairagi%5Fmalaysiaairlines%5Fcom%2FDocuments%2FMHMessenger%2Eipa&parent=%2Fpersonal%2Fext%5Fkrishnakant%5Fbairagi%5Fmalaysiaairlines%5Fcom%2FDocuments&ga=1
+
+https://mabitdept-my.sharepoint.com/:u:/g/personal/ext_mujeebazainab_khan_malaysiaairlines_com/EWfo9RK2VjxKgrw4giW2ICoBF4xEi9FPKE8_2f789CQ6mg
+
+https://mabitdept-my.sharepoint.com/personal/ext_mujeebazainab_khan_malaysiaairlines_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fext%5Fmujeebazainab%5Fkhan%5Fmalaysiaairlines%5Fcom%2FDocuments%2FMHMessenger%2Eipa&parent=%2Fpersonal%2Fext%5Fmujeebazainab%5Fkhan%5Fmalaysiaairlines%5Fcom%2FDocuments&ga=1
+
+
+INC0244958 - transit check list
+
+2022-07-08 13:00:09 INFO  BPMFormNotificationService:167 - prepopulateMap{FP_ADJ_TAKEOFF_FUEL_HIDDEN=8600, FP_FUEL_SURPL_HIDDEN=0, FP_MAX_FUEL_AVBL=16154, FLT_DATE_UTC=08-JUL-2022 0640, FLT_ACFT_REGN=9MMLN, FP_REG_TAKE_OFF_WT=72154, FP_FUEL_OZFW=56000, FP_FUEL_BURN_TO_DEST=5794, MAX_FUEL_CAPA_TANK_HIDDEN=20298, ID=2208218, FP_FUEL_TAXI_HIDDEN=170, FP_FUEL_SURPL=0, FLT_NBR=MH 2634, FP_FUEL_TAKEOFF=8551, FP_BLOCK_FUEL_REQ=8770, FP_MIN_SECT_FUEL=8600, SECTOR=KUL/LBU, FP_ADJ_TAKEOFF_FUEL=8600, MEL_DESCRIPTION=DURING SOC INSPECTION FOUND SIDEWALL LIGHT ROW 25ABC U/S#DURING SOC INSPECTION FOUND CREW O2 LOW PRESSURE READING 1100 PSI#FROM CCL 020917 #3: ROW 5 CEILING LIGHT BLINKING, MEL_REF=33-02-02   :  DURING SOC INSPECTION FOUND SIDEWALL LIGHT ROW 25ABC U/S
+35-01B   :  DURING SOC INSPECTION FOUND CREW O2 LOW PRESSURE READING 1100 PSI
+
+INC0245332  - GATS - resolved
+
+INC0245219  -MHM - resolved
+
+INC0245615 - GATS - resolved
+
+INC0246384 - FIDS - resolved
+
+
+
+INC0247130  - GATS - resolved
+
+CHG0023756  -IDVS - CTASK0026522
+As of now, all applications are included in the monthly report and decommissioned applications are not required to display on the report. Exclude decommissioned applications from the monthly report generation.
+
+UAT :  05-AUG-2022 - 1000hrs - 2000 hrs MYT.
+Production:  17-AUG-2022- 19:00 to 21:00 MYT.
+
+INC0247347 - EVR - shared the link  - resolved
+
+INC0247584 - GATS - on hold - resolved
+
+INC0247359 - GATS - on hold - resolved
+
+INC0247636 - GATS - on hold - resolved
+
+INC0247720 - EVR - on hold - resolved
+
+INC0247752  -PDD - on hold
+
+INC0247954 - MHM - resolved - @Ali
+
+INC0247804 - GATS - resolved - @Aish
+
+CHG0020884 - MEL - @KK
+
+INC0248523, INC0248521 - FSIS, MHM - server down
+
+INC0248732 - EVR - resolved - @Aish
+
+INC0249375  - MHSMS - resolved - @MZK
+
+INC0249602 - FSIS - resolved
+After restarting the tomcat service in the MASG-1NMHLINKSAPP1 server, application is working fine.
+Got the user confirmation too.
+
+Infra Midrange team has assisted by restarting the tomcat service in the MASG-1NMHLINKSAPP1 server as requested by us.
+Now the FSIS application is accessible and working fine.
+
+INC0249854  - PDD - @MZK - resolved.
+
+CHG0023908 - FSIS 
+SRAS to TATS NG service queue  QR.SRAS.MBRK.IN.02  is active from FSIS but the service is not active from EAI side. We need to detach the queue from FSIS application because the queue is not reachable to FSIS thus resulting in more errors on the application logs which is resulting out of memory.

@@ -1,0 +1,1422 @@
+CHG0023147
+IDVS and FY AD integration
+To onboard FY staffs in IDVS system for better management of Onboarding, Movement and Separation.
+
+
+
+1. Exisiting data stucture
+2. New Data structure
+3. Mapping with new data structure.
+
+
+
+Operation:
+1. Insert
+a. If user not exist.
+b. DB Operation.
+c. Business logic
+2. Modify
+a. If user exist then modify specific attribute.
+b. DB Operation.
+c. Business logic
+3. Remove or delete
+a. If user exist then delete/Suspend.
+b. DB Operation.
+c. Business logic
+
+
+
+FXJPK0997R
+
+Application Ref. No.
+527268686
+
+
+client id - 60eacb65-104c-4f0a-8cb5-07144aad1325
+client secret for IDVS - J0u8Q~JYyzXqbXnraHmnLFicyrOVOtLBfo8pPa.i
+tenant id  - 9f1f7a0c-4ff7-4ade-b8ed-20f83e1cfb0c
+
+
+malaysia  - AU - 88454dfa-e12b-464a-98e2-ead4b8e71713
+
+Please find the FY AD details.
+
+
+ldap.basedn= DC=MH,DC=CORP,DC=NET
+ldap.username= mh\\IDVS
+ldap.password= Welcome@123
+#ldap.server= adldap.mas.net
+ldap.server= MHKULKJDCS102.mh.corp.net
+
+ldap.authentication.managerDn=_svcidvsfy
+ldap.authentication.managerPassword=  P@$$w0rd2022!
+ldap.authentication.searchBase= OU\=SZBAP,OU\=Firefly-AD,DC\=mh,DC\=corp,DC\=net
+ldap.authentication.server=ldap\://adldap.mas.net\:389
+
+
+Environment of credentials - UAT or PROD
+AD DS creation - already done ?
+Similarly do we just need to modify the code for this particular ldap configuration.
+
+
+ldap://adldap.mas.net:636
+ldap://adldap.mas.net:389
+ldap\://adldap.mas.net\:389
+
+10.3.10.82 - adldap.mas.net
+
+IDVS
+
+http://3idvsapp.mas.net:8080/Deploymanager/html
+tomcatusr
+jkGeJS5B
+
+http://3idvsapp.mas.net:8080/Id_Management
+MASG-3IDVSAPP	10.221.12.13
+
+http://idvs.mas.net
+MASG-1IDVSAPP1	10.221.4.14
+
+
+ 
+If user does not exist 
+	create the new id
+	new mail
+if user already exists 
+	modify the attributes
+	update the mail id
+if user already exists 
+	delete/Suspend
+	
+	
+	
+testing scenario
+	if we modify attributes of the user present in new AD so does those changes have to be reflected in existing AD too 
+	Users data of FY has came towards MAB side ...vice versa is also true?
+	
+if (locationCodes__NotFound_in_ad.contains(list.getLocationCode())
+
+email = email1 + "." + email2 + "@malaysiaairlines.com";
+
+590
+546
+
+602
+
+Good morning Sir,
+
+While testing the scenarios in idvs application, how can we test the creation of user in AD like as we are doing for the modifying attributes because we have that sample id which already exists in AD, but if the new id has to be created so how should we test that particular scenario because here only we will be able to verify the creation of new email and password
+
+And another query - If we modify attributes of the user present in new AD so does those changes have to be reflected in existing AD too ?
+
+
+And Sir here we will have to work with both the ADs ryt ? like we need to establish 2 ldap connections ?
+
+
+env.put(Context.SECURITY_PRINCIPAL, "_svcidvsfy");
+env.put(Context.SECURITY_CREDENTIALS, "P@$$w0rd2022!");
+
+--------In IDVS----------
+
+ids exist in new AD
+cn: 8501856
+cn: 8502133
+cn: 8501903
+cn: 8501190
+cn: 8501356
+cn: 8501986
+cn: 8502504
+cn: 8500358
+cn: 8500012
+cn: 8501702
+cn: 8501750
+cn: 8501543
+cn: 8500761
+cn: 8500907
+cn: 8502022
+cn: 8500090
+cn: 8502600
+cn: 8501615
+cn: 8501663
+cn: 8501667
+cn: 8500071
+cn: 8501883
+cn: 8500552
+cn: 8501674
+cn: 2356521
+cn: 8502147
+cn: 8502135
+cn: 2356520
+cn: 8501953
+cn: 2356519
+cn: 8500553
+cn: 8502115
+cn: 2356518
+cn: 8500596
+cn: 8500176
+cn: 2356517
+cn: 8501058
+cn: 2356516
+cn: 8500708
+cn: 2356515
+cn: 8500159
+cn: 8501971
+cn: 2356514
+cn: 8500227
+cn: 8502393
+cn: 8501172
+cn: 2356512
+cn: 8500099
+cn: 8501254
+cn: 2356511
+cn: 8502691
+cn: 8500492
+cn: 2356510
+cn: 8501787
+cn: 8502132
+cn: 2356509
+cn: 8501621
+cn: 8501010
+cn: 8502070
+cn: 8500391
+cn: 2356507
+cn: 8500684
+cn: 8500582
+cn: 2356506
+cn: 8500230
+cn: 8500606
+cn: 2356505
+cn: 8500124
+cn: 8500142
+cn: 8501686
+cn: 8520006
+cn: 8502269
+cn: 8501785
+cn: 8501754
+cn: 8500367
+cn: 8502271
+cn: 8502153
+cn: 8502015
+cn: 8502235
+cn: 8502075
+cn: 8501116
+cn: 8502036
+cn: 8502310
+cn: 8502566
+cn: 8500100
+cn: 8502222
+cn: 8501737
+cn: 8501753
+cn: 8501781
+cn: 8502542
+cn: 8502203
+cn: 8501390
+cn: 8500273
+cn: 8501774
+cn: 8502150
+cn: 8501819
+cn: 8500927
+cn: 8502602
+cn: 8501592
+cn: 8502292
+cn: 8501757
+cn: 8502025
+cn: 8502608
+cn: 8500982
+cn: 8502030
+cn: 8501836
+cn: 8500141
+cn: 8501719
+cn: 8502307
+cn: 8500110
+cn: 8501561
+cn: 8502611
+cn: 8502148
+cn: 8500783
+cn: 8502603
+cn: 8502688
+cn: 8500411
+cn: 8502591
+cn: 8500435
+cn: 8501622
+cn: 8500314
+cn: 8502080
+cn: 8502000
+cn: 8502221
+cn: 8502669
+cn: 8502507
+cn: 8502585
+cn: 8501596
+cn: 8501733
+cn: 8501155
+cn: 8502592
+cn: 8501243
+cn: 8500914
+cn: 8502002
+cn: 8500551
+cn: 8500476
+cn: 8502255
+cn: 8502563
+cn: 8502657
+cn: 8501943
+cn: 8500922
+cn: 8500037
+cn: 8502211
+cn: 8502655
+cn: 8500855
+cn: 8502345
+cn: 8502554
+cn: 8502013
+cn: 8500299
+cn: 8502675
+cn: 8500246
+cn: 8502656
+cn: 8500075
+cn: 8502595
+cn: 8502641
+cn: 8501430
+cn: 8502270
+cn: 8502323
+cn: 8500898
+cn: 8502210
+cn: 8502676
+cn: 8501954
+cn: 8502382
+cn: 8502090
+cn: 8502231
+cn: 8502651
+cn: 8502095
+cn: 8502599
+cn: 8502246
+cn: 8501863
+cn: 8502437
+cn: 8501718
+cn: 8502426
+cn: 8500702
+cn: SZBOCFY
+cn: 8502282
+cn: 8500424
+cn: 8502601
+cn: 8502658
+cn: 8501944
+cn: 8502594
+cn: 8502314
+cn: 8502154
+cn: 8502286
+cn: 8502589
+cn: 8501244
+cn: 8502598
+cn: 8502332
+cn: 8502093
+cn: 8502487
+cn: 8502674
+cn: 8500419
+cn: 8502544
+cn: 8502659
+cn: 8500707
+cn: 8502562
+cn: 8502232
+cn: 8502586
+cn: 8502226
+cn: 8502698
+cn: 8500420
+cn: 8502699
+cn: 8502662
+cn: 8500310
+cn: 8502700
+cn: 8501820
+cn: 8502701
+cn: 8501564
+cn: 8502690
+cn: 8502634
+cn: 8502290
+cn: 8502677
+cn: 8500787
+cn: 8502230
+cn: 8500365
+cn: 8502251
+cn: 8501212
+cn: 8502661
+cn: 8500255
+cn: 8502160
+cn: 8502597
+cn: 8502645
+cn: 8501593
+cn: 8502532
+cn: 8502671
+cn: 8500562
+cn: 8502242
+cn: 8500484
+cn: 8502643
+cn: 8501984
+cn: 8502567
+cn: 8501973
+cn: 8502646
+cn: 8502584
+cn: 8501298
+cn: 8502304
+cn: 8501721
+cn: 8502685
+cn: 8502576
+cn: 8501562
+cn: 8502686
+cn: 8502672
+cn: 8501145
+cn: 8501613
+cn: 8502632
+cn: 8500705
+cn: 8502316
+cn: 8502678
+cn: 8502202
+cn: 8502213
+cn: 8500447
+cn: 8502521
+cn: 8502256
+cn: 8502097
+cn: 8502596
+cn: 8500967
+cn: 8502631
+cn: 8520011
+cn: 8500718
+cn: 8502684
+cn: 8501099
+cn: 8502549
+cn: 8502633
+cn: 8501898
+cn: 8502428
+cn: 8502320
+cn: 8501301
+cn: 8502665
+cn: 8502653
+cn: 8501214
+cn: 8502543
+cn: 8501759
+cn: 8502593
+cn: 8502346
+cn: 8500747
+cn: 8502680
+cn: 8501720
+cn: 2356269
+cn: 8502530
+cn: 8502673
+cn: 8500418
+cn: 8502679
+cn: 8500608
+cn: 8502552
+cn: 8502644
+cn: 8500426
+cn: 2350327
+cn: 8502681
+cn: 8502249
+cn: 8502140
+cn: 8502630
+cn: 8501758
+cn: 8502141
+cn: 8502647
+cn: 8502347
+cn: 8501265
+cn: 8502519
+cn: 8502446
+cn: 8501992
+cn: 8502431
+cn: 8500876
+cn: 8502638
+cn: 8502348
+cn: 8500782
+cn: 8502654
+cn: 8501545
+cn: 8502411
+cn: 8502579
+cn: 8501934
+cn: 8502518
+cn: 8502305
+cn: 8500245
+cn: 8502588
+cn: 8500756
+cn: 8502219
+cn: 8500409
+cn: 8502344
+cn: 8501961
+cn: 8502357
+cn: 8502587
+cn: 8500882
+cn: 2354579
+cn: 8501588
+cn: 8501795
+cn: 8502639
+cn: 8500567
+cn: 8502636
+cn: 8502693
+cn: 8502101
+cn: 8502432
+cn: 8502128
+cn: 8501931
+cn: 8502635
+cn: 8501597
+cn: 8502642
+cn: 8502129
+cn: 8502547
+cn: 8502285
+cn: 8502014
+cn: 8501864
+cn: 8502652
+cn: 8500750
+cn: 8502590
+cn: 8501955
+cn: 8502336
+cn: 8502137
+cn: 8502287
+cn: 8502448
+cn: FYZ008
+cn: 8502279
+cn: 8501964
+cn: FYZ007
+cn: 8502687
+cn: 8500429
+cn: 8502447
+cn: 8502682
+cn: 8501861
+cn: 8502319
+cn: 8502551
+cn: 8502131
+cn: 8502273
+cn: 8502480
+cn: 8502683
+cn: 8501790
+cn: 8502546
+cn: 8501891
+cn: 8502526
+cn: 8501465
+cn: 8501008
+cn: 8502525
+cn: 8501518
+cn: 8502556
+cn: 8501948
+cn: 8500695
+cn: 8501816
+cn: 8502583
+cn: 8501463
+cn: 8502533
+cn: 8501151
+cn: 8500244
+cn: 8502237
+cn: 8502435
+cn: 8502663
+cn: 8502548
+cn: 8500276
+cn: 2355083
+cn: 8501464
+cn: 8502430
+cn: 8502021
+cn: 8502335
+cn: 8500305
+cn: 2352827
+cn: 8502489
+cn: 8502664
+cn: 8501978
+cn: 8500341
+cn: 8502214
+cn: 8501013
+cn: 8501804
+cn: 8510020
+cn: 8502159
+cn: 8502124
+cn: 8502565
+cn: 8500250
+cn: 8500130
+cn: 8501834
+cn: 8500745
+cn: 8502125
+cn: 8500059
+cn: 8501591
+cn: 8502158
+cn: 8501655
+cn: 8501236
+cn: 8502212
+cn: 8500491
+cn: 8500392
+cn: 8502143
+cn: 8501734
+cn: 8501495
+cn: 8501727
+cn: 8500474
+cn: 8500008
+cn: 8500752
+cn: 8501770
+cn: 8500653
+cn: 8501086
+cn: 8500389
+cn: 8500665
+cn: 8502177
+cn: 8501599
+cn: 8502174
+cn: 8502486
+cn: 8501604
+cn: 8501605
+cn: 8500730
+cn: 8500152
+cn: 8501761
+cn: 8502175
+cn: 8500758
+cn: 8500859
+cn: 8501124
+cn: 8501942
+cn: 8500045
+cn: 8502331
+cn: 8500530
+cn: 8501547
+cn: 8501205
+cn: 8501233
+cn: 8502053
+cn: 8500348
+cn: 8500545
+cn: 8501363
+cn: 8502100
+cn: 8501855
+cn: 8501297
+cn: 8501264
+cn: 8501717
+cn: 8501481
+cn: 8502157
+cn: 8501052
+cn: 8501087
+cn: 8501652
+cn: 8502178
+cn: 8502069
+cn: 8500868
+cn: 8500574
+cn: 8502190
+cn: 8501283
+cn: 8501627
+cn: 8502217
+cn: 8500893
+cn: 8501572
+cn: 8502438
+cn: 8502126
+cn: 8500035
+cn: 8500068
+cn: 8500930
+cn: 8501917
+cn: 8501645
+cn: 8501847
+cn: 8501748
+cn: 8500504
+cn: 8501631
+cn: 8501653
+cn: 8500088
+cn: 8502351
+cn: 8501723
+cn: 8502091
+cn: 8501680
+cn: 8500860
+cn: 8500038
+cn: 8501927
+cn: 8501972
+cn: 8502253
+cn: 8500611
+cn: 8502450
+cn: 8500558
+cn: 8502250
+cn: 8500667
+cn: 8502220
+cn: 8502152
+cn: 8501970
+cn: 8500471
+cn: 8501936
+cn: 8500639
+cn: 8501239
+cn: 8500006
+cn: 8501937
+cn: 8501688
+cn: 8500617
+cn: 8500065
+cn: 8501508
+cn: 8500731
+cn: 8500067
+cn: 8502277
+cn: 8502092
+cn: 8500345
+cn: 8500643
+cn: 8500407
+cn: 8502194
+cn: 8502436
+cn: 8500032
+cn: 8501654
+cn: 8502192
+cn: 8502062
+cn: 8500464
+cn: 8500066
+cn: 8500416
+cn: 8520008
+
+
+ids exist in both existing AD and New AD
+
+2354579		"Mab@2354#579"
+2355083
+8502141
+2356269
+
+2356521
+2356520
+2356519
+2356518
+2356517
+2356516
+2356515
+2356514
+2356512
+2356511
+2356510
+2356509
+2356507
+2356506
+2356505
+
+
+sample id - EMPLOYEE_NUMBER ='2354579'
+
+CN=2354579,OU=PENAP,OU=Malaysia,OU=MH,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net
+
+User info-
+
+{mobile=null, cn=CN=2354579,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net, StaffName=Nur Aminulmuhaimin Hamaru, email=aminulmuhaimin.hamaru@fireflyz.com.my, userAccountControl=512, pwdLastSet=132990600135587716}
+
+Manager info-
+{mobile=null, cn=CN=8500006,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net, StaffName=Gladys Ong Guat Lee, email=gladys.ong@fireflyz.com.my, userAccountControl=512, pwdLastSet=133018401573494401}
+
+[Replace attribute: department: FY - Flight Operations, Replace attribute: division: Operations, Replace attribute: extensionAttribute4: 11SZB6303, Replace attribute: manager: CN=8500006,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net, Replace attribute: postalCode: 11900, Replace attribute: userPrincipalName: aminulmuhaimin.hamaru@fireflyz.com.my, Replace attribute: company: FY, Replace attribute: streetAddress: Level 2, Penang International Airport, Bayan Lepas, Replace attribute: st: Penang, Replace attribute: co: Malaysia, Replace attribute: mail: aminulmuhaimin.hamaru@fireflyz.com.my, Replace attribute: title: Cabin Crew Part Time, Replace attribute: l: BAYAN LEPAS, Replace attribute: mobile: 013-3526355, Replace attribute: physicalDeliveryOfficeName: PENAP, Replace attribute: extensionAttribute3: F-E3-CC]
+
+
+creation permission for both the ADs
+
+Good morning Sir,
+
+Do we have to perform the tests on the same id for the existing AD too ? - No 
+
+There is nothing as uat and prod for ldap configuration ryt? The new ldap credentials we have got will remain same for both the environments...correct?
+correct
+
+
+CHG0021980
+CHG0023147
+IDVS and FY AD integration
+To onboard FY staffs in IDVS system for better management of Onboarding, Movement and Separation.
+
+
+email generation - suffix will remain same or it will chng
+email = email1 + "." + email2 + "@malaysiaairlines.com";
+
+nabihah.nasharuddin@fireflyz.com.my
+
+password generation - 
+String password = "Mab@" + parts[0] + "#" + parts[1];
+
+
+SELECT * FROM IDVS_MASTER_TABLE WHERE PROCESS_TYPE='NEW_PROFILE' AND IS_PROCESSED='NO' AND LEGAL_ENTITY !='FY'
+
+SELECT * FROM IDVS_MASTER_TABLE WHERE DATE_FORMAT(DATE_START,'%Y-%m-%d')<=DATE_FORMAT(NOW(),'%Y-%m-%d') AND PROCESS_TYPE='PROFILE_UPDATE' AND IS_PROCESSED='NO'
+
+
+	public static void modifyUserDetails(LdapContext ctx, String id, ADUpdateVO list, String email,
+			Map<String, Object> managerInfo2) throws NamingException {
+		String baseDN = IDMConstants.returnBaseDN;
+		
+CHG0023147
+IDVS and FY AD integration
+
+Code changes
+
+InsertUserLdapProcessTrigger
+	-> DataInsertionAD
+	-> CreateUserADDAO
+	-> IDVS_MASTER_TABLE
+separationProcessTrigger 
+	-> SrasTask
+	-> SrasTasksDao
+	-> MAS_IDM_USER_SEPARATION_LIST
+ADVPNValidationJobTrigger
+	-> PulseraTask
+	-> validateStaffInLDAP
+	-> MAS_IDM_USER_SEPARATION_LIST
+	
+
+Testing cases
+	
+createFYUser()
+	userinfo.cn != null -> User id exists in AD 
+		userAccountControl - 514 -> inactive user - update mail to DB
+			- modifyUserDetails()
+		userAccountControl - 512 -> active user - update mail to DB
+			- modifyUserDetails()
+	userinfo.cn == null -> User id does not exist in AD 
+		createNewUser - 
+			new email generation - finalMail
+				email exists in AD - generate a new one by modifying finalMail
+				email doesn't exist in AD - finalMail remains 
+			add attributes 
+			set password
+			update userAccountControl to 512
+			
+modifyFYUser()
+	movementAdDataList.size > 0
+		changing the OU details
+		get userInfo, managerInfo
+		userinfo.cn != null -> modifyUserDetails
+			User enabled
+			updated in DB
+		userinfo.cn == null -> User not found in AD
+	movementAdDataList.size = 0
+		No Movement data available in DB for AD Updation
+		
+modifyUserDetails()
+	managerInfo2.get("cn") == null
+		can update 15 attributes in AD
+	managerInfo2.get("cn") != null
+		can update 16 attributes in AD
+		managerInfo -> manager 
+		
+		
+		
+Name                   |Value                          |
+-----------------------+-------------------------------+
+Full_NAME              |NUR AMINULMUHAIMIN BINTI HAMARU|
+FIRST_NAME             |NUR AMINULMUHAIMIN             |
+LAST_NAME              |BINTI HAMARU                   |
+EMPLOYEE_NUMBER        |2354579                        |
+DATE_START             |2022-05-17                     |
+USER_PERSON_TYPE       |Part Time                      |
+LOCATION               |PENAP                          |
+DIVISION               |Operations                     |
+DEPARTMENT             |FY - Flight Operations         |
+SECTION_NAME           |FO - Cabin Crew Operations     |
+DESIGNATION            |Cabin Crew Part Time           |
+JOB_GRADE_ID           |F-E3-CC                        |
+EMPLOYEE_CATEGORY      |Cabin Crew                     |
+LEGAL_ENTITY           |FY                             |
+RC                     |11SZB6303                      |
+IMMEDIATE_SUPERVISOR_ID|8500006                        |
+PRIMARY_PHONE_NO       |013-3526355                    |
+SECONDARY_PHONE_NO     |                               |
+BUSINESS_EMAIL_ADDRESS |                               |
+TERMINATION_DATE       |                               |
+STATUS                 |Active                         |
+IS_PROCESSED           |YES                            |
+PROCESS_TYPE           |PROFILE_UPDATE                 |
+IS_REACTIVATED         |NO                             |
+CREATED_DATE           |2019-02-26                     |
+LAST_UPDATED_DATE      |2022-05-19                     |
+MODIFIED_DATE          |2022-05-20                     |
+GENDER                 |Female                         |
+NATIONAL_ID            |950216-11-5616                 |
+DATE_OF_BIRTH          |1995-02-16                     |
+NATIONALITY            |Malaysia                       |
+PLACE_OF_BIRTH         |Terengganu                     |
+ADDRESS_1              |No 8225 Baitul Hannan          |
+ADDRESS_2              |Manir                          |
+POSTCODE               |                               |
+CITY                   |KUALA TERENGGANU               |
+
+
+Debugging
+
+createFYUser()
+
+[ADUpdateVO [staffId=2354579, fullName=NUR AMINULMUHAIMIN BINTI HAMARU, malaysiaIc=null, nationality=null, joinedCompany=null, legalEntity=FY, divisionName=Operations, departmentName=FY - Flight Operations, locationCode=PENAP, costCenter=11SZB6303, jobGrade=F-E3-CC, designation=Cabin Crew Part Time, employmentType=null, contractPeriodEndDate=null, employeeCategory=Cabin Crew, businessEmail=, phoneNO=013-3526355, SecondryPhoneNO=, superior=8500006, AdOU=MALAYSIA, streetAddress=Level 2, Penang International Airport, Bayan Lepas, state=Penang, postalCode=11900, city=BAYAN LEPAS, country=Malaysia] 
+]
+
+CN=2354579,OU=PENAP,OU=Malaysia,OU=MH,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net
+
+user info-
+{mobile=null, cn=CN=2354579,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net, StaffName=Nur Aminulmuhaimin Hamaru, email=aminulmuhaimin.hamaru@fireflyz.com.my, userAccountControl=512, pwdLastSet=132990600135587716}
+
+manager info-
+{mobile=null, cn=CN=8500006,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net, StaffName=Gladys Ong Guat Lee, email=gladys.ong@fireflyz.com.my, userAccountControl=512, pwdLastSet=133018401573494401}
+
+ctx.rename
+javax.naming.NoPermissionException: [LDAP: error code 50 - 00000005: SecErr: DSID-0315087E, problem 4003 (INSUFF_ACCESS_RIGHTS), data 0
+
+
+modifyFYUser()
+
+[ADUpdateVO [staffId=2354579, fullName=NUR AMINULMUHAIMIN BINTI HAMARU, malaysiaIc=null, nationality=null, joinedCompany=null, legalEntity=FY, divisionName=Operations, departmentName=FY - Flight Operations, locationCode=PENAP, costCenter=11SZB6303, jobGrade=F-E3-CC, designation=Cabin Crew Part Time, employmentType=null, contractPeriodEndDate=null, employeeCategory=Cabin Crew, businessEmail=, phoneNO=013-3526355, SecondryPhoneNO=, superior=8500006, AdOU=MALAYSIA, streetAddress=Level 2, Penang International Airport, Bayan Lepas, state=Penang, postalCode=11900, city=BAYAN LEPAS, country=Malaysia] 
+]
+
+{mobile=null, cn=CN=2354579,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net, StaffName=Nur Aminulmuhaimin Hamaru, email=aminulmuhaimin.hamaru@fireflyz.com.my, userAccountControl=512, pwdLastSet=132990600135587716}
+
+CN=2354579,OU=PENAP,OU=Malaysia,OU=MH,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net
+
+javax.naming.NoPermissionException: [LDAP: error code 50 - 00000005: SecErr: DSID-0315087E, problem 4003 (INSUFF_ACCESS_RIGHTS), data 0
+
+
+
+
+
+
+
+env.put(Context.SECURITY_PRINCIPAL, "mh\\IDVS");
+env.put(Context.SECURITY_CREDENTIALS, "Welcome@123");	
+
+In IDVS
+cn: 8501856
+cn: 8502133
+cn: 8501903
+cn: 8501190
+cn: 8501356
+cn: 8501986
+cn: 8502504
+cn: 8500358
+cn: 8500012
+cn: 8501702
+cn: 8501750
+cn: 8501543
+cn: 8500761
+cn: 8500907
+cn: 8502022
+cn: 8500090
+cn: 8502600
+cn: 8501615
+cn: 8501663
+cn: 8501667
+cn: 8500071
+cn: 8501883
+cn: 8500552
+cn: 8501674
+cn: 2356521
+cn: 8502147
+cn: 8502135
+cn: 2356520
+cn: 8501953
+cn: 2356519
+cn: 8500553
+cn: 8502115
+cn: 2356518
+cn: 8500596
+cn: 8500176
+cn: 2356517
+cn: 8501058
+cn: 2356516
+cn: 8500708
+cn: 2356515
+cn: 8500159
+cn: 8501971
+cn: 2356514
+cn: 8500227
+cn: 8502393
+cn: 8501172
+cn: 2356512
+cn: 8500099
+cn: 8501254
+cn: 2356511
+cn: 8502691
+cn: 8500492
+cn: 2356510
+cn: 8501787
+cn: 8502132
+cn: 2356509
+cn: 8501621
+cn: 8501010
+cn: 8502070
+cn: 8500391
+cn: 2356507
+cn: 8500684
+cn: 8500582
+cn: 2356506
+cn: 8500230
+cn: 8500606
+cn: 2356505
+cn: 8500124
+cn: 8500142
+cn: 8501686
+cn: 8520006
+cn: 8502269
+cn: 8501785
+cn: 8501754
+cn: 8500367
+cn: 8502271
+cn: 8502153
+cn: 8502015
+cn: 8502235
+cn: 8502075
+cn: 8501116
+cn: 8502036
+cn: 8502310
+cn: 8502566
+cn: 8500100
+cn: 8502222
+cn: 8501737
+cn: 8501753
+cn: 8501781
+cn: 8502542
+cn: 8502203
+cn: 8501390
+cn: 8500273
+cn: 8501774
+cn: 8502150
+cn: 8501819
+cn: 8500927
+cn: 8502602
+cn: 8501592
+cn: 8502292
+cn: 8501757
+cn: 8502025
+cn: 8502608
+cn: 8500982
+cn: 8502030
+cn: 8501836
+cn: 8500141
+cn: 8501719
+cn: 8502307
+cn: 8500110
+cn: 8501561
+cn: 8502611
+cn: 8502148
+cn: 8500783
+cn: 8502603
+cn: 8502688
+cn: 8500411
+cn: 8502591
+cn: 8500435
+cn: 8501622
+cn: 8500314
+cn: 8502080
+cn: 8502000
+cn: 8502221
+cn: 8502669
+cn: 8502507
+cn: 8502585
+cn: 8501596
+cn: 8501733
+cn: 8501155
+cn: 8502592
+cn: 8501243
+cn: 8500914
+cn: 8502002
+cn: 8500551
+cn: 8500476
+cn: 8502255
+cn: 8502563
+cn: 8502657
+cn: 8501943
+cn: 8500922
+cn: 8500037
+cn: 8502211
+cn: 8502655
+cn: 8500855
+cn: 8502345
+cn: 8502554
+cn: 8502013
+cn: 8500299
+cn: 8502675
+cn: 8500246
+cn: 8502656
+cn: 8500075
+cn: 8502595
+cn: 8502641
+cn: 8501430
+cn: 8502270
+cn: 8502323
+cn: 8500898
+cn: 8502210
+cn: 8502676
+cn: 8501954
+cn: 8502382
+cn: 8502090
+cn: 8502231
+cn: 8502651
+cn: 8502095
+cn: 8502599
+cn: 8502246
+cn: 8501863
+cn: 8502437
+cn: 8501718
+cn: 8502426
+cn: 8500702
+cn: SZBOCFY
+cn: 8502282
+cn: 8500424
+cn: 8502601
+cn: 8502658
+cn: 8501944
+cn: 8502594
+cn: 8502314
+cn: 8502154
+cn: 8502286
+cn: 8502589
+cn: 8501244
+cn: 8502598
+cn: 8502332
+cn: 8502093
+cn: 8502487
+cn: 8502674
+cn: 8500419
+cn: 8502544
+cn: 8502659
+cn: 8500707
+cn: 8502562
+cn: 8502232
+cn: 8502586
+cn: 8502226
+cn: 8502698
+cn: 8500420
+cn: 8502699
+cn: 8502662
+cn: 8500310
+cn: 8502700
+cn: 8501820
+cn: 8502701
+cn: 8501564
+cn: 8502690
+cn: 8502634
+cn: 8502290
+cn: 8502677
+cn: 8500787
+cn: 8502230
+cn: 8500365
+cn: 8502251
+cn: 8501212
+cn: 8502661
+cn: 8500255
+cn: 8502160
+cn: 8502597
+cn: 8502645
+cn: 8501593
+cn: 8502532
+cn: 8502671
+cn: 8500562
+cn: 8502242
+cn: 8500484
+cn: 8502643
+cn: 8501984
+cn: 8502567
+cn: 8501973
+cn: 8502646
+cn: 8502584
+cn: 8501298
+cn: 8502304
+cn: 8501721
+cn: 8502685
+cn: 8502576
+cn: 8501562
+cn: 8502686
+cn: 8502672
+cn: 8501145
+cn: 8501613
+cn: 8502632
+cn: 8500705
+cn: 8502316
+cn: 8502678
+cn: 8502202
+cn: 8502213
+cn: 8500447
+cn: 8502521
+cn: 8502256
+cn: 8502097
+cn: 8502596
+cn: 8500967
+cn: 8502631
+cn: 8520011
+cn: 8500718
+cn: 8502684
+cn: 8501099
+cn: 8502549
+cn: 8502633
+cn: 8501898
+cn: 8502428
+cn: 8502320
+cn: 8501301
+cn: 8502665
+cn: 8502653
+cn: 8501214
+cn: 8502543
+cn: 8501759
+cn: 8502593
+cn: 8502346
+cn: 8500747
+cn: 8502680
+cn: 8501720
+cn: 2356269
+cn: 8502530
+cn: 8502673
+cn: 8500418
+cn: 8502679
+cn: 8500608
+cn: 8502552
+cn: 8502644
+cn: 8500426
+cn: 2350327
+cn: 8502681
+cn: 8502249
+cn: 8502140
+cn: 8502630
+cn: 8501758
+cn: 8502141
+cn: 8502647
+cn: 8502347
+cn: 8501265
+cn: 8502519
+cn: 8502446
+cn: 8501992
+cn: 8502431
+cn: 8500876
+cn: 8502638
+cn: 8502348
+cn: 8500782
+cn: 8502654
+cn: 8501545
+cn: 8502411
+cn: 8502579
+cn: 8501934
+cn: 8502518
+cn: 8502305
+cn: 8500245
+cn: 8502588
+cn: 8500756
+cn: 8502219
+cn: 8500409
+cn: 8502344
+cn: 8501961
+cn: 8502357
+cn: 8502587
+cn: 8500882
+cn: 2354579
+cn: 8501588
+cn: 8501795
+cn: 8502639
+cn: 8500567
+cn: 8502636
+cn: 8502693
+cn: 8502101
+cn: 8502432
+cn: 8502128
+cn: 8501931
+cn: 8502635
+cn: 8501597
+cn: 8502642
+cn: 8502129
+cn: 8502547
+cn: 8502285
+cn: 8502014
+cn: 8501864
+cn: 8502652
+cn: 8500750
+cn: 8502590
+cn: 8501955
+cn: 8502336
+cn: 8502137
+cn: 8502287
+cn: 8502448
+cn: FYZ008
+cn: 8502279
+cn: 8501964
+cn: FYZ007
+cn: 8502687
+cn: 8500429
+cn: 8502447
+cn: 8502682
+cn: 8501861
+cn: 8502319
+cn: 8502551
+cn: 8502131
+cn: 8502273
+cn: 8502480
+cn: 8502683
+cn: 8501790
+cn: 8502546
+cn: 8501891
+cn: 8502526
+cn: 8501465
+cn: 8501008
+cn: 8502525
+cn: 8501518
+cn: 8502556
+cn: 8501948
+cn: 8500695
+cn: 8501816
+cn: 8502583
+cn: 8501463
+cn: 8502533
+cn: 8501151
+cn: 8500244
+cn: 8502237
+cn: 8502435
+cn: 8502663
+cn: 8502548
+cn: 8500276
+cn: 2355083
+cn: 8501464
+cn: 8502430
+cn: 8502021
+cn: 8502335
+cn: 8500305
+cn: 2352827
+cn: 8502489
+cn: 8502664
+cn: 8501978
+cn: 8500341
+cn: 8502214
+cn: 8501013
+cn: 8501804
+cn: 8510020
+cn: 8502159
+cn: 8502124
+cn: 8502565
+cn: 8500250
+cn: 8500130
+cn: 8501834
+cn: 8500745
+cn: 8502125
+cn: 8500059
+cn: 8501591
+cn: 8502158
+cn: 8501655
+cn: 8501236
+cn: 8502212
+cn: 8500491
+cn: 8500392
+cn: 8502143
+cn: 8501734
+cn: 8501495
+cn: 8501727
+cn: 8500474
+cn: 8500008
+cn: 8500752
+cn: 8501770
+cn: 8500653
+cn: 8501086
+cn: 8500389
+cn: 8500665
+cn: 8502177
+cn: 8501599
+cn: 8502174
+cn: 8502486
+cn: 8501604
+cn: 8501605
+cn: 8500730
+cn: 8500152
+cn: 8501761
+cn: 8502175
+cn: 8500758
+cn: 8500859
+cn: 8501124
+cn: 8501942
+cn: 8500045
+cn: 8502331
+cn: 8500530
+cn: 8501547
+cn: 8501205
+cn: 8501233
+cn: 8502053
+cn: 8500348
+cn: 8500545
+cn: 8501363
+cn: 8502100
+cn: 8501855
+cn: 8501297
+cn: 8501264
+cn: 8501717
+cn: 8501481
+cn: 8502157
+cn: 8501052
+cn: 8501087
+cn: 8501652
+cn: 8502178
+cn: 8502069
+cn: 8500868
+cn: 8500574
+cn: 8502190
+cn: 8501283
+cn: 8501627
+cn: 8502217
+cn: 8500893
+cn: 8501572
+cn: 8502438
+cn: 8502126
+cn: 8500035
+cn: 8500068
+cn: 8500930
+cn: 8501917
+cn: 8501645
+cn: 8501847
+cn: 8501748
+cn: 8500504
+cn: 8501631
+cn: 8501653
+cn: 8500088
+cn: 8502351
+cn: 8501723
+cn: 8502091
+cn: 8501680
+cn: 8500860
+cn: 8500038
+cn: 8501927
+cn: 8501972
+cn: 8502253
+cn: 8500611
+cn: 8502450
+cn: 8500558
+cn: 8502250
+cn: 8500667
+cn: 8502220
+cn: 8502152
+cn: 8501970
+cn: 8500471
+cn: 8501936
+cn: 8500639
+cn: 8501239
+cn: 8500006
+cn: 8501937
+cn: 8501688
+cn: 8500617
+cn: 8500065
+cn: 8501508
+cn: 8500731
+cn: 8500067
+cn: 8502277
+cn: 8502092
+cn: 8500345
+cn: 8500643
+cn: 8500407
+cn: 8502194
+cn: 8502436
+cn: 8500032
+cn: 8501654
+cn: 8502192
+cn: 8502062
+cn: 8500464
+cn: 8500066
+cn: 8500416
+cn: 8520008
+
+
+
+CN=2354579,OU=PENAP,OU=Malaysia,OU=MH,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net
+
+{mobile=null, cn=CN=2354579,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net, StaffName=Nur Aminulmuhaimin Hamaru, email=aminulmuhaimin.hamaru@fireflyz.com.my, userAccountControl=512, pwdLastSet=132990600135587716}
+
+{mobile=null, cn=CN=8500006,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net, StaffName=Gladys Ong Guat Lee, email=gladys.ong@fireflyz.com.my, userAccountControl=512, pwdLastSet=133018401573494401}
+
+
+&& updationProcessing.getLegalEntity() == "FY"
+
+
+Sample ids for testing - 
+new ids - dont exist in idvs
+	8500242 
+	8500365
+	8500424
+id exists in idvs-
+	8501155	- updation
+	2356934 - creation/deletion
+	
+	
+	hamaru.nuraminulmuhaimin@fireflyz.com.my
+	2354579
+	Nur Aminulmuhaimin Binti Hamaru
+	
+	ADUpdateVO [staffId=2354579, fullName=NUR AMINULMUHAIMIN BINTI HAMARU, malaysiaIc=null, nationality=null, joinedCompany=null, legalEntity=FY, divisionName=Operations, departmentName=FY - Flight Operations, locationCode=PENAP, costCenter=11SZB6303, jobGrade=F-E3-CC-PT, designation=Cabin Crew Part Time, employmentType=null, contractPeriodEndDate=null, employeeCategory=Cabin Crew, businessEmail=aminulmuhaimin.hamaru@fireflyz.com.my, phoneNO=013-3526355, SecondryPhoneNO=, superior=8500006, AdOU=MALAYSIA, streetAddress=Level 2, Penang International Airport, Bayan Lepas, state=Penang, postalCode=11900, city=BAYAN LEPAS, country=Malaysia] 
+
+CN=2354579,OU=PENAP,OU=Malaysia,OU=MH,OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net
+
+javax.naming.NameNotFoundException: [LDAP: error code 32 - 0000208D: NameErr: DSID-0310023C, problem 2001 (NO_OBJECT), data 0, best match of:
+	'OU=SZBAP,OU=Firefly-AD,DC=mh,DC=corp,DC=net'

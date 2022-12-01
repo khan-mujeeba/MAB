@@ -1,0 +1,214 @@
+CTASK0025453 - for mysql upgrade in MHMessenger - closed
+CHG0023064 - for uat, prod and dr
+
+CHG0023064 - CTASK0025495 - fro mysql upgrade in SrasJavaApp1 - closed
+
+CHG0023000 - Q2 2022 - Patching - SCV- UAT/DEV - CTASK0025391 - closed
+will assign new for prod
+CTASK0025637 - for prod
+
+RE: CHG0022905-- Apache & Tomcat upgrade --UAT/DEV - for SCV - CTASK0025550 - closed
+MASG-3SCVAPP2  - tukz4Wzh
+
+RE: CHG0022905-- Apache & Tomcat upgrade -- UAT/DEV -- GATS - CTASK0025570 - closed
+KxrFgd8w
+
+RE: CHG0023000- Q2 2022 - Patching -MHLDB --- CTASK0025386 - not getting edited
+
+RE: CHG0022905 & CHG0023219-- Apache & Tomcat upgrade --
+PROD-MOBILITY-CTASK0025603 & CTASK0025720 - closed
+
+RE: CHG0023000 - Q2 2022 - Patching -SRAS-JAVA -PROD-CTASK0025593 - assigned to diksha  - closed
+
+RE: CHG0023219 & CHG0022905 -Apache upgrade & Wildcard certificate renewal --PROD-MHSMS
+
+RE: CHG0022905-- Apache & Tomcat upgrade --Prod--SCV - closed
+
+RE: CHG0023000 - Q2 2022 Patching - SPRP - PROD - CTASK0025634 - closed
+
+
+
+xmlns:jee="http://www.springframework.org/schema/jee" 
+http://www.springframework.org/schema/jee 
+http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
+
+<!--  <jee:jndi-lookup jndi-name="jdbc/ITCB_SIT" id="dataSource" expected-type="javax.sql.DataSource"></jee:jndi-lookup> -->
+
+	<!-- <resource-ref>
+
+		<description>DB Connection</description>
+
+		<res-ref-name>jdbc/ITCB_SIT</res-ref-name>
+
+		<res-type>javax.sql.DataSource</res-type>
+
+		<res-auth>Container</res-auth>
+
+	</resource-ref>  -->
+
+
+
+CTASK0026164 - MHLDB restoration - closed
+
+CTASK0026164 | Periodic database restoration - MH-Messenger  - closed
+
+15 July
+CTASK0026271 - Mobility patching - closed
+
+
+CTASK0026273 - MHSMS - closed
+
+
+CTASK0026274  -FSIS - closed
+
+
+CTASK0026229 - IDVS - closed
+
+
+18 july
+
+Q3 2022 - Patching - SRAS-JAVA - UAT/DEV - CTASK0026282
+
+Q3 2022 - Patching -MHLDB --- CTASK0026292 - closed
+
+21 july 
+
+Q3 2022 Patching - UAT -  MHSSP - CTASK0026234 - closed
+
+Q3 2022 Patching - UAT -  SCV - CTASK0026235 - closed
+
+Q3 2022 Patching - UAT -  SPRP - CTASK0026236 - closed
+
+
+CHG0023598 - AODB Maintenance Activity - 7th Aug
+
+AODB apps
+
+MHM CTASK0026474
+SCVService, RTMM, MHSSP CTASK0026478
+FSIS CTASK0026472
+
+EVR CTASK0026475
+FIDS CTASK0026471
+SRAS - Dhaka mail - CTASK0026476
+
+
+Q3 2022 Patching
+
+SPRP	MASG-1SPRPAPP1	1sprpapp1.mas.net	Production	Monday, August 1, 2022	21.00 to 23.00	CTASK0026363
+
+MFMIG/iHRMS	MASG-1MFMIGDB1	1mfmigdb1.mas.net	Production	Monday, August 1, 2022	19:00 to 22:00 	CTASK0026387
+
+IDVS	MASG-1IDVSAPP1	1idvsapp1.mas.net	Production	Monday, August 1, 2022	18:00 to 21:00	CTASK0026407 
+
+MHSMS	MASG-1MHSMSAPP1	1mhsmsapp1.mas.net	Production	Tuesday, August 2, 2022	18:00 to 21:00 	CTASK0026392
+
+NMHLINKS(FSIS)	MASG-1NMHLINKSAPP1	1nmhlinksapp1.mas.net	Production	Thursday, August 4, 2022	00:00 to 03:00 	CTASK0026393
+
+SRAS-PHP	MASG-1SRASPHPAPP1	1srasphpapp1.mas.net	Production	Monday, August 8, 2022	18:00 to 21:00 	CTASK0026275
+
+MOBILITY	MASG-1MOBAPP1	1mobapp1.mas.net	Production	Tuesday, August 9, 2022	01:00 to 03:00 	CTASK0026388
+
+MHSSP	MASG-1MHSSPAPP1	1mhsspapp1.mas.net	Production	Wednesday, August 10, 2022	00:00 to 02:00	CTASK0026362
+
+SCV		MASG-1SCVAPP1	1scvapp1.mas.net	Production	Thursday, August 11, 2022	21:00 to 23:00 	CTASK0026383
+
+SRAS-JAVA	MASG-1SRASJAVAAPP1	1srasjavaapp1.mas.net	Production	Friday, August 26, 2022	18:00 to 21:00 	CTASK0026566
+
+MHLDB	CX2-1LMSDCSAPP1	1lmsdcsapp1.mas.net	Production	Monday, August 29, 2022	02:00 to 05:00 	CTASK0026360
+
+EVR		MASG-1EVRWEB1	1evrapp1.mas.net	Production	Wednesday, August 30, 2022	00:00 to 03:00 MYT
+
+
+CHG0023732-MySQL Minor Version Upgrade from 8.0.28 to 8.0.29
+
+MASG-3MOBDB-LX	      09-Aug-2022  (2 PM- 4 PM MYT)	CTASK0026515
+MASG-3IDVSDB	      10-Aug-2022  (2 PM- 4 PM MYT) CTASK0026529
+MASG-3SRASJAVADB1	  12-Aug-2022  (4 PM -6 PM MYT)
+MASG-3SPRPDB1	      15-Aug-2022  (2 PM -4 PM MYT)
+
+MASG-1IDVSDB1	17/08/2022	06:00 PM - 08:00 PM MYT CTASK0026529
+MASG-1MOBDB1	18/08/2022	
+MASG-1SRASJAVADB1	19/08/2022
+MASG-1MFMIGDB1	Masters\Mastero Archival PROD	25/08/2022	04:00 - 06:00 PM MYT	CTASK0026675
+MASG-1SPRPDB1	30/08/2022	06:00 PM - 08:00 PM MYT	CTASK0026577 
+
+
+CHG0023780 - ID Cleanup for MySQL databases on UAT - 25 August 2022/ 5-6 September 2022
+
+CTASK0026682 - IDVS UAT/PROD
+CTASK0026683  - SRAS JAVA UAT/PROD - MHCLRS, SMS Dashboard
+CTASK0026685  - SPRP UAT
+CTASK0026684 - MHMessenger UAT/PROD
+CTASK0026804 - Masters/Mastero Archival PROD
+
+CHG0023780: ID Cleanup for DB2 databases - 
+
+MHLDB UAT - 5 September 2022
+SRAS JAVA 
+
+CHG0023780: ID Cleanup for MSSQL databases - 
+
+CTASK0026739 - GATS UAT/PROD - 30 Aug/5 Sept
+ITCB UAT - No id removal
+CTASK0026839 -	ITCB PROD - 9 Sept
+
+CHG0023908 - FSIS - 14 Sept	CTASK0026860
+
+
+CHG0024054-MySQL Minor Version Upgrade from 8.0.29 to 8.0.30
+
+	MH-Messenger UAT	CTASK0027052	12-Oct-2022 (2 PM -4 PM MYT)
+	IDVS UAT	CTASK0027071	13-Oct-2022 (2 PM -4 PM MYT)
+	MASG-3SRASJAVADB1	  17-Oct-2022 (4  PM -6 PM MYT)	CTASK0027116 
+	MASG-3SPRPDB1	      18-Oct-2022 (2 PM -4 PM MYT)	CTASK0027127 
+
+	MASG-1IDVSDB PROD	20-Oct-2022 ( 6 PM – 8 PM MYT)
+	MASG-1MOBDB1 PROD	20-Oct-2022 ( 12.30 AM-2.30 AM MYT)
+	MASG-1SRASJAVADB1	21-Oct-2022 (4 PM-6 PM MYT)
+	MASG-1SPRPDB1	  02-Nov-2022 ( 4 PM -6 PM MYT)
+	MASTERS &MASTRO Archival	CTASK0027195	26 Oct 2022	(4 PM-6 PM MYT)
+
+
+CHG0024039 - Q4 2022 - Patching UAT
+
+	EVR- UAT/DEV - CTASK0027109	Wednesday, October 19, 2022	12:00 PM to 2:00  PM MYT
+	SRAS-JAVA - UAT/DEV - CTASK0027112	Wednesday, October 19, 2022	10:00 to 13:00  PM MYT	closed
+	Ticket No:- 2322430282620
+	MHLDB - UAT/DEV - CTASK0027104	Wednesday, October 19, 2022	17:00 to 20:00 PM MYT	Ali
+	
+	FSIS/NMHLINKS --- CTASK0027121	Thursday, October 20, 2022	10:00 to 13:00  MYT		closed
+	MHSMS --- CTASK0027122	Thursday, October 20, 2022	10:00 to 13:00  MYT		sujit
+	MOBILITY -- CTASK0027123	Thursday, October 20, 2022	10:00 to 13:00  MYT		closed
+	
+	MHSSP - UAT/DEV -  CTASK0027175		Thursday, October 27, 2022	14:30 to 17:30		closed
+	SCV - UAT/DEV -  MASG-3SCVAPP2	CTASK0027174		Thursday, October 27, 2022	14:30 to 17:30	closed
+	SPRP - UAT/DEV -  CTASK0027176		Thursday, October 27, 2022	14:30 to 17:30		closed
+	IDVS - UAT/DEV -CTASK0027193	Thursday, October 27, 2022	15:00 to 18:00  PM MYT	closed
+	
+
+CHG0024039 - Q4 2022 - Patching PROD
+
+	SPRP - CTASK0027255		Tuesday, November 8, 2022	21.00 to 23.00	closed
+	MHSMS --PROD /DR- CTASK0027297		Thursday, November 10, 2022	18:00 to 21:00 PM MYT	closed
+	MFP 	Friday, November 11, 2022	18:00 to 21:00 MYT	done
+	
+	MOBILITY -- CTASK0027373	Tuesday, November 15, 2022	01:00 to 03:00		closed 
+	FSIS/NMHLINKS --- CTASK0027372	Thursday, November 17, 2022	00:00 to 03:00	closed
+	
+	MHLDB - CTASK0027251	Monday, November 21, 2022	02:00 to 05:00 	closed
+	MFMIG/IHRMS-- CTASK0027374	Tuesday, November 22, 2022	19:00 to 22:00 		diksha
+	EVR- Prod - CTASK0027109	Wednesday, November 23, 2022	00:00 to 03:00 MYT	 closed
+	IDVS - Prod -CTASK0027193	Wednesday, November 23, 2022	18:00 to 21:00	closed
+	SCV - CTASK0027254	Thursday, November 24, 2022	21:00 to 23:00	diksha
+	SRAS-JAVA - PROD/DR - CTASK0027295	 Friday, November 25, 2022	18:00 to 21:00 closed
+	
+	MHSSP - CTASK0027253	Wednesday, November 30, 2022	00:00 to 02:00	Ali
+	
+
+	
+	
+	
+	
+
+

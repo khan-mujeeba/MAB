@@ -1,0 +1,249 @@
+*Advise user to test it out in different web browser
+*User said the MH VVIP portal accessible thru mozilla browser but unable to access thru chrome
+*remote user pc thru quick assist
+*check the MH VVIP portal accessibility thru chrome browser and it's working fine
+*user claim before this unable to access to Enrich Platinum page but now able to access it thru chrome browser
+*informed user it could be proxy server connection error
+*user ack
+
+cache issue / 
+user is not added into the app
+
+We are able to access the MHVIP Application and it is working fine as expected.
+http://mhvip.mas.net/mhvip/
+NOTE: Kindly clear the cache of the browser then try to access the application.
+
+they are not able to delete the id from 
+their end so we need to delete it 
+from our end
+
+User Not Available in MH VVIP portal 
+after updated in User Management
+	OR
+All registered MHVVIP users are not 
+available to access MHVVIP Portal.
+
+INC0092733
+       OR
+INC0092719
+
+SCV - MHVIP: Provide an Excel list of 
+MHVIP email distribution list.
+
+make an excel file of VIP 
+emails from database
+
+prepared an excel file and send it to them
+VIP_EMAIL_LIST_202002241026.xlsx
+Total Records in [MHVIP] Email Distribution List: 171
+
+CV - MHVIP- Log4J vulnerability 
+CVE-2021-44228 -Version Upgrade from 1.x to 2.16.0
+
+To resolve MHVIP Pops Out Error Screen
+on Clicking Send Mail Option
+
+Parking bay not captured for
+MH Freighter Flight
+
+Value of parking bay and gate got 
+mismatched for MH Freighter Flight 
+
+Kindly refer to findings below from FSIS team.
+Check with our source team (T@TS and EAI)
+# Findings.
+- We have checked FSIS Application to get the data from 
+AODB and the data is correct.
+- AODB gets the data from MAHB and same-day data it 
+is being fetched by FSIS Application.
+# EAI Team , shared the logs. PFA
+
+
+user not added into the application
+
+check the entry for that staff id into database
+if not available then add the id manually into db
+let the user know that he got added
+
+Unable to log in FSIS/
+Unable to Access FSIS/
+Register to Access FSIS
+
+INC0215183/
+INC0216003/
+INC0227760/
+INC0231263
+
+FSIS - Gate & Bay Info Discrepancy 
+FSIS & AMS
+
+Value of parking bay and gate in FSIS app got 
+mismatched with the values in AMS Web log-in 
+under SITA
+
+check with T@TS and EAI
+confirm it with BU
+
+
+disabled 179 Users(as mentioned in the list) 
+from the FSIS app.
+
+unable to export report 
+( data not downloading in excel )
+
+check the entries in database...
+got to know that - application was not 
+getting response from AODB 
+connect with db team
+
+to load the data into temp table
+in replica db
+
+As the data was in bulk so we splitted the file data into 
+4 parts with maintaing the zeros at the front of the 
+values and loading into one table,
+current status we loaded 3 splitted tables with total count :  2 ,460,315
+
+loaded the data as you maintain the zeros at the front
+of the values successfully into the table. 
+[ MABCRANE_PROD.TEMP_LOAD_27072020 ]
+Total count: 595,215
+
+load the attached document into table 
+TEMP_LOAD_27072020.
+
+Data has loaded successfully into 
+(MABCRANE_PROD.TEMP_LOAD)
+Total Available Records: 9775.
+made COL2 value to 9 digit since its MemberID and they are 9 digits.
+added leading 0s for digit < 9.
+
+SCV - REPLICA load data in temp table -
+2,020,000 Miles Campaign
+
+load the data into temp table as per 
+user requirement
+
+Data has loaded successfully into (MABCRANE_PROD.TEMP_LOAD)
+Total Available Records: 1,245,770 .
+
+REPLICA load data in temp table -
+Enrich Dec19 Statement
+
+MHVIP - Application code/Configuration changes 
+for Tomcat  upgrade 9.0.36
+
+tomcat upgraded version has to be 
+incorporated in the code
+log path has to be updated in
+log4j.properties file	
+/tomcat/apache-tomcat-8.5.9/logs/vvip_portal.log
+
+use of Log4J 2 library and a working exploit affecting all applications using the library.
+
+
+azure cloud
+azure AD
+web apps to azure ad
+
+PoC request for migration Plan for CWIS servers 
+to private cloud environment.
+
+SCVP - ENRICHREPLICA - 
+Data Processing Error : Missing dates files
+
+Table and field names:
+Scoredef.id and Bonus_acts.rule_id 
+number field changed to varchar(50). 
+Maximum data length can be 50 characters
+
+in bonus act table - the datatype of
+Rule_ID col has to be changed
+
+To check all the 25 files for 15th Dec 2020 whether 
+it consists the data for 13th and 14th or not,
+as the seperate files for 13th and 14th Dec is missing
+
+SCVP - ENRICHREPLICA - 
+Data Processing Error : Missing dates files
+
+Checked the db, found the data of 13th and 
+14th Dec files in 15th Dec file, 
+loaded the data correctly
+
+To implement following details in fsis code
+
+Changes made in respective jsp files accordingly
+to reflect this features-
+FOCA FIS – to have same features as MH FIS 
+( UTC timing & Flight Status)
+SCH – able to filter all operating flights in flight 
+status filter ( MH FIS& FOCA FIS )
+ATD/ATA  time in FOCA FIS should be referring to 
+ATD/ATA in MAHB Flight Info.
+
+
+MH FSIS -  (MH and FY, XY, TK)  getting info from the
+same tab with Dynamic Fields in  UI Screen.
+
+To implement following details in fsis code
+
+Changes made in respective jsp files and java files accordingly
+to reflect this features-
+Add  MH/ FY  both in the same tab with dynamic fields
+need to be displayed on the screen and that contains  
+(MH, FY, XY, TK)  in  [Filter by flight / Filter by Duration] 
+ with Export Report  for XLS, PDF, CSV.
+
+Implementing sso changes in fsis 
+for single sign on
+To Integrate FSIS with SSO on production environment
+a) FSIS Production - https://mhmessenger.malaysiaairlines.com/fsis/
+
+First of all, login page will be changed as 
+sso link has to be incorporated as provided
+then similarly logout will also change as per 
+requirement. Accordingly changes in respective 
+java classes will also be made 
+ 
+"PoC request for migration Plan for CWIS servers 
+to private cloud environment."
+
+Minor - take less than 3 days
+Major - more than 3 days (need to prepare SOW)
+
+CAB meeting - tue
+deployment - thu - time pick up 
+
+BU - clist - Wong Sou Chiet
+      sms dashboard - farid
+      dhaka mail notification - 
+
+MASG-1SRASJAVAAPP1 + 10.221.4.29
+
+
+log4j path
+report download path
+db details prod
+sso prod 
+
+I have analysed the code...for CList as you have assigned me yesterday....
+I have checked out the latest code from svn for CList and analysed it on this below points...
+ 
+db details - correct - db got connected - pointing to prod - verified from sod
+log4j2.xml - uploaded - right logPath is given - tomcat/apache-tomcat/logs/CLIST
+war file path - /tmp/TempResult.txt
+log jars - api,core,sl4j-impl 2.1.7
+no reports to get downloaded
+login - no sso integrated - traditional login - working fine - index.jsp
+logout - redirect to index.jsp
+application running fine
+
+
+Sir for SCV apps, I have validated SCV Service and its working fine but we are not registered in RTMM application so we are not able to access it further for the validation...
+But the login page is visible for rtmm....And the UAT db is not getting connected so we are not able to add ourselves into it...
+so can I drop the mail confirming that its working fine because we are able to see the deploymanager window and even access the applications
+
+
+
+

@@ -1,0 +1,144 @@
+11 march
+
+Reverse KT by Sujit and  Diksha on EVR(Electronic Voyage Reports) application
+	BU - Mohd Jafar
+	BIT - Jamal Abu Bakar
+
+
+after flight landing from one destination to other report is generated
+half is generated before flying and half is generated after flying
+
+Current and future evr
+Submission status
+
+submitted evr form can be seen datewise
+
+technical crew voyage report
+incident and CR are mainly raised here
+
+capt and FO ki daily basis pr time calc
+
+training ka data
+
+stick hour
+
+reason for delay
+
+fuel data
+
+can take help from  BU and BIT
+
+filled and submitted by captain or pilot
+
+elogbook
+ simulator session entry for new trainee pilot
+ data of pilot's duty
+ other flying entry - when pilot has tried new flight
+
+UAT - local net
+
+code UAT pr point hoga PROD pr nhi
+
+database details--
+UAT ka db for evr is DB2
+hostname - ip address
+port 50000
+database name AIR_OPS
+username evra
+
+connection type - production krna hai development nhi
+
+war bnana hai code ke baad and to deploy it in the UAT
+uske liye credentials -- 
+
+2 modules of EVR hai TCF(Technical Crew Form) aur CCF(Cabin Crew Form)
+
+14 March
+
+Previous flying entry
+update address
+4 month me certification report generate hota hai
+
+local pr session maintain hota hai report ek hi submit hoti hai of the flight
+
+common incid - evr manual entry form
+
+add/delete/update krne ka option nhi hai tcf me
+
+CCF
+
+
+16 March
+
+Reverse KT by Diksha on IDVS(ID Validation System) application
+	BU - Suriati Abdul Manaf
+	BIT - Suriati Abdul Manaf
+
+Application user
+View Master app user list (all users)
+Users ki details
+staff id, name, status, wo kaun si app ko access kr skte hai
+app bhi active hai ki nhi  hai
+
+Manage application
+decommission - abhi app use me hai ya nhi
+
+Manage app system owners
+System owner - BU - app ka dekh skte hai
+
+Jobs configuration
+ Jobs trigger hoti hai
+
+Data Integrity 
+Pulsera - HR upload the data in this file
+Active Directory - 
+dono files send krna hai particular format me
+db - dono files compare krta hai
+
+Discrepancy List - difference in data of both the files
+
+User Management - new user can be added (only admins)
+2 roles - System administrator & Super admin
+
+ID management performance and compliance report
+record of application performance monthly
+
+Export/Import User list
+of particular app
+
+Manage Owner
+status - active - application ko acceess kr skta hai 
+	suspended - nhi kr skta hai
+
+Reports -  kon kon se users ko kis application ke liy access mila. view krne ke liy hai
+
+Compliance & data integrity -
+Compliance aging report - records of resigned users...Resigned notifications month wise
+
+
+
+Password Reset Portal
+
+related to password for vpn and non sap
+
+Self Password Change 
+VPN and SAP
+we are non-SAP staff
+
+New password is changed and u will get the mail regarding the same
+
+Password Notification
+Password Expiry Notification Interval - 14,7,3,2,1
+
+Update mobile num - admin will do - mail will be generated
+
+Digicert - admin can register for the certificate for the vpn users - IT 
+Evry 6 month user will get it
+Revoke, Reports, Renew
+
+incd -  user ka data add nhi hua proper
+	
+
+Mid range - TCS ki team - db issues handle kr rhe hai
+
+

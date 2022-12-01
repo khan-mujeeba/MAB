@@ -1,0 +1,29 @@
+
+BU - Business Users
+BIT - Business IT
+OST - Open System
+SRAS -  Small Rapid Application System
+OPS - Operation System
+SLA - Service Level Agreement
+SOD - System Operation Document
+ICD - Interface Control Document
+CAB - Change Advisory Board
+POC  - Point of Contact
+AMS team - Application Management Services
+EVR - Electronic Voyage Report
+CCF - Cabin Crew Form
+TCF - Technical Crew Form
+CCVR - Cabin Crew Voyage Report
+TCVR - Technical Crew Voyage Report
+UAT - User Acceptance Testing
+PROD - Production
+DR - Disaster Recovery
+DTAP - Development->Testing->Acceptance->Production
+AODB - Airport Operation Database
+IDVS  - ID Validation System
+
+
+trouble shooting
+- mail check kro
+- logs check kro
+- code ko local pr run kro

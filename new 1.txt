@@ -1,0 +1,667 @@
+MHSMS, MHSSP (User module), MHM  - Internet expose application.
+
+Flight cancellation, Missing baggage, Travel advisory
+
+AMADEUS - SHeetal - Databroker - Azure pipeline - External table - MAintable in scv
+dependent on scv service
+
+Integration point - AODB - flight cancellation status, scv db, scv service, Databroker
+
+
+http://masg-1svnap1.mh.corp.net/svn/SRAS/BPM_BizCard/Adapter/HTTPAdapterJava
+http://masg-1svnap1.mh.corp.net/svn/SRAS/BPM_BizCard/MobileSRC
+
+10.221.6.50 - 1scvpgdb.mas.net
+1scvpgdb.mas.net:5432/scvp
+corp_sales@masg-1scvpgdb1
+A6cz2#F@NW
+
+
+Admin - https://mhselfservice.malaysiaairlines.com/admin/
+User - https://mhselfservice.malaysiaairlines.com/user/#/home
+
+jdbc:db2://1aodb.mas.net:50000/AIR_OPS
+FIDSAS
+Aodb#Fid@2020
+
+MASG-1SCVAPP2 (10.221.4.57)
+MASG-3SCVAPP2 (10.221.12.25)
+
+
+
+
+2022-07-20 00:30:45,833 ERROR SeleniumWork.doWork  - unknown error: DevToolsActivePort file doesn't exist
+Build info: version: 'unknown', revision: 'e82be7d358', time: '2018-11-14T08:24:01'
+
+2022-07-20 03:01:07,975 ERROR SeleniumWork.doWork  - Error: org.openqa.selenium.WebDriverException: chrome not reachable
+Build info: version: 'unknown', revision: 'e82be7d358', time: '2018-11-14T08:24:01'
+System info: host: 'YH1008211DT', ip: '10.10.18.2', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: ChromeDriver
+
+
+2022-07-21 01:40:08,584 ERROR SeleniumWork.doWork  - Error: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='sn-pane-action icon-arrow-right-rounded']"}
+  (Session info: chrome=100.0.4896.127)
+
+2022-07-21 05:40:15,221 ERROR SeleniumWork.doWork  - Error: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='sn-pane-action icon-arrow-right-rounded']"}
+  (Session info: chrome=100.0.4896.127)
+
+INC0245923, application name: APP - SCV assigned to Sujit Patil
+
+2022-07-21 08:35:46,250 ERROR SeleniumWork.doWork  - Error: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=100.0.4896.127)
+
+
+
+
+Good Morning Sir,
+
+From the logs, it is working fine but the last incident which got assigned is this - 
+2022-08-19 06:30:45,154 INFO  NewIncidentAutoAssign.autoAssign  - Incident: INC0248342, application name: APP - iKARGO IM assigned to Tharun Donthineni
+
+And after that it is just saying - 
+2022-08-19 08:50:29,776 INFO  NewIncidentAutoAssign.autoAssign  - No new Incident found
+
+And last time this error has been observed -
+2022-08-19 04:11:25,449 ERROR SeleniumWork.doWork  - chrome not reachable
+Build info: version: 'unknown', revision: 'e82be7d358', time: '2018-11-14T08:24:01'
+System info: host: 'YH1008211DT', ip: '10.10.18.2', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: ChromeDriver
+
+
+
+
+Dear Ajay,
+
+Below mentioned ids are active from AMS side and needs access for this application. Kindly refer to them.
+
+V101403 - Rajashekarreddy Kasireddy
+V101561 - Srikanth Kankara
+V104244 - Mujeeba Zainab Khan
+V103933 - Swati Sonwane
+V104098 - Sujit Ravindra Patil
+V104099 - Diksha Patidar
+V104243 - Abdeali Tinwala
+V104245 - Aishwary Joshi
+V101623	- Ashish Dharmrajsingh Baghel
+
+V101403
+V103933
+V104098
+V104099
+V104244
+
+
+self_sit_adm - uat sprp
+selfpswdreset_vpn_adm - prod sprp
+
+osdbadm - clist/rapid uat/prod
+clrs_rw - clrs uat/prod
+sms_portal_adm - sms dashboard uat/prod
+
+Among these usernames for srasjava, I am aware about few applications which are mentioned below along with their current usernames for db connection
+MHCLRS - clrs_rw
+SMS Dashboard - sms_portal_adm
+CLIST/RAPID Jobs - osdbadm
+
+And for SPRP UAT, currently we are using these usernames - self_sit_adm, selfreset_adm
+
+
+Mohd Zahir Md Zahari 2108019
+Captain.OPS - Flight Crew
+OPS - Flight Operations
+
+First Officer.OPS - Flight Crew A330
+Captain.OPS - Flight Crew B737
+
+Mab$2022
+
+
+FSIS
+
+PROD - https://mhmessenger.malaysiaairlines.com/fsis/
+UAT - http://3nmhlinksapp1.mas.net:8080/fsis/
+
+Server details - 
+PROD - MASG-1NMHLINKSAPP1
+UAT - MASG-3NMHLINKSAPP1
+
+UAT Deploymanager-
+Link: http://3nmhlinksapp1.mas.net:8080/Deploymanager/html
+Username: tomcatusr   
+Password: 86tLcetd
+
+UAT DB details-
+Server - 10.224.22.63 
+Database: DB2 LUW	Port: 50000
+Username: fsisa 
+Password: Fsis@20 
+
+PROD DB details-
+Server - MASG-1AODB + 10.223.6.118 
+Database: DB2 LUW	Port: 50000
+Username: fsisa
+Password: Aodb#Fsi@2020
+
+
+CLRS
+
+PROD - http://clrs.mas.net/
+UAT - http://3srasjavaapp1.mas.net:8080/clrs
+
+Server details - 
+PROD - MASG-1SRASJAVAAPP1 
+UAT - MASG-3SRASJAVAAPP1 
+
+UAT Deploymanager-
+Link: http://3srasjavaapp1.mas.net:8080/Deploymanager/html
+Username: tomcatusr
+Password: TqKwkH2d
+
+UAT DB details-
+Server - MASG-3SRASJAVADB1 + 10.221.14.26 
+Database: MySQL		Port: 3036
+Username: clrs_rw 
+Password: 3YSwesxqUwE4 (SSL certificates needed)
+
+PROD DB details-
+Server - MASG-1SRASJAVADB1 + 10.221.6.28 
+Database: MySQL		Port: 3036
+Username: clrs_rw 
+Password: yD3EYAn2WqWS (SSL certificates needed)
+
+IDVS
+
+PROD - http://idvs.mas.net
+UAT - http://3idvsapp.mas.net:8080/Id_Management
+
+Server details - 
+PROD - MASG-1IDVSAPP1
+UAT - MASG-3IDVSAPP
+
+UAT Deploymanager-
+Link: http://3idvsapp.mas.net:8080/Deploymanager/html
+Username: tomcatusr
+Password: jkGeJS5B
+
+UAT DB details-
+Server - MASG-3IDVSDB
+Database: MySQL		Port: 3036
+Username: IDVSADMIN 
+Password: IDVSADMIN123  (SSL certificates needed)
+
+PROD DB details-
+Server - MASG-1IDVSDB1 
+Database: MySQL		Port: 3036
+Username: idadm
+Password: idadm@456  (SSL certificates needed)
+
+FIDS
+
+PROD - http://fids.mas.net/fids/#/home?station=KUL	
+UAT - http://3scvapp2.mas.net:8080/fids/#/SatLayover1 
+
+Server details - 
+PROD - MASG-1SCVAPP2
+UAT - MASG-3SCVAPP2
+
+UAT Deploymanager-
+Link: http://3scvapp2.mas.net:8080/Deploymanager/html
+Username: tomcatusr
+Password: tukz4Wzh
+
+UAT DB details-
+Server - 10.224.22.63 
+Database: DB2 LUW	Port: 50000
+Username: FIDSAS 
+Password: Fid@20 
+
+PROD DB details-
+Server - MASG-1AODB 
+Database: DB2 LUW	Port: 50000
+Username: FIDSAS
+Password: Aodb#Fid@2020
+
+MHSMS
+
+PROD - https://mhsms.malaysiaairlines.com/mhsms/
+UAT - http://3mhsmsapp1.mas.net:8080/mhsms/
+
+Server details - 
+PROD - MASG-1MHSMSAPP1
+UAT - MASG-3MHSMSAPP1
+
+UAT Deploymanager-
+Link: http://3mhsmsapp1.mas.net:8080/Deploymanager/html
+Username: tomcatusr
+Password: 3m94atJq
+
+UAT DB details-
+Server - 3scvpgdb1.mas.net 
+Database: PostgreSQL	Port: 5432
+Username: corp_sales@masg-3scvpgdb1 
+Password: Y4#j$t8t
+
+PROD DB details-
+Server - 1scvpgdb.mas.net 
+Database: PostgreSQL	Port: 5432
+Username: corp_sales@masg-1scvpgdb1
+Password: A6cz2#F@NW
+
+MHSSP
+
+PROD - https://mhselfservice.malaysiaairlines.com/  
+UAT - http://3mhsspapp1.mas.net:8080/user/#/home
+
+Server details - 
+PROD - MASG-1MHSSPAPP1
+UAT - MASG-3MHSSPAPP1
+
+UAT Deploymanager-
+Link: http://3mhsspapp1.mas.net:8080/Deploymanager/html
+Username: tomcatusr
+Password: jkGeJS5B
+
+UAT DB details-
+Server - 10.250.30.197 
+Database: DB2 LUW	Port: 50000
+Username: db2admin 
+Password: oct@2012
+
+PROD DB details-
+Server - 10.224.22.63
+Database: DB2 LUW	Port: 50000
+Username: mhsspas
+Password: Mhss@2020
+
+MHMessenger
+
+PROD - https://mhmessenger.malaysiaairlines.com
+UAT - http://3mobapp.mas.net:8080/mhmessenger/
+
+Server details - 
+PROD - MASG-1MOBAPP1
+UAT - MASG-3MOBAPP-LX
+
+UAT Deploymanager-
+Link: http://3mobapp.mas.net:8080/Deploymanager/html
+Username: tomcatusr
+Password: MN7XwPFd
+
+UAT DB details-
+Server - 10.221.14.12
+Database: MySQL		Port: 3036
+Username: srasadmin 
+Password: srasadmin123 (SSL certificates needed)
+
+PROD DB details-
+Server - MASG-1MOBDB1 
+Database: MySQL		Port: 3036
+Username: mobadm
+Password: mobadm@456 (SSL certificates needed)
+
+
+SPRP
+
+PROD - https://msc.malaysiaairlines.com/securityCorner/
+UAT - http://3sprpapp1.mas.net:8080/securityCorner/
+
+Server details - 
+PROD - MASG-1SPRPAPP1
+UAT - MASG-3SPRPAPP1
+
+UAT Deploymanager-
+Link: http://3sprpapp1.mas.net:8080/Deploymanager/html	
+Username: tomcatusr
+Password: GHf6rqAZ
+
+UAT DB details-
+Server - MASG-3SPRPDB1
+Database: MySQL		Port: 3036
+Username: self_sit_adm 
+Password: Ah5dJfS54N	(SSL certificates needed)
+
+PROD DB details-
+Server - MASG-1SPRPDB1 
+Database: MySQL		Port: 3036
+Username: selfpswdreset_vpn_adm
+Password: MN5tEg5AAE	(SSL certificates needed)
+
+MHVIP
+
+PROD - http://mhvip.mas.net/mhvip/welcome.do
+UAT  - http://3scvapp2.mas.net:8080/mhvip
+
+Server details - 
+PROD - MASG-1SCVAPP2
+UAT - MASG-3SCVAPP2
+
+UAT Deploymanager-
+Link: http://3scvapp2.mas.net:8080/Deploymanager/html
+Username: tomcatusr
+Password: tukz4Wzh
+
+UAT DB details-
+Server - MASG-3SCVPGDB
+Database: PostgreSQL		Port: 5432
+Username: vip@masg-3scvdbps1
+Password: AK#y2%R43 
+
+PROD DB details-
+Server - MASG-1SCVPGDB 
+Database: PostgreSQL		Port: 5432
+Username: vip@masg-1scvpgdb1
+Password: Wd$Xy93bM7@
+
+PDD
+
+PROD - http://pddviewer.mas.net/pddviewer/login
+UAT  - http://3scvapp2.mas.net:8080/pddviewer
+
+Server details - 
+PROD - MASG-1SCVAPP2
+UAT - MASG-3SCVAPP2
+
+UAT Deploymanager-
+Link: http://3scvapp2.mas.net:8080/Deploymanager/html
+Username: tomcatusr
+Password: tukz4Wzh
+
+UAT DB details-
+Server - MASG-3SCVPGDB
+Database: PostgreSQL		Port: 5432
+Username: pdd@masg-3scvdbps1 
+Password: pX$6mR#9 
+
+PROD DB details-
+Server - MASG-1SCVPGDB 
+Database: PostgreSQL		Port: 5432
+Username: mhscv
+Password: zaq12wsx
+
+RTMM
+
+PROD - http://scv.mas.net/rtmm/login
+UAT - http://3scvapp1.mas.net:8080/rtmm
+
+Server details - 
+PROD - MASG-1SCVAPP1
+UAT - MASG-3SCVAPP1
+
+UAT Deploymanager-
+Link: http://3scvapp1.mas.net:8080/Deploymanager/html
+Username: tomcatusr
+Password: 
+
+UAT DB details-
+Server - MASG-3SCVPGDB  
+Database: PostgreSQL		Port: 5432
+Username: mhscv@masg-3scvdbps1 
+Password: A%jo3V51$ 
+
+PROD DB details-
+Server - MASG-1SCVPGDB 
+Database: PostgreSQL		Port: 5432
+Username: mhscv_user@masg-1scvpgdb1
+Password: wz$G65@CLDg
+
+
+EAI - Enterprise Application Integration
+
+
+
+
+Staffnumber	Staffname
+
+2200785	MEXCOLINE SUNTANG
+2353062	IRFAN MURSYID MAT YAZID
+2354882	ZULQASHFI NADZMI ZULKIPLI
+2354895	NURSHIKIN NASYARA KAMARUDDIN
+
+2356151	NURDAYANI LUBIS MUKTAR
+2356185	MOHD IDZHAM ZULHAQFIQ IDRIS
+2356281	NURFAEZAH YAKUB
+2356289	BROVELL ARBELL JAMIN
+2356618	MOHAMED SHAMSUDIN MOHAMED AMIN
+2356668	MOHAMAD SYAFIQ HARIRI MOHAMED SAUDI
+2356677	MOHD HAKIMI ABDUL HAMID
+2356682	MUHAMMAD IZDWAN ISMAIL
+2356684	MUHAMMAD IQRAM SOFYAN
+2356686	MUHAMMAD JAZLI MUHAMMAD JALIL
+2356787	SITI NOR LIYANA MOHD ARIS
+2356788	SITI NURMI KHALSUM HUSSIN FATIMI
+2356789	AMIRUL HAFIZ HISHAMUDDIN
+2356790	SIRI GANESHA MOGANAN
+2356791	MOHD ASRIZAL ABDUL HAMID
+2356792	MOHAMAD HAMZI HAIKAL ABDUL RAZAK
+2356853	MUHAMMAD MUAMMAR MOHD. AZLAN
+2356854	MUHAMMAD NORHAFIZ MAD AYOB
+2356855	SYAIRAZI SAHARUDDIN
+2356874	NASRUL HAQ AMRAN
+2356875	NAZRUL YAACOB
+2356876	MUHAMMAD RUZAINI ANUAR
+2356877	DESMOND BANGAU MERIPA
+2356878	VISUNU RAGUNATHANS
+2356879	NURUL SHAHIRA KARIM
+2356880	MUHAMMAD ZHAFRAN NOR ZAMZURI
+2356881	MUHAMMAD KHAIRUL AZIM KHAIRY
+2356882	MUHAMMAD IZWAN HAIKAL SHAHROL AZAN
+2356883	MUHAMAD AIMAN IRFAN MOHAMMAD SHAH
+
+ext_mujeebazainab.khan@malaysiaairlines.com, ext_abdeali.tinwala@malaysiaairlines.com
+
+
+
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:167 - prepopulateMap{FP_ADJ_TAKEOFF_FUEL_HIDDEN=8249, FP_FUEL_SURPL_HIDDEN=0, FP_MAX_FUEL_AVBL=17966, FLT_DATE_UTC=27-SEP-2022 0355, FLT_ACFT_REGN=9MMLL, FP_REG_TAKE_OFF_WT=67666, FP_FUEL_OZFW=49700, FP_FUEL_BURN_TO_DEST=2349, MAX_FUEL_CAPA_TANK_HIDDEN=20298, ID=2262067, FP_FUEL_TAXI_HIDDEN=170, FP_FUEL_SURPL=0, FLT_NBR=MH 1438, FP_FUEL_TAKEOFF=8249, FP_BLOCK_FUEL_REQ=8420, FP_MIN_SECT_FUEL=4600, SECTOR=KUL/LGK, FP_ADJ_TAKEOFF_FUEL=8249, MEL_DESCRIPTION=RECLINING BUTTON AT SEAT 2C INOP - LOOSE & NOT  FUNCTIONING#DURING TRANSIT |  FOUND PORTSIDE ASHTRAY MISSING, MEL_REF=25-06-01A   :  RECLINING BUTTON AT SEAT 2C INOP - LOOSE & NOT  FUNCTIONING
+25-20-01A   :  DURING TRANSIT |  FOUND PORTSIDE ASHTRAY MISSING
+, FP_FUEL_TANKER=3725, FP_FUEL_TAXI=170, MAX_FUEL_CAPA_TANK=20298, FK_FLIGHT_SKED_ID=1703816, MEL_REF_HIDDEN=25-06-01A   :  RECLINING BUTTON AT SEAT 2C INOP - LOOSE & NOT  FUNCTIONING
+25-20-01A   :  DURING TRANSIT |  FOUND PORTSIDE ASHTRAY MISSING
+}
+2022-09-27 09:10:11 INFO  FormDAO:366 -  Inside findHtmlByFormName-->FuelOrderForm
+2022-09-27 09:10:11 INFO  FormDAO:374 -  outside findHtmlByFormName-->
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_ADJ_TAKEOFF_FUEL_HIDDEN
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_FUEL_SURPL_HIDDEN
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_MAX_FUEL_AVBL
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FLT_DATE_UTC
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FLT_ACFT_REGN
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_REG_TAKE_OFF_WT
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_FUEL_OZFW
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_FUEL_BURN_TO_DEST
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   MAX_FUEL_CAPA_TANK_HIDDEN
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   ID
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_FUEL_TAXI_HIDDEN
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_FUEL_SURPL
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FLT_NBR
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_FUEL_TAKEOFF
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_BLOCK_FUEL_REQ
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_MIN_SECT_FUEL
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   SECTOR
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_ADJ_TAKEOFF_FUEL
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   MEL_DESCRIPTION
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   MEL_REF
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_FUEL_TANKER
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FP_FUEL_TAXI
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   MAX_FUEL_CAPA_TANK
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   FK_FLIGHT_SKED_ID
+2022-09-27 09:10:11 INFO  BPMFormNotificationService:181 - Attributes   MEL_REF_HIDDEN
+2022-09-27 09:10:11 INFO  NotificationDAO:706 - Inside getNotificationID in NotificationDAO
+2022-09-27 09:10:11 INFO  NotificationDAO:716 - Exiting msgID in getNotificationID5288718
+2022-09-27 09:10:11 INFO  UserProfileDAO:183 - Get user group information
+2022-09-27 09:10:11 INFO  UserProfileDAO:192 - User group information available
+2022-09-27 09:10:11 INFO  NotificationDAO:639 - Inside insertNotificationHeader in NotificationDAO
+2022-09-27 09:10:11 INFO  NotificationDAO:917 - time: 2022-09-27 09:10:11.0
+2022-09-27 09:10:11 INFO  FCMHelper:151 - {"to":"reg","notification":{"body":"FORM"}}
+2022-09-27 09:10:12 INFO  NotificationDAO:917 - time: 2022-09-27 09:10:12.0
+2022-09-27 09:10:12 INFO  NotificationDAO:917 - time: 2022-09-27 09:10:12.0
+2022-09-27 09:10:12 INFO  NotificationDAO:917 - time: 2022-09-27 09:10:12.0
+2022-09-27 09:10:12 INFO  NotificationDAO:706 - Inside getNotificationID in NotificationDAO
+2022-09-27 09:10:12 INFO  NotificationDAO:716 - Exiting msgID in getNotificationID5288719
+2022-09-27 09:10:12 INFO  UserProfileDAO:183 - Get user group information
+2022-09-27 09:10:12 INFO  UserProfileDAO:192 - User group information available
+2022-09-27 09:10:12 INFO  NotificationDAO:639 - Inside insertNotificationHeader in NotificationDAO
+2022-09-27 09:10:12 INFO  NotificationDAO:917 - time: 2022-09-27 09:10:12.0
+2022-09-27 09:10:12 INFO  FCMHelper:151 - {"to":"reg","notification":{"body":"FORM"}}
+2022-09-27 09:10:12 INFO  NotificationDAO:917 - time: 2022-09-27 09:10:12.0
+2022-09-27 09:10:12 INFO  NotificationDAO:917 - time: 2022-09-27 09:10:12.0
+2022-09-27 09:10:12 INFO  NotificationDAO:917 - time: 2022-09-27 09:10:12.0
+2022-09-27 09:10:13 INFO  BPMFormNotificationService:164 - final finalMelStr>>>>25-06-01A   :  RECLINING BUTTON AT SEAT 2C INOP - LOOSE & NOT  FUNCTIONING
+25-20-01A   :  DURING TRANSIT |  FOUND PORTSIDE ASHTRAY MISSING
+
+
+<!-- <bean id="dataSource_sras" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.ibm.db2.jcc.DB2Driver" /> <property
+        name="url" value="jdbc:db2://mhlmsdcsdb.mas.net:50005/MHLDB1A" /> <property
+        name="username" value="appadmin" /> <property name="password" value="Mab@2015"
+        /> </bean> -->
+		
+		
+{
+"SELECT * from user_profile WHERE STAFF_ID ='V104244'": [
+	{
+		"STAFF_ID" : "V104244",
+		"USER_NAME" : "Mujeeba Zainab Khan",
+		"DESIGNATION" : "1",
+		"ROLE" : "Admin",
+		"DEPARTMENT" : "1",
+		"EMAIL" : null,
+		"DEVICE_ID" : "1",
+		"REGISTRATION_ID" : "reg",
+		"DEVICE_PLATFORM" : "android",
+		"MOBILE_NUMBER" : "2",
+		"REGISTRATION_DATE" : "2022-08-16 00:57:28",
+		"REG_APPROVAL_DATE" : null,
+		"PROFILE_PIC_ID" : null,
+		"LAST_LOGIN" : "2022-09-28 14:42:18",
+		"LAST_ACTIVE" : "2022-09-28 14:42:18",
+		"LAST_ACCESSED_SERVICE" : "Login Service",
+		"LOGGED_IN_STATUS" : "LOGGED OUT"
+	}
+]}
+
+
+
+2354666	Mohamad Azreen Aznan
+
+2022-10-03 05:50:04 INFO  BPMFormNotificationService:167 - prepopulateMap{FP_ADJ_TAKEOFF_FUEL_HIDDEN=11454, FP_FUEL_SURPL_HIDDEN=0, FP_MAX_FUEL_AVBL=14194, FLT_DATE_UTC=02-OCT-2022 2330, FLT_ACFT_REGN=9MMXK, FP_REG_TAKE_OFF_WT=70394, FP_FUEL_OZFW=56200, FP_FUEL_BURN_TO_DEST=4213, MAX_FUEL_CAPA_TANK_HIDDEN=20298, ID=2265850, FP_FUEL_TAXI_HIDDEN=170, FP_FUEL_SURPL=0, FLT_NBR=MH 2542, FP_FUEL_TAKEOFF=11454, FP_BLOCK_FUEL_REQ=11630, FP_MIN_SECT_FUEL=7100, SECTOR=KUL/KCH, FP_ADJ_TAKEOFF_FUEL=11454, MEL_DESCRIPTION=APU FAULT LIGHT COMES ON DURING STARTING |  APU UNABLE TO START - APU INOP#FOUND QTY 01 SPARE LIFE VEST (ADULT) EXPIRED., MEL_REF=49-01   :  APU FAULT LIGHT COMES ON DURING STARTING |  APU UNABLE TO START - APU INOP
+
+Paper OFP generated date - 2nd Oct 21:46
+FOF in mhm app created date - 2022-10-03 05:50:04
+
+
+Hello Syed,
+
+Can you kindly check with FPM team why we haven't received the latest OFP form as per the paper OFP for flight MH-2542.
+
+As per the system logs and db tables, data present over there is populated in OFP of MHM app. So updated OFP data haven't received from FPM side.
+
+
+
+INC0252344
+
+3 medium and 3 low vulnerabilities found on mhselfservice.malaysiaairlines.com
+
+List of vulnerabilities
+
+- Medium vulnerabilities =
+    - Overly Permissive Content Security Policy (CSP)
+    - Absence of Anti-CSRF Token
+    -  Vulnerable Java Script Dependency
+
+- Low vulnerabilities -
+    -  Cookie With SameSite Attribute = None
+    - Strict Transport Security Not Enforced
+    -  Cacheable SSL Page Found
+	
+
+2 high & 4 medium vulnerabilities detected on mhselfservice.malaysiaairlines.com
+
+
+
+
+log.info("Creating new server {}", server.getName());
+		server.setImageUrl(setServerImageUrl());
+		return repo.save(server);
+		
+		
+		
+User: Jazmeen Yunadia Mazlan (2200682)
+Old Manager Approval: Abdul Halim Zaki Shaarani 2105597
+Current Manager: Noor Suriani Muda (2105783)
+
+
+Subject: Leave Application for Marriage 
+
+Hello Sir,
+
+I am writing to inform you that my marriage ceremony will be held on 27th of December, 2022. For the ceremony and post-marriage rituals, I need to be away for 14 days in different intervals.
+
+I would be very much obliged if you could kindly grant me leave for the below mentioned dates:
+27th to 30th Dec 2022 & 9th to 13th Jan 2023 
+6th Feb - 10th Feb 2023 (might change)
+
+The wedding invitation is enclosed with the mail. I will also surpass an invitation to all co-members.
+It would be great to see you there as well.
+
+I will be available on call (9752336615) if need arises.
+
+Thanking you,
+
+
+
+MHSSP
+	Delay letter CR - CAB
+	Confirmation letter - Devlopment
+	Vulnerability issues - Analysis -> Devlopment
+MFP - Patching activity PROD
+IDVS - Unit testing
+Angular-Spring POC 
+CLRS notification issue
+
+2101394
+
+
+Application name	BU Checker
+Application name	Checker/Verifier
+	 
+As per user request, amendment has been done successfully.
+
+CHG0016677 - UCustom
+
+CHG0019176-EVR
+CHG0018071 - IDVS
+CHG0017985 - MHLDB
+CHG0015806-Gats
+CHG0015750-MHSMS
+CHG0015324-CLRS
+
+
+ LoginService:219 - java.util.NoSuchElementException -- group issue
+ 
+ {
+"SELECT * FROM CLRS_USER_INFO WHERE USER_ID ='2102453'": [
+	{
+		"USER_ID" : "2102453",
+		"USER_NAME" : "KHAMISAH KHALIDI",
+		"USER_EMAIL" : "KHAMISAH.KHALIDI@MALAYSIAAIRLINES.COM",
+		"USER_ROLE" : "ADMIN",
+		"CREATED_BY" : "EXT260170",
+		"CREATED_DATE" : "2018-03-09 13:07:19",
+		"UPDATED_BY" : "EXT260170",
+		"UPDATED_DATE" : "2018-03-09 13:07:19"
+	}
+]}
+
+
+
+https://start.spring.io/starter.zip	
+base url
+
+https://start.spring.io/starter.zip?name=drapp&groupId=com.intellize&artifactId=drapp&version=0.0.1-SNAPSHOT&description=DR+Project&packageName=com.intellize.dr&type=maven-project&packaging=war&javaVersion=11&language=java&bootVersion=2.7.5.RELEASE&dependencies=devtools&dependencies=data-jpa&dependencies=data-rest&dependencies=web
+full url
+
+
+1. Used constants instead of literals
+2. Reused code
+3. Logger added
+4. Comments added
+
+Indore CIT Park   14.141.254.90    IDR2-VPN-USERS
