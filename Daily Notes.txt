@@ -1,0 +1,270 @@
+Week 1 (1st-4th March 2022)
+
+linux command practice krna hai
+s/w install krna hai
+
+
+6 March
+
+Ask the trainer to explain
+Ask him to share the docs
+Ask him to give the access to the applications
+Ask them to make u go thru incidents of that application (20-30 incidents from past)
+
+detail of application - root causes of problems, their resolutions
+
+CR (Change Request) - Upstream and downstream of data
+
+how does change management works - who raises the chng, our role, approvals (CAB - Change Approval Code)
+
+how to raise RITM request for your self
+team to go, parameters to be filled in
+
+
+MA -> ATOS -> YASH managing OST/SRAS and OPS
+We are the part of OST
+
+
+
+7 March
+
+AMS understanding
+Resolution/Fix steps
+
+Incident management
+every incident has to be handles within the SLA
+
+Open aging - incident put on hold, not resolved yet
+>10 days...follow up with team members...ready status with u...any update 
+
+app has BCD level --- Business Criticality
+can expect downtime of few mins not few hours
+
+app availability -- uptime of ur appl -- if matrix get crossed then the charges are applied
+
+**** app shuld be available
+
+
+problem report --- raised on severity 1 or 2
+SLA
+
+
+
+UAT/PROD envmnt connectivity
+
+
+MAC address white listing
+
+
+8 March
+
+Linux
+Email etiquette
+CAB
+Downtime approval
+
+issue: releasing multiple app within a single CR
+
+cycle for incident
+
+old incidents - knowledege based -- repetitive issue -- service now me check kro -- usme resolved sol hota hai to u can agn provide that
+
+auto assignment -- it get stopped in sometime...so it has to be notified when it is getting stopped
+SLA breach
+POC
+
+9 March
+
+Reverse KT
+-- app understanding in words
+-- app agenda, working, impact if it doesnt work
+-- code setup
+-- functioning
+-- app go thru -- screen wise flow
+-- flow from UI to database -- code walk thru any single transaction -- ui se controller -> dao -> database -> query hit -> response
+-- KT tracker
+-- UAT & PROD env connectivity
+-- add in app GD group
+-- app permission
+
+
+10 march
+
+we belong to ATOS in MAB
+there are soo many partners involved 
+
+
+11 march
+
+Mandatory info require for any app--
+access for UAT and PROD server - tomcat ka username password url
+db connectivity for UAT and PROD
+respective email grp
+database access from local
+server access hona
+SOD aur ICD 
+logpath - login and folder access
+UAT PROD logs
+BIT
+BU
+
+MOM merits of meeting bna kr mail pr daalo
+open item - details jo bhi hai
+password, username, server details - jo bhi nhi hai 
+ 
+
+14 March
+
+within 30 mins u shuld hv the understanding of the incident
+
+EVR faced the cache issue
+
+incid - problem in db connection - could be coz of multiple clients in db 
+sol - ask the user to clear the cache at their end
+
+logpath ka access nhi hai - to download the log file
+
+To-Do
+vpn access to auto-assignment
+update roaster excel sheet
+copy the SAP in new excel sheet
+
+
+15 March
+
+CH--22863 - wrongly assigned to Srikanth
+
+incd - CCF app on EVR - on hold - user didnt send the reference no.
+waiting for user response
+go thru the logs
+
+if they arent responding for 2-3 hrs then we can connect directly to the BU with them in teams
+chrome version, cache problem -> restart the system
+
+Incidents -> Infra activity -> CR
+
+
+16 March
+
+To-do
+Autoassignment deployment
+	task scheduler ke bajae server pr le lo
+
+	mail - system issue & when owner is not available in the machine
+	har 6 hrs me mail
+	chrome driver ka version shuld be matched
+	code changes - jar shuld be updated
+	excel sheet update
+
+Sir, we have deployed the autoassignment with the updated excel sheet...and its functioning properly 
+now...we have recorded the session too...
+What document are we suppose to prepare...like is there any format for it 
+
+
+KT on MH-CLRS
+
+
+Reverse KT on IDVS, ITCB
+
+
+17th March
+
+Suggestion – 
+As it is functioning on the remote desktop’s task scheduler, it might get break down in between which can’t be affordable as it is a very crucial application. So for better and efficient functioning it should be shifted on one of the server rather than remote desktop.
+
+
+21 March
+
+evr incid - last simulator session entry is missing in the generated pdf
+
+23 March
+
+MHLDb - log 4j vulnerability - update to Husni - security related issue (Lee handles it)
+
+24 March
+
+got the mab id (vpn)
+we hv to raise RITM request for server access
+apps  - clrs, pdd, evr, 
+sujit will help us
+
+chng requests pr kaam krna hai
+MhMessenger
+
+vpn issue - ping Yusra Syuhada Mohd Yusni
+itm team ko mail daalna hai
+
+service-now issue - ping Muskan Ahluwalia
+
+upstream - jaha se data aa rha hai
+downstream - jaha data jaana hai
+As all the applications are interconnected
+
+MHMEssenger
+BU - Saleh Mustufa
+BIT - Jamal ud din bakar
+
+wisdom service
+
+9 access needed for each app -
+ 
+uat server access, db access
+prod server access, db access
+gd group
+service now
+tomcat server
+app ka url
+user add hona app me(User management)
+
+EVR - server access Uat/prod - RITM0164184, RITM0164185
+
+
+25 March
+
+MhMessenger - RITM0164248 (server UAT/Prod)
+
+28 March
+
+MhMessenger - RITM0164331 (UAT db)
+Prashant will raise the CR for white listing of IP 
+
+CLRS prod and Uat server access - RITM0164335
+
+CLRS Uat db access - RITM0164346
+
+
+6-04
+
+CLRS analysis
+ - authentication (login)
+ - navigation flow
+ - data flow
+
+07-04
+
+KT tracker complete krna hai (MHVIP)
+CLRS ka analysis
+
+08-04
+
+App verification - 
+
+check app is up
+check app functionality
+check app logs
+test tomcat credentials and update in Credential file
+
+CAB meetings
+Mohd Hairy
+Nor Azni
+
+
+
+
+
+
+
+
+
+
+

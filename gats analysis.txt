@@ -1,0 +1,309 @@
+
+GATS production application server is allocated with 4 GB Memory - 4 GB
+Tomcat heap Memory – 1 GB 
+ 
+
+MASG-1GATSAP.mh.corp.net
+
+Hostname - masg-3gatsap1
+			masg-1gatsap
+	Username - MH\<your staff id> (MH\V104244)
+	Password – your password
+Once the connection get established, you can see the log file at this location-
+logpath - C:/GATS/logs/prod
+10.221.4.53
+
+
+Memory = 4096 MB = 4 GB
+
+
+
+2022-07-28 04:31:32
+
+DESCRIPTION OF ALERTS: 
+
+The MEM Utilization is 90.108988317162
+
+Top MEM ProcessList
+
+Name RAM (in %)
+---- ----------
+tomcat9 19.14
+SSPService 5.93
+SavService 4.56
+SophosFileScanner 4.16
+MonitoringHost 2.33
+svchost 2.14
+CcmExec 1.99
+explorer 1.07
+WmiPrvSE 0.9
+WaAppAgent 0.88
+
+
+
+Time problem started   : 27/07/2022
+
+DESCRIPTION OF ALERTS: 
+
+GD_TCSWintel@malaysiaairlines.com	2	2022-07-27 5:42:38 AM	2022-07-27 11:42:38 AM	Critical	Windows Operating System	MASG-1GATSAP.mh.corp.net	0	0	% Used Memory is greater than threshold	GATS	
+
+The MEM Utilization is 90.0486713382758
+
+Top MEM ProcessList
+
+Name RAM (in %)
+---- ----------
+tomcat9 19.17
+SSPService 6.18
+SophosFileScanner 5.24
+SavService 4.47
+explorer 2.74
+CcmExec 2.21
+MonitoringHost 2.19
+svchost 2.01
+Sophos UI 1.16
+WmiPrvSE 1
+
+
+07/18/2022
+
+DESCRIPTION OF ALERTS: 
+
+HD=MASG-1GATSAP.mh.corp.net !!NEW!!!!Critical!!**Microsoft Windows Server 2012 R2 Datacenter**% Used Memory is greater than threshold (Hardware Device) Date:07/18/2022 03:02:45
+********************************************** SCOM Alert  **********************************************
+
+++++++++ --------------- ++++++++
+
+Alert: % Used Memory is greater than threshold
+Hostname:Microsoft Windows Server 2012 R2 Datacenter
+IPAddress:
+Source: MASG-1GATSAP.mh.corp.net
+Alert Description: The MEM Utilization is 90.1193272806523
+   
+    Top MEM ProcessList
+   
+Name              RAM (in %)
+----              ----------
+tomcat9                18.94
+SophosFileScanner       5.21
+SSPService              4.92
+SavService              3.87
+MonitoringHost          3.05
+CcmExec                 1.99
+svchost                 1.59
+MonitoringHost           1.5
+CollectGuestLogs        1.27
+WmiPrvSE                0.99
+TimeStamp: 07/18/2022 03:02:45
+
+
+
+2022-07-13
+DESCRIPTION OF ALERTS: 
+
+
+GD_TCSWintel@malaysiaairlines.com	2	2022-07-13 8:57:45 AM	2022-07-13 9:32:45 AM	Critical	Windows Operating System	MASG-1GATSAP.mh.corp.net	0	0	% Used Memory is greater than threshold	GATS	
+The MEM Utilization is 90.2262458975584
+
+Top MEM ProcessList
+
+Name RAM (in %)
+---- ----------
+tomcat9 18.18
+SSPService 4.16
+SavService 3.43
+SophosFileScanner 2.96
+MonitoringHost 2.5
+CcmExec 2.03
+explorer 1.9
+explorer 1.8
+svchost 1.69
+svchost 1.41
+
+
+Time problem started   : 2022-06-18
+
+DESCRIPTION OF ALERTS: 
+
+
+The MEM Utilization is 90.4588916516685
+
+Top MEM ProcessList
+
+Name RAM (in %)
+---- ----------
+tomcat9 18.29
+SophosFileScanner 5.27
+SSPService 4.95
+SavService 3.95
+MonitoringHost 2.53
+svchost 2.33
+CcmExec 1.88
+WaAppAgent 0.95
+WindowsAzureGuestAgent 0.89
+WmiPrvSE 0.89
+
+
+Time problem started   : 2022-02-11
+********************************************** SCOM Alert  **********************************************
+
+++++++++ --------------- ++++++++
+
+Alert: % Used Memory is greater than threshold
+Hostname:Microsoft Windows Server 2012 R2 Datacenter
+IPAddress:
+Source: MASG-1GATSAP.mh.corp.net
+Alert Description: The MEM Utilization is 90.0036720488411
+   
+    Top MEM ProcessList
+   
+Name              RAM (in %)
+----              ----------
+tomcat9                14.28
+SophosFileScanner        5.2
+SavService              4.86
+explorer                3.33
+SSPService               3.1
+MonitoringHost          2.56
+explorer                2.51
+CcmExec                 2.13
+svchost                 1.87
+dwm                     1.45
+TimeStamp: 02/10/2022 16:45:20
+
+
+2022-05-19 7:37:53 AM
+DESCRIPTION OF ALERTS: 
+
+GD_TCSWintel@malaysiaairlines.com	2	2022-05-19 7:37:53 AM	2022-05-19 7:43:26 PM	Critical	Windows Operating System	MASG-1GATSAP.mh.corp.net	0	0	% Used Memory is greater than threshold	GATS	
+Alert: % Used Memory is greater than threshold
+Hostname:Microsoft Windows Server 2012 R2 Datacenter
+IPAddress:
+Source: MASG-1GATSAP.mh.corp.net
+Alert Description: The MEM Utilization is 90.1010528765495
+   
+    Top MEM ProcessList
+   
+Name              RAM (in %)
+----              ----------
+tomcat9                18.76
+SophosFileScanner       5.41
+SSPService              5.12
+SavService              4.63
+MonitoringHost             3
+svchost                 2.48
+CcmExec                 2.05
+explorer                1.02
+WaAppAgent              1.01
+WmiPrvSE                   1
+TimeStamp: 05/19/2022 15:37:53
+
+
+Date:06/02/2022 20:17:53
+DESCRIPTION OF ALERTS: 
+
+hd-MASG-1GATSAP.mh.corp.net NEW!!!!Critical!!**Microsoft Windows Server 2012 R2 Datacenter**% Used Memory is greater than threshold (Hardware Device) Date:06/02/2022 20:17:53
+********************************************** SCOM Alert  **********************************************
+
+++++++++ --------------- ++++++++
+
+Alert: % Used Memory is greater than threshold
+Hostname:Microsoft Windows Server 2012 R2 Datacenter
+IPAddress:
+Source: MASG-1GATSAP.mh.corp.net
+Alert Description: The MEM Utilization is 90.1350264816717
+   
+    Top MEM ProcessList
+   
+Name              RAM (in %)
+----              ----------
+tomcat9                14.33
+SSPService              6.22
+SophosFileScanner       5.19
+SavService              4.66
+MonitoringHost          2.57
+CcmExec                 2.52
+svchost                 2.39
+WaAppAgent              1.08
+WmiPrvSE                0.98
+explorer                0.98
+TimeStamp: 06/02/2022 20:17:53
+
+
+2022-06-16
+DESCRIPTION OF ALERTS:
+
+
+GD_TCSWintel@malaysiaairlines.com	2	2022-06-16 3:12:53 AM	2022-06-16 6:32:53 AM	Critical	Windows Operating System	MASG-1GATSAP.mh.corp.net	0	0	% Used Memory is greater than threshold	GATS	
+
+Alert: % Used Memory is greater than threshold
+Hostname:Microsoft Windows Server 2012 R2 Datacenter
+IPAddress:
+Source: MASG-1GATSAP.mh.corp.net
+Alert Description: The MEM Utilization is 90.5305013729648
+   
+    Top MEM ProcessList
+   
+Name              RAM (in %)
+----              ----------
+tomcat9                18.54
+SSPService              4.07
+SavService              3.55
+svchost                 3.21
+MonitoringHost          2.81
+SophosFileScanner       2.77
+explorer                2.68
+explorer                1.95
+svchost                 1.82
+dwm                     1.34
+TimeStamp: 06/16/2022 11:12:53
+
+
+
+
+The Memory Warning Threshold Exceeded or Memory Critical Threshold Exceeded alerts appear in Deep Security to alert you that a host's memory usage has exceeded a certain amount. A warning alert indicates that 70% of the host's memory is used, and a critical alert indicates that usage has exceeded 85%.
+
+
+Kindly find the server utilization for past 6 months.
+
+S.No Month		Memory Avg %	Memory Max %
+1	February 	80.18			94.31
+2	March	 	82.16			96.19
+3	April	 	79.44			96.09
+4	May	     	81.92			97.66
+5	June	 	83.93			99.17
+6	July	 	83.81			97.39
+
+
+2022-08-04
+DESCRIPTION OF ALERTS: 
+
+
+The MEM Utilization is 90.4441843807257
+
+Top MEM ProcessList
+
+Name RAM (in %)
+---- ----------
+tomcat9 19.09
+SSPService 5.96
+SophosFileScanner 5.19
+SavService 3.08
+MonitoringHost 2.28
+CcmExec 2.22
+svchost 1.75
+WmiPrvSE 0.92
+WaAppAgent 0.83
+explorer 0.81
+
+
+As We dont have heap memory monitoring in specific, only server memory is monitored and as informed earlier current heap size 1Gb and no changes were done for the past 6 months.
+
+
+As we don't have heap memory utilization monitoring in specific, thereby resolving the issue from our end.
+
+INC0247584 - GATS - on hold
+
+INC0247359 - GATS - on hold
+
+INC0247636 - GATS - on hold

@@ -1,0 +1,304 @@
+mvn install:install-C:\Users\mujeeba.khan\.m2\repository\com\microsoft\sqlserver\sqljdbc42\4.2 -Dfile=sqljdbc42-4.2.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc42 -Dversion=4.2 -Dpackaging=jar
+
+Onsite end managers
+Amrina- business analyst - audit - represents OST team
+Ruby- online project manager
+Husni-
+
+
+
+[3:23 PM] Krishnakant Bairagi
+select distinct form_id,`from` from notification where `from` like '%MH0721 %' order by form_id desc; - 74765822
+select * from notification where form_id=74765822 and Receiver_StaffID='8000937';
+
+[3:23 PM] Krishnakant Bairagi
+MHM ka Prod connect karo
+
+[3:25 PM] Krishnakant Bairagi
+first query run karo
+
+[3:25 PM] Krishnakant Bairagi
+Captain MOHD IZZUAN BIN ISMAIL(2108484)First OfficerEDWARD RAYMOND ANAK NAYONG(8000937)
+
+
+Manage VVIP/VIP Master List
+Add VVIP/VIP
+
+Title, Name, Designation
+Country, Catalog
+
+VIP_MASTER_DTLS
+VIP.AUDIT_LOG
+VIP.AUDIT_CHANGES
+
+insert into VIP_MASTER_DTLS (MASTER_ID,TITLE,VIP_NM,DESIGNATION,COUNTRY,CATEGORY,
+RCRE_USER_ID,RCRE_DT,LCHG_USER_ID,LCHG_DT) VALUES ("+maxMailCount+", '"+masterVO.getCreateMasterTitle()
++"', '"+masterVO.getCreateMasterName()+"', '"+masterVO.getCreateMasterDesignation()+"',
+ '"+masterVO.getCreateMasterCountry()+"', '"+masterVO.getCreateMasterCategory()+"', 
+ '"+masterVO.getMasterListcreatedBy()+"', CURRENT_DATE, '"+masterVO.getMasterListupdatedBy()+"', 
+ CURRENT_DATE)";
+ 
+ 
+ UPDATE VIP_MASTER_DTLS SET TITLE='"+vvipVO.getUpdateMasterTitle()+"', 
+VIP_NM='"+vvipVO.getUpdateMasterName()+"'"
+					+ ", DESIGNATION='"+vvipVO.getUpdateMasterDesignation()+"', COUNTRY='"+vvipVO.getUpdateMasterCountry()+"', "
+					+ "CATEGORY='"+vvipVO.getUpdateMasterCategory()+"',LCHG_USER_ID='"+vvipVO.getMasterListupdatedBy()+"',LCHG_DT=CURRENT_DATE "
+					+ "WHERE MASTER_ID='"+vvipVO.getSnoMaster()+"'"
+					
+					
+Delete from VIP_MASTER_DTLS WHERE MASTER_ID='"
++vvipVO.getDelrowIdMaster()+"'
+
+MASTER_ID/
+MasterVVIPVO vvipVO
+staffId
+
+UPDATE VIP_MASTER_DTLS SET PASSPORT_NO=null,NATIONALITY=null,ENRICH_ID=null,
+ENRICH_TIER_CD=null,PNR_SURNAME=null,PNR_FIRSTNAME=null,P_LASTNAME=null,
+P_MIDDLENAME=null,P_FIRSTNAME=null,LCHG_USER_ID='"+staffId+"',
+LCHG_DT = CURRENT_DATE WHERE MASTER_ID='"+vvipVO.getResetRowIdMaster()+"'";
+
+select * from VIP.VIP_MASTER_DTLS order by 
+MASTER_ID
+
+INSERT INTO vip_app_Usr_log (LOG_ID, STAFF_ID, COMMENTS, MAIL_LIST_IND,RCRE_DT, 
+RCRE_USER_ID,LCHG_DT,LCHG_USER_ID) VALUES(?,?,?,?,CURRENT_DATE,?,CURRENT_DATE,?)", 
+count, Loguser, message,indicator, VvipConstants.SRC_VVIP,VvipConstants.SRC_VVIP)
+
+SELECT UP_USER_ID,UP_USER_NAME FROM "+VvipConstants.SchemaName+"
+SRAS_USER_PROFILE WHERE UP_USER_ID='"+staffid.toUpperCase()+"'"
++ " and UP_AI_APPL_ID="+Integer.valueOf(VvipConstants.applicationId)+"
+
+MHSCV_USER.SRAS_USER_PROFILE
+MHSCV_USER.SRAS_USER_ROLE_IDENTITY
+MHSCV_USER.SRAS_USER_FEATURE_IDENTITY
+
+User Id
+Password
+
+UserVO userVO
+
+INSERT INTO VIP.VIP_USER_ACT_AUDIT (LOG_ID,STAFF_ID,MODULE_NAME,ACTION,ACTION_TIME,
+RCRE_USER_ID,RCRE_DT) VALUES(?,?,?,?,CURRENT_DATE,?,CURRENT_DATE)",
+count, staffId, moduleName, action, staffId
+
+String staffId, String moduleName,
+String action
+
+SELECT * FROM "+VvipConstants.SchemaName+"SRAS_USER_ROLE_IDENTITY WHERE UPPER(URI_UP_USER_ID) = ?
+AND URI_AI_APPL_ID = ? ",staffid.toUpperCase(), Integer.valueOf(VvipConstants.applicationId)
+
+SELECT * FROM "+VvipConstants.SchemaName+"SRAS_USER_FEATURE_IDENTITY WHERE UPPER(UFI_UP_USER_ID) = ?  
+AND URI_AI_APPL_ID = ? ",staffid.toUpperCase(), Integer.valueOf(VvipConstants.applicationId.trim()))
+
+
+
+			insert into "+VvipConstants.SchemaName+"SRAS_USER_PROFILE (
+			UP_USER_ID, UP_AI_APPL_ID, UP_USER_NAME,UP_USER_EMAIL, 
+			UP_US_STATUS_ID, CREATED_BY,CREATED_DATE,UPDATED_BY,UPDATED_DATE ) VALUES 
+			(?, ?, ?, ?, ?, ?,CURRENT_DATE,?,CURRENT_DATE)", user.getCreateUserId().toUpperCase(),
+			Integer.valueOf(VvipConstants.applicationId), user.getCreateUserName(), 
+			user.getCreateUserEmail(),  Integer.valueOf(VvipConstants.userStatus), 
+			user.getUserCreatedBy(),user.getUserCreatedBy())
+			
+			insert into "+VvipConstants.SchemaName+"SRAS_USER_ROLE_IDENTITY (
+			URI_UP_USER_ID ,URI_UR_ROLE_ID, URI_AI_APPL_ID,CREATED_BY,
+			CREATED_DATE,UPDATED_BY,UPDATED_DATE
+			) 
+			VALUES (?, ?, ?,?,CURRENT_DATE,?,CURRENT_DATE)", user.getCreateUserId().toUpperCase(),
+			user.getCreateRoleString(), Integer.valueOf(VvipConstants.applicationId.trim()),
+			user.getUserCreatedBy(),user.getUserCreatedBy())
+			
+			insert into "+VvipConstants.SchemaName+"SRAS_USER_FEATURE_IDENTITY (
+			UFI_UP_USER_ID,UFI_UF_FEATURE_ID, URI_AI_APPL_ID,
+			CREATED_BY,CREATED_DATE,UPDATED_BY,UPDATED_DATE
+			)
+			VALUES (?, ?, ?,?,CURRENT_DATE,?,CURRENT_DATE)", user.getCreateUserId().toUpperCase()
+			, feature, Integer.valueOf(VvipConstants.applicationId.trim()),
+			user.getUserCreatedBy(),user.getUserCreatedBy());
+			
+			
+			delete from "+VvipConstants.SchemaName+"SRAS_USER_PROFILE WHERE UP_USER_ID=?
+			AND UP_AI_APPL_ID = ?", id.toUpperCase(), 
+			Integer.valueOf(VvipConstants.applicationId)
+			
+			delete from "+VvipConstants.SchemaName+"SRAS_USER_ROLE_IDENTITY WHERE 
+			URI_UP_USER_ID=? AND URI_AI_APPL_ID=?", id.toUpperCase(), 
+			Integer.valueOf(VvipConstants.applicationId)
+			
+			delete from "+VvipConstants.SchemaName+"SRAS_USER_FEATURE_IDENTITY where
+			UFI_UP_USER_ID=? AND URI_AI_APPL_ID=?", 
+			id.toUpperCase(), Integer.valueOf(VvipConstants.applicationId)
+			
+			
+			SELECT URI_UR_ROLE_ID FROM "+VvipConstants.SchemaName+"SRAS_USER_ROLE_IDENTITY
+			WHERE URI_UP_USER_ID=? AND URI_AI_APPL_ID = ?", user.getUpdateUserId().toUpperCase()
+			, Integer.valueOf(VvipConstants.applicationId.trim())
+			
+			DELETE from "+VvipConstants.SchemaName+"SRAS_USER_ROLE_IDENTITY WHERE URI_UP_USER_ID=?
+			AND URI_AI_APPL_ID = ?", user.getUpdateUserId().toUpperCase(), 
+			Integer.valueOf(VvipConstants.applicationId.trim())
+			
+			INSERT INTO "+VvipConstants.SchemaName+"SRAS_USER_ROLE_IDENTITY 
+			(URI_UP_USER_ID, URI_UR_ROLE_ID, URI_AI_APPL_ID,CREATED_BY,CREATED_DATE,
+			UPDATED_BY,UPDATED_DATE) VALUES (?, ?, ?,?,CURRENT_DATE,?,CURRENT_DATE) ",
+			user.getUpdateUserId().toUpperCase(), user.getUpdateRoleString(), 
+			Integer.valueOf(VvipConstants.applicationId.trim()),
+			user.getUserUpdatedBy(),user.getUserUpdatedBy()
+			
+			DELETE from "+VvipConstants.SchemaName+"SRAS_USER_FEATURE_IDENTITY 
+			WHERE UFI_UP_USER_ID=? AND URI_AI_APPL_ID = ?", user.getUpdateUserId()
+			.toUpperCase(), Integer.valueOf(VvipConstants.applicationId.trim()
+			
+			Insert into "+VvipConstants.SchemaName+"SRAS_USER_FEATURE_IDENTITY 
+			(UFI_UP_USER_ID, UFI_UF_FEATURE_ID, URI_AI_APPL_ID,CREATED_BY,CREATED_DATE,
+			UPDATED_BY,UPDATED_DATE) VALUES (?, ?, ?,?,CURRENT_DATE,?,CURRENT_DATE)", 
+			user.getUpdateUserId().toUpperCase(), feature, 
+			Integer.valueOf(VvipConstants.applicationId.trim()),user.getUserUpdatedBy(),
+			user.getUserUpdatedBy()
+			
+			select PAX_NM, CATEGORY, COUNTRY, DESIGNATION, PNR, PNR_ID, 
+			FLT_NBR, BKG_AGT_CD, TO_CHAR(FLT_DT,'DD/MM/YYYY') as fltDate,"
+			+ "BKG_AGT_CD, SEG, OSI_TXT, ENRICH_ID, ENRICH_TIER_CD, 
+			IS_VERIFIED, TABLE_FLG, PERCNT_MATCH, VIP_NM, BKD_ID, "
+			+ "MASTER_ID from VIP_BKG_DTLS_V WHERE FLT_DT>=date_trunc
+			('day',CURRENT_DATE) and FLT_DT<date_trunc
+			('day',CURRENT_DATE+"+range+") order by FLT_DT"
+			
+			VIP.VIP_BKG_DTLS_V
+			
+			View Booked VVIP/VIP List
+			Displaying VVIP/VIP PAX for 
+			flights
+					
+			Select PAX_NM,CATEGORY,COUNTRY,DESIGNATION,PNR,PNR_ID,FLT_NBR,SEG,"
+			+ " OSI_TXT,BKG_AGT_CD,TO_CHAR(FLT_DT,'DD/MM/YYYY') as fltDate, 
+			ENRICH_ID, ENRICH_TIER_CD,VIP_NM, BKD_ID  from VIP_BKG_DTLS_V 
+			where FLT_DT>=date_trunc('day',CURRENT_DATE) and 
+			FLT_DT<date_trunc('day',CURRENT_DATE+"+duration+") ";
+
+
+Select PAX_NM,CATEGORY,COUNTRY,DESIGNATION,PNR,PNR_ID,FLT_NBR,SEG,"
++ " OSI_TXT,BKG_AGT_CD,TO_CHAR(FLT_DT,'DD/MM/YYYY') as fltDate, 
+ENRICH_ID, ENRICH_TIER_CD, PERCNT_MATCH, VIP_NM, BKD_ID from VIP_BKG_DTLS_V
+ where FLT_DT>=date_trunc('day',CURRENT_DATE) and FLT_DT<date_trunc
+ ('day',CURRENT_DATE+"+duration+") and IS_VERIFIED = 'Y'"
+ 
+ Export PDF/Excel (All)
+ 
+int duration,
+String category
+
+Send Mail Notification
+
+select LOWER(SEG) as SEG from VIP_BKG_DTLS_V where FLT_DT>=date_trunc
+('day',CURRENT_DATE) and FLT_DT<date_trunc('day',CURRENT_DATE+"+duration+")
+ order by FLT_DT
+ 
+ ManualBookingVO manualBookingVO, 
+	String userId
+	
+	Select VIP_NM from VIP_MASTER_DTLS where 
+	MASTER_ID = "+manualBookingVO.getVipId()+"
+	
+	SELECT MAX(BKD_ID) AS BKD_ID_MAX FROM VIP.USER_VIP_BKG_DTLS
+	
+	Insert into VIP.USER_VIP_BKG_DTLS (
+	BKD_ID, PAX_NM, MASTER_ID, 
+	FLT_NBR, FLT_DT, PNR, SEGMENT, 
+	RCRE_DT, RCRE_USER_ID, IS_VERIFIED
+	) 
+	VALUES ('"+maxBookedCount+"', '"+vipName+"', "+manualBookingVO.getVipId()+",
+	'"+manualBookingVO.getFlightNumber()+"', TO_DATE
+	('"+manualBookingVO.getFlightDate()+"','MM/DD/YYYY'), 
+	'"+manualBookingVO.getPnr()+"', '"+segment+"', CURRENT_DATE, '"+userId+"', 'Y')
+			
+	VIP.VIP_MASTER_DTLS
+	VIP.USER_VIP_BKG_DTLS
+	
+	String vipId, String bkdId,
+	String staffId
+	
+	MASTER_ID, IS_VERIFIED, LCHG_USER_ID,
+	LCHG_DT=CURRENT_DATE
+	
+	Email Distribution List
+	
+	Insert into vip_email_list (SEQ_NO, CATEGORY,STAFF_NM, DESIGNATION, 
+	BASE_STN,  EMAIL, RCRE_USER_ID,RCRE_DT,LCHG_USER_ID,LCHG_DT,IS_DEFAULT)
+	VALUES ("+maxMailCount+", '"+emailVO.getCreateCategoryMail()+"', 
+	'"+emailVO.getCreateNameMail()+"', '"+emailVO.getCreateDesignationMail()+"',
+	'"+emailVO.getCreateBaseMail()+"', '"+emailVO.getCreateEmailMail()+"', 
+	'"+emailVO.getCreatedBy()+"', CURRENT_DATE, '"+emailVO.getUpdatedBy()+"',
+	CURRENT_DATE, '"+emailVO.getIsDefaultStr()+"')"; 
+	
+	UPDATE vip_email_list SET STAFF_NM='"+emailVO.getUpdateNameMail()+"', CATEGORY='"+emailVO.getUpdateCategoryMail()+"'"
+					+ ", DESIGNATION='"+emailVO.getUpdateDesignationMail()+"', BASE_STN='"+emailVO.getUpdateBaseMail()+"', "
+					+ "EMAIL='"+emailVO.getUpdateEmailMail()+"',LCHG_USER_ID='"+emailVO.getUpdatedBy()+"',LCHG_DT=CURRENT_DATE ,IS_DEFAULT='"+emailVO.getUpdateIsDefaultStr()+"'"
+					+ " WHERE SEQ_NO='"+emailVO.getSnoMail()+"'
+
+
+	STAFF_NM, CATEGORY, DESIGNATION, BASE_STN,
+	EMAIL, LCHG_USER_ID, LCHG_DT
+	
+	VIP.AUDIT_LOG
+	VIP.AUDIT_CHANGES
+	
+	SELECT UP_USER_ID, UP_AI_APPL_ID,UFI_UF_FEATURE_ID, min(UP_USER_NAME) AS UP_USER_NAME,"
+			+ " min(UP_USER_EMAIL) AS UP_USER_EMAIL,min(UP_US_STATUS_ID) AS UP_US_STATUS_ID,min(UP_LAST_LOGGED_IN) AS UP_LAST_LOGGED_IN, min(CREATED_BY) AS CREATED_BY,"
+			+ " min(CREATED_DATE) AS CREATED_BY,min(UPDATED_BY) AS UPDATED_BY, min(UPDATED_DATE) AS UPDATED_DATE,min(URI_UR_ROLE_ID) AS URI_UR_ROLE_ID"
+			+ " from (SELECT B.UP_USER_ID UP_USER_ID, B.UP_AI_APPL_ID UP_AI_APPL_ID,"
+			+ " (SELECT  STRING_AGG(F.UFI_UF_FEATURE_ID, ',' ORDER BY F.UFI_UP_USER_ID) "
+			+ " FROM "+VvipConstants.SchemaName+"SRAS_USER_FEATURE_IDENTITY F WHERE "
+			+ " B.UP_USER_ID   = F.UFI_UP_USER_ID AND B.UP_AI_APPL_ID  = F.URI_AI_APPL_ID AND F.URI_AI_APPL_ID = ?) UFI_UF_FEATURE_ID,"
+			+ " B.UP_USER_NAME UP_USER_NAME,B.UP_USER_EMAIL UP_USER_EMAIL,B.UP_US_STATUS_ID UP_US_STATUS_ID,"
+			+ " B.UP_LAST_LOGGED_IN UP_LAST_LOGGED_IN,B.CREATED_BY CREATED_BY, B.CREATED_DATE CREATED_DATE,"
+			+ " B.UPDATED_BY UPDATED_BY,B.UPDATED_DATE UPDATED_DATE,D.URI_UR_ROLE_ID URI_UR_ROLE_ID FROM "+VvipConstants.SchemaName+"SRAS_USER_PROFILE B,"
+			+ " "+VvipConstants.SchemaName+"SRAS_USER_ROLE_IDENTITY D,"+VvipConstants.SchemaName+"SRAS_USER_FEATURE_IDENTITY E WHERE D.URI_UP_USER_ID = E.UFI_UP_USER_ID"
+			+ "	AND D.URI_AI_APPL_ID   = E.URI_AI_APPL_ID "
+			+ "AND B.UP_AI_APPL_ID    = E.URI_AI_APPL_ID "
+			+ "AND B.UP_USER_ID       = E.UFI_UP_USER_ID "
+			+ "AND D.URI_AI_APPL_ID   = ? "
+			+ "AND E.URI_AI_APPL_ID   = ? "
+			+ "AND B.UP_AI_APPL_ID    = ? AND E.UFI_UP_USER_ID  !=?) AS sub1 "
+			+ "GROUP BY UP_USER_ID, UP_AI_APPL_ID, UFI_UF_FEATURE_ID";
+			
+			
+			UP_USER_ID, UFI_UF_FEATURE_ID,
+			UP_USER_NAME, UP_USER_EMAIL, 
+			URI_UR_ROLE_ID
+			
+			select 
+			AUDIT_ID,MODULE_NAME,PAX_NM,MODIFIED_BY,
+			MODIFIED_DATE, FIELD_NAME,OLD_VALUE,NEW_VALUE,
+			ACTION_NAME,USERNAME,USER_EMAIL_ID
+			
+			TO_CHAR(MODIFIED_DATE,'YYYY/MM/DD HH24:MI:SS') as modifiedDate ,FIELD_NAME,OLD_VALUE,NEW_VALUE,ACTION_NAME,USERNAME,USER_EMAIL_ID from VIP.AUDIT_VIEW_V
+
+			PNR_PAX_NM,COUNTRY,PNR,PNR_ID,
+			FLT_NO,SEGMENT,BKG_AGT_CD,
+			ENRICH_ID,ENRICH_TIER_CD
+			
+			Export List/
+			Email List
+			
+			MHVIP 
+			(bookedEnrichPlatinum.jsp)
+			
+			"UPDATE VIP_MASTER_DTLS SET 
+			PASSPORT_NO,NATIONALITY,ENRICH_ID,ENRICH_TIER_CD,
+			PNR_SURNAME,PNR_FIRSTNAME,P_LASTNAME,
+			P_MIDDLENAME,P_FIRSTNAME,LCHG_USER_ID,LCHG_DT = CURRENT_DATE WHERE MASTER_ID='""+vvipVO.getResetRowIdMaster()+""'"";"
+
+"UPDATE VIP_MASTER_DTLS SET 
+TITLE, VIP_NM, DESIGNATION, COUNTRY,
+ CATEGORY,LCHG_USER_ID,LCHG_DT
+
+
+
+
+URI_UP_USER_ID, URI_UR_ROLE_ID, URI_AI_APPL_ID,
+CREATED_BY,CREATED_DATE,UPDATED_BY,UPDATED_DATE
+
+UFI_UP_USER_ID, UFI_UF_FEATURE_ID, URI_AI_APPL_ID,
+CREATED_BY,CREATED_DATE, UPDATED_BY,UPDATED_DATE

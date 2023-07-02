@@ -1,0 +1,31 @@
+SSO  - Single Sign On
+cookies me session id rkhega...
+
+
+To support MHCLRS application, kindly provide server access for UAT and PROD 
+
+UAT Application Server :- IP address : 10.221.12.29 
+(hostname : MASG-3SRASJAVAAPP1)
+
+Prod Application Server :- IP address : 10.221.4.29 
+(hostname : MASG-1SRASJAVAAPP1)
+
+
+Kindly provide server access for UAT and PROD for MHCLRS application to below mail ids-
+
+ext_mujeebazainab.khan@malaysiaairlines.com
+(V104244)
+ext_abdeali.tinwala@malaysiaairlines.com
+(V104243)
+ext_aishwary.joshi@malaysiaairlines.com
+(V104245)
+
+
+
+To support MHMessenger app, kindly provide me UAT server access
+UAT Application Server :- IP address : 10.221.12.15 
+(hostname : 3mobapp.mas.net)
+
+Prod Application Server :- IP address : 10.221.4.24 
+(hostname : 1mobapp1.mas.net)
+

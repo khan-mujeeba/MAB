@@ -1,0 +1,19 @@
+
+
+
+--------------------------------------------------create  Raja-------------------------------------------
+keytool -genkey -alias importkey -keyalg RSA -keystore "D:\SCV_RTMM\prod.jks" -keysize 2048 -validity 365
+
+-------------------------------------------------- Export Raja ---------------------------------------------
+keytool -export -alias importkey -file "D:\SCV_RTMM\prod.der" -keystore "D:\SCV_RTMM\prod.jks" -validity 365
+
+
+
+N = MHURREPROD
+OU = SWS2020
+O = MH
+L = KLIA
+S = SELANGOR
+C = MY
+
+

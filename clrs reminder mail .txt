@@ -1,0 +1,76 @@
+<p><span style="font-family: Times New Roman,serif; font-size: medium;"><span style="font-size: 12pt;"><span style="font-family: Calibri,sans-serif; font-size: small;"><span style="font-size: 11pt;">Based on CMS records, we note that you reported sick on the following days. However, there is no record of Medical Certificate (&ldquo;MC&rdquo;) submitted or approved in HC Sytsem</span></span></span></span><span style="font-family: Times New Roman,serif; font-size: medium;"><span style="font-size: 12pt;"><span style="color: red; font-family: Calibri,sans-serif; font-size: small;"><span style="font-size: 11pt;">&nbsp;</span></span><span style="font-family: Calibri,sans-serif; font-size: small;"><span style="font-size: 11pt;">(PULSERA) as at today for the dates below:</span></span></span></span></p>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+	<table align=left style="width: 700px;height: 250px;border: thin; border-style: solid;margin: 0px auto;">
+		<tr style="width: 600px; height: 200px">
+		
+			<td style="font-family: Calibri,sans-serif; font-size: 11pt;line-height: 115%; vertical-align: top;">
+			
+			<br>
+			Dear Crew,
+			<br>
+			<br>
+			
+		     <p><span style="font-family: Times New Roman,serif; font-size: medium;"><span style="font-size: 12pt;"><span style="font-family: Calibri,sans-serif; font-size: small;"><span style="font-size: 11pt;">Based on CMS records, we note that you reported sick on the following days. However, there is no record of Medical Certificate (&ldquo;MC&rdquo;) submitted or approved in HC Sytsem</span></span></span></span><span style="font-family: Times New Roman,serif; font-size: medium;"><span style="font-size: 12pt;"><span style="color: red; font-family: Calibri,sans-serif; font-size: small;"><span style="font-size: 11pt;">&nbsp;</span></span><span style="font-family: Calibri,sans-serif; font-size: small;"><span style="font-size: 11pt;">(PULSERA) as at today for the dates below:</span></span></span></span></p>
+		     <br>
+		     <table ><thead><tr><th>Staff No</th><th>Staff Name</th><th>Date</th><th>Status</th></tr></thead><tbody><td>2103311</td><td>DEVAN KANDIAH KANAPATHI PILLAI</td><td>2022-04-26</td><td>NOT RAISED</td></tr></tbody></table>
+             <br>
+			If you have submitted your MC for the dates above, kindly check your submission status in PULSERA.
+			<br>
+			<br>
+			If you have not submitted your MC, kindly do so soonest.
+			<br>
+			<span style="color: black;font-family: Calibri,sans-serif; font-size: 11pt; line-height: normal; font-weight: bold;">
+			<br>
+			<br>
+			<br>
+			Thank you
+			</span>
+			<span style="color: #1F497D;font-family: Calibri,sans-serif; font-size: 11pt; line-height: normal; font-weight: bold;">
+			<br>
+			Staff Services
+			</span>
+			<span style="color: #1F497D;font-family: Calibri,sans-serif; font-size: 11pt; line-height: normal; font-weight: bold;">
+			<br>
+			Flight Operations
+			</span>
+				<br>
+					<br>
+					<i>
+			This is an auto-generated email. Please do not reply to this email address.</i>
+				<br>
+					<i> &copy; 2022 Malaysia Airlines Berhad</i>
+
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+
+
+
+Illegal whitespace in address in string ``Muhammad Azrin Ng.abdullah01@malaysiaairlines.com''] with root cause

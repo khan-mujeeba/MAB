@@ -1,0 +1,46 @@
+	
+	Enter ip - 10.223.4.165
+	putty pr login with our id
+	$ su mfpadm 
+	pass - mfp@adm
+	/opt/IBM/wlp/bin/server stop mfp1
+	
+	after activity---------then app
+	
+	/opt/IBM/wlp/bin/server start mfp1
+	
+	parallely
+	enter ip - 10.223.6.134
+	putty pr login with our id
+	$ su mfpdbadm  
+	pass - mfpdb@adm 
+	db2stop
+	
+	Stop -  sudo /opt/IBM/HTTPServer/bin/apachectl stop
+
+	
+	after activity---------first db will strt
+	
+	db2start
+	
+	Start - sudo /opt/IBM/HTTPServer/bin/apachectl start
+	
+	then start the mfp console https://10.223.4.165:9443/mfpconsole thiisunsafe
+	admin/admin
+	
+	then hit the app url
+	
+	then check the logs
+		ip: 10.223.4.165
+		id/pass: mfpadm/mfp@adm
+		log path: /opt/IBM/wlp/usr/servers/mfp1/logs
+		file: messages.log 
+
+IP				  Hostname		Username	Password
+10.224.4.35		ICTY-4MFPAPP1	mfpadm		mfp@123
+10.224.6.40		ICTY-4MFPDB1	mfpdbadm	mfp@123
+10.223.4.165	CX2-1MFPAPP1	mfpadm		mfp@adm
+10.223.2.43 	CX2-1MFPWEB1	mfpadm 		mfp@adm
+10.223.6.134 	CX2-1MFPDB1 	mfpdbadm 	mfpdb@adm 
+
+10.223.6.134

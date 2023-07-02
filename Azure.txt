@@ -1,0 +1,75 @@
+PoC (Proof Of Concept)
+---------------------
+Steps:
+1. Create Azure id - Free account - done
+	close the services as soon as you are over with it
+2. Azure Active Directory/AD
+What is this? - done
+How to integrate with Java? - in progress
+How to add members? 
+How to Remove members?
+How to update members?
+Using Java
+
+
+----------Azure AD----------------
+Azure Active Directory is Microsoft’s multi-tenant, cloud-based directory and identity management service. 
+multi-tenant service that provides enterprise level identity and access mngmnt for the cloud.
+For an organization, Azure AD helps employees sign up to multiple services and access them anywhere over the cloud 
+with a single set of login credentials.
+
+In Azure Active Directory (Azure AD), authentication involves more than just the verification of a username and password. To improve security and reduce the need for help desk assistance, Azure AD authentication includes the following components:
+
+- Self-service password reset
+- Azure AD Multi-Factor Authentication
+- Hybrid integration to write password changes back to on-premises environment
+- Hybrid integration to enforce password protection policies for an on-premises environment
+- Passwordless authentication
+
+
+azure:
+   activedirectory:
+	tenant-id: 525acd43-e1d1-4070-8ebb-2801d916e63d
+	client-id: 369af494-b854-4218-913d-d43c9a63275f
+	client-secret: oEA7Q~AZ99AXcDzOBMvKDkLOyd6BNcZRC45xv
+	user-group:
+	       allowed-groups: group1
+
+pass - User@12345
+
+client-
+	id
+	secret
+	scope
+	consent
+	token
+Azure key vault - to store the passwords
+
+outlook, skype, onedrive - usind AAD
+
+
+azure:
+    activedirectory:
+        tenant-id: 525acd43-e1d1-4070-8ebb-2801d916e63d
+        client-id: 369af494-b854-4218-913d-d43c9a63275f
+        client-secret: oEA7Q~AZ99AXcDzOBMvKDkLOyd6BNcZRC45xv
+        user-group:
+            allowed-groups: group1
+
+
+
+git clone https://github.com/Azure-Samples/ms-identity-java-spring-tutorial.git
+    cd ms-identity-java-spring-tutorial
+    cd 1-Authentication/sign-in
+
+
+----java-spring-webapp-auth
+application(client id): 61a85a32-99ff-4b7a-b522-b940430d9402
+client secret value : DzW7Q~UOP6vjXLdh.txVYkAIqT-KQgp2dA2YR
+client secret id : dd0a21a4-ff9c-43a1-90ec-4b65ffdc9cb1
+
+
+
+6522667200034595
+6070936166288479
+4251760000778677

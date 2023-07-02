@@ -1,0 +1,88 @@
+select
+   RTD_SC_ITEM_ID,
+   RTD_TRIG_ID,
+   RTD_COMMAND_TRIG,
+   RTD_RESPONSE,
+   CREATED_DATE,
+   FLT_NBR,
+   FLT_SKED_DATE_UTC,
+   RC_ITEM_CD,
+   CREATED_BY 
+from
+   (
+      select
+         ROWNUM R,
+         rtd.RTD_SC_ITEM_ID,
+         rtd.RTD_TRIG_ID,
+         rtd.RTD_COMMAND_TRIG,
+         rtd.RTD_RESPONSE,
+         to_char(rtd.CREATED_DATE, 'DD-MM-YYYY HH24:MI:SS') as CREATED_DATE,
+         flt.FLT_NBR,
+         flt.FLT_SKED_DATE_UTC,
+         rc.RC_ITEM_CD,
+         rtd.CREATED_BY 
+      from
+         RRTM_CONFIGURATOR rc,
+         RRTM_TRIGGER_DATA rtd,
+         AODB_FLIGHT_SKED flt 
+      where
+         rtd.RTD_FLT_SKED_ID = flt.ID 
+         AND rc.RC_ITEM_ID = rtd.RTD_SC_ITEM_ID 
+         AND flt.FLT_SKED_DATE_UTC = to_date('2020-08-12', 'yyyy-mm-dd hh24:mi:ss') 
+      order by
+         rtd.RTD_TRIG_ID
+   )
+   
+   
+SELECT * FROM RRTM_CONFIGURATOR 
+
+SELECT * FROM RRTM_TRIGGER_DATA ORDER BY CREATED_DATE DESC
+
+SELECT * FROM MHSCV.AODB_FLIGHT_SKED ORDER BY FLT_SKED_DATE_UTC DESC
+   
+
+INSERT INTO MHSCV.AODB_FLIGHT_SKED
+(ID, FK_STATION_ORIGIN_ID, FK_STATION_DEST_ID, FK_AIRCRAFT_ID, FLT_NBR, FLT_ACFT_REGN, FLT_OPERATION_TYPE, FLT_ISMAINTENANCE_ACFT, FLT_SECTOR_TYPE, FLT_ISCREW_TRANSFER, FLT_ISMIXED_TRANSIT, FLT_ISFRESH_CREWSET, FLT_AIRLINE, FLT_SKED_DATE_UTC, FLT_SKED_ORIGIN, FLT_SKED_DESTINATION, FLT_SKED_STD_UTC, FLT_SKED_STA_UTC, FLT_SKED_PLANNED_FLEET, FLT_LATEST_ACFT, CREATED_BY, CREATED_TIME, MODIFIED_BY, MODIFIED_TIME, STATUS, FLT_MEAL_UPLIFT_STN, FLT_DEPARTURE_STATUS, FLT_ARRIVAL_STATUS, FLT_LTS_DEP_ARP_CD, FLT_LTS_ARV_ARP_CD, FLT_LTS_DEP_DT, FLT_LTS_ARV_DT, OFM_STATUS, STM_STATUS, FLT_ISDIVERTED, FLT_ACTUAL_GATE, ISACTUAL_WASTE_REMOVED, ISPLANNED_WASTE_REMOVAL, ISSSR_CHECKED, ISTRAINING_FLIGHT, FLT_PLANNED_GATE, FLT_SKED_ETD_UTC, FLT_SKED_ETA_UTC, FLT_SKED_ATD_UTC, FLT_SKED_ATA_UTC, FLT_SKED_AIR_UTC, FLT_SKED_LND_UTC, FLT_SKED_STD_MLT, FLT_SKED_STA_MLT, FLT_SKED_STD_LT, FLT_SKED_STA_LT, FLT_SKED_ETD_LT, FLT_SKED_ETA_LT, FLT_SKED_ATD_LT, FLT_SKED_ATA_LT, FLT_SKED_AIR_LT, FLT_SKED_LND_LT, FLT_SKED_ETD_MLT, FLT_SKED_ETA_MLT, FLT_SKED_ATD_MLT, FLT_SKED_ATA_MLT, FLT_SKED_AIR_MLT, FLT_SKED_LND_MLT)
+VALUES(1025415, 27104, 24122, 141, '0140', '9MMTE', 'J', NULL, NULL, NULL, NULL, NULL, 'MH', TIMESTAMP '2020-08-12 00:00:00.000000', 'SYD', 'KUL', TIMESTAMP '2020-08-12 12:10:00.000000', TIMESTAMP '2020-08-12 21:00:00.000000', '333', '333', 'WMBAPPLICATION', TIMESTAMP '2020-08-12 05:25:06.901506', 'WMBAPPLICATION', TIMESTAMP '2020-08-12 05:25:06.912267', 'Y', NULL, 'SCH', 'SCH', 'SYD', 'KUL', TIMESTAMP '2020-08-12 00:00:00.000000', TIMESTAMP '2020-08-12 00:00:00.000000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, TIMESTAMP '2020-08-12 12:10:00.000000', TIMESTAMP '2020-08-12 21:00:00.000000', NULL, NULL, NULL, NULL, TIMESTAMP '2020-08-12 20:10:00.000000', TIMESTAMP '2020-06-18 05:00:00.000000', TIMESTAMP '2020-08-12 22:10:00.000000', TIMESTAMP '2020-08-12 05:00:00.000000', TIMESTAMP '2020-08-12 22:10:00.000000', TIMESTAMP '2020-08-13 05:00:00.000000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+
+DELETE FROM MHSCV.AODB_FLIGHT_SKED
+WHERE ID=1025415;
+
+
+=======POSTGRES====
+
+SELECT rtd_sc_item_id, 
+       rtd_trig_id, 
+       rtd_command_trig, 
+       rtd_response, 
+       created_date, 
+       flt_nbr, 
+       flt_sked_date_utc, 
+       rc_item_cd, 
+       created_by 
+FROM   ( 
+                SELECT   rtd.rtd_sc_item_id, 
+                         rtd.rtd_trig_id, 
+                         rtd.rtd_command_trig, 
+                         rtd.rtd_response, 
+                         To_char(rtd.created_date, 'DD-MM-YYYY HH24:MI:SS') AS created_date, 
+                         flt.flt_nbr, 
+                         flt.flt_sked_date_utc, 
+                         rc.rc_item_cd, 
+                         rtd.created_by 
+                FROM     mhscv_user.rrtm_configurator rc, 
+                         mhscv_user.rrtm_trigger_data rtd, 
+                         mhscv_user.aodb_flight_sked flt 
+                WHERE            
+						rtd.RTD_FLT_SKED_ID = flt.ID 
+				 AND rc.RC_ITEM_ID = rtd.RTD_SC_ITEM_ID 
+				 AND flt.FLT_SKED_DATE_UTC = to_date('2020-01-07', 'yyyy-mm-dd hh24:mi:ss') 
+                ORDER BY rtd.rtd_trig_id ) AS sub limit 10 - 0 offset 0
+				
+
+Select * FROM MHSCV_USER.AODB_FLIGHT_SKED where flt_sked_date_utc='2021-01-07'
+WHERE ID=1547091;
+
+
+==============================================================================
