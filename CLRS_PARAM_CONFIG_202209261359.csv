@@ -1,0 +1,28 @@
+"PARAM_ID","MODULE_NAME","PARAM_NAME","PARAM_VALUE","CREATED_DATE","CREATED_BY"
+4,MAIL,MAIL_CONTENT,"<p><span style=""font-family: Times New Roman,serif; font-size: medium;""><span style=""font-size: 12pt;""><span style=""font-family: Calibri,sans-serif; font-size: small;""><span style=""font-size: 11pt;"">Based on CMS records, we note that you reported sick on the following days. However, there is no record of Medical Certificate (&ldquo;MC&rdquo;) submitted or approved in HC Sytsem</span></span></span></span><span style=""font-family: Times New Roman,serif; font-size: medium;""><span style=""font-size: 12pt;""><span style=""color: red; font-family: Calibri,sans-serif; font-size: small;""><span style=""font-size: 11pt;"">&nbsp;</span></span><span style=""font-family: Calibri,sans-serif; font-size: small;""><span style=""font-size: 11pt;"">(PULSERA) as at today for the dates below:</span></span></span></span></p>","2018-03-06",EXT260170
+5,JOB,SCHEDULE_TIME,"11:30","2018-03-06",EXT260170
+6,ROLES,USERROLES,User,"2018-03-06",EXT260170
+7,ROLES,USERROLES,Admin,"2018-03-06",EXT260170
+8,JOB,MONTHLY_DATES,"07-09-2022,24-09-2022,25-09-2022,26-09-2022,27-09-2022,28-09-2022,29-09-2022,30-09-2022","2018-01-23",EXT657948
+9,JOB,MIN_DATE,"07","2018-01-30",EXT657948
+10,JOB,FREQUENCY,"7","2018-01-30",EXT657948
+11,JOB,TIME_LIMIT,"10:30","2018-02-14",EXT657948
+12,MAIL,TO_LIST_USERS,"rodzlin.ramli@malaysiaairlines.com,khamisah.khalidi@malaysiaairlines.com","2018-02-14",EXT260170
+13,MAIL,CC_LIST_USERS,"ext_prashant.chauhan@malaysiaairlines.com, ext_krishnakant.bairagi@malaysiaairlines.com","2018-02-14",EXT260170
+14,MAIL,TO_LIST_NCMS_FAIL,"GD_AMS_NCMS@malaysiaairlines.com,GD_AMS_EAI@malaysiaairlines.com, ext_prashant.chauhan@malaysiaairlines.com","2018-02-14",EXT657948
+15,MAIL,TO_LIST_ERROR_SUPPORT,"ext_prashant.chauhan@malaysiaairlines.com, ext_palash.pandit@malaysiaairlines.com, ext_krishnakant.bairagi@malaysiaairlines.com","2018-02-14",EXT657948
+16,MAIL,TO_LIST_NCMS_ZERO_RECORDS,"GD_AMS_NCMS@malaysiaairlines.com, ext_prashant.chauhan@malaysiaairlines.com","2018-03-06",EXT260170
+18,MAIL,TO_LIST_SUPPORT,"ext_prashant.chauhan@malaysiaairlines.com,ext_krishnakant.bairagi@malaysiaairlines.com","2018-03-06",EXT260170
+19,MAIL,CC_LIST_SUPPORT,"ext_prashant.chauhan@malaysiaairlines.com,ext_palash.pandit@malaysiaairlines.com,ext_krishnakant.bairagi@malaysiaairlines.com,ext_rajasekharreddy.kasireddy@malaysiaairlines.com, ext_manish.barapatre@malaysiaairlines.com","2018-03-06",EXT260170
+20,MAIL,TO_LIST_PULSERA_FAIL,"nurazniyati.abdwahid@malaysiaairlines.com, ams.corporateservices@malaysiaairlines.com,GD_AMS_EAI@malaysiaairlines.com, ext_prashant.chauhan@malaysiaairlines.com","2018-03-06",EXT260170
+21,MAIL,TO_LIST_PULSERA_ZERO_RECORDS,"mohdkhairulnizam.ahmad@malaysiaairlines.com,nurazniyati.abdwahid@malaysiaairlines.com, ext_prashant.chauhan@malaysiaairlines.com,ext_manish.barapatre@malaysiaairlines.com","2018-03-06",EXT260170
+22,JOB,MONTHRANGE,"1","2018-07-04",EXT260170
+23,MAIL,CABINCREW,"LS,IFS,CS,FS","2018-05-22",EXT260170
+24,MAIL,TECHCREW,"CAPT,CDT,FO,SO","2018-05-22",EXT260170
+25,JOB,LEAVETYPE,"MC1,MC2,MCH,MCEX,MCHEX,MCNP,MCCU,MCH1,MCHEX1,MCHS,MCRT,MCS,MCXX","2018-09-10",EXT260170
+26,REPORT,STATUSTYPE,"APPROVED,CANCELLED,REJECTED,NOT RAISED,PENDING","2020-07-24",V101679
+27,LEAVE_MAPPING,Medical Leave,"MC1,MC2,MCEX,MCNP,MCS,MCXX,MCCU,MCRT,MCH,MCH1,MCH2,MCHEX,MCHEX1","2021-07-06",V101652
+28,LEAVE_MAPPING,Hospitalization Leave,"MCH1,MCHEX,MCH,MCH2,MCHEX1,MC1,MC2,MCEX","2021-07-06",V101652
+29,LEAVE_MAPPING,Prolonged Illness Leave - Half Pay,"MCH1,MCHEX,MCH,MCH2,MCHEX1,MC1,MC2,MCEX,MCH LTA,MCHEX LTA","2021-07-06",V101652
+30,LEAVE_MAPPING,Prolonged Illness Leave - Full Pay,"MCH1,MCHEX,MCH,MCH2,MCHEX1,MC1,MC2,MCEX,MCH LTA,MCHEX LTA","2021-07-06",V101652
+31,LEAVE_MAPPING,Prolonged Illness Leave - No Pay,"MCH1,MCHEX,MCH,MCH2,MCHEX1,MC1,MC2,MCEX,MCH LTA,MCHEX LTA","2021-07-06",V101652
