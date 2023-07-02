@@ -1,0 +1,99 @@
+----------Angular---------------
+
+------------Day - 01------------------
+
+-> single page application design framework
+component based framework
+-> use html and typescript(superset of javascript)
+-> provides built in features for animations, navigation, toolbars, menus..
+-> code is written in typescript which compiles to js and displays the same in the browser.
+-> latest version - Angular 12
+-> TS Lint --> ESLint
+-> ngcc update for faster build
+-> Webpack 5 support - cjs tree-shaking
+
+-> Main building blocks of angular application--
+1. Modules
+2. Components
+3. Templates- html part (combine html with angular markup)
+4. Metadata - data of data
+5. Databinding - one way, two way
+6. Directives
+7. Services
+8. dependency Injection
+
+Template to Component - Event binding
+Component to Template - Property binding
+
+Angular Ngmodules
+for router service - Router NgModule
+
+Commands-
+
+npm install -g @angular/cli
+ng new angular-app
+cd angular-app
+npm run start/ ng serve
+
+
+
+------------Day - 02------------------
+
+-> ng generate component product-list
+ generating component thru cli - 4 files are generated: html, ts, css, spec.ts (for test cases)
+
+-> ng g c product-list --skipTests
+ for skipping test file generation
+
+selectors:
+ attribute( [] ), class ( . )
+
+2 way data binding- 
+ combination of property binding and event binding together
+
+
+
+------------Day - 03------------------
+
+Directives - instructions in the DOM
+
+Directive class are declared as @directive
+
+Types-- 
+Component (@Component)
+Structural - manipulates the structure of DOM (*ngIf, *ngFor, *ngElse)
+Attribute - chng the look and behaviour of DOM elements (ngClass, ngStyle)
+
+ngIf - used to add or remove html elements acc to expression
+ removes the entire element along with its sub tree from the DOM 
+
+ngFor - used to repeat a portion of html template once per each item from an iterable list 
+ similar to ngRepeat in AngularJS
+
+created angular-shopping-list app
+ npm i
+ npm install --save bootstrap
+ type this in styles.css - @import "~bootstrap/dist/css/bootstrap.css"
+
+
+
+------------Day - 04------------------
+Decorators: use for data flow between components
+ 1. Input decorator - Parent -> Child
+ 2. Output decorator - Child -> Parent
+Local Reference
+@ViewChild - get the value of local reference from ts code
+LifeCycle Hooks
+
+
+
+Angular project---
+check apis first on postman
+No integration for fb and google just buttons
+after login receiving token...store token in local session browser
+dont focus on icons
+just symbol for locate map...no need for google map integration
+calculate rating index -- 0.6<x higher 0.5 tk 3 and after 0.6 it will be 4
+no need to add the zoom effect...change the pointer
+no need to integrate with backend
+
