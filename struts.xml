@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<package name="default" namespace="/" extends="struts-default">
+	
+	<interceptors>
+			<interceptor name="loginCheck" class="loginInterceptor">
+			</interceptor>
+			<interceptor-stack name="logginStack">
+				<interceptor-ref name="loginCheck" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+	</interceptors>
+	
+  	<action name="login" method="loginValidateOld" class="loginAction">  
+			<result name="login-success" type="redirectAction">
+				<param name="actionName">getUserInformation</param>
+			</result>
+			<result name="input">index.jsp</result>
+			<result name="error">error.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			 <result name="login-error">error.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+	</action>
+	
+  
+	<action name="loginsso" method="loginValidate" class="loginAction">
+			<result name="login-success" type="redirectAction">
+				<param name="actionName">getUserInformation</param>
+			</result>
+			<result name="input">index.jsp</result>
+			<result name="error">error.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+<!-- 			<result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result>
+			<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+	</action>
+  
+		<action name="getUserInformation" method="getUserInfo" class="userAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="FOCA Delay Update" type="redirectAction">
+				<param name="actionName">getFocaDelay</param>
+			</result>
+			<result name="FOCA Delay Report" type="redirectAction">
+				<param name="actionName">focareport</param>
+			</result>
+			<result name="MH Delay Update" type="redirectAction">
+				<param name="actionName">getMhDelay</param>
+			</result>
+			<result name="MH Delay Report" type="redirectAction">
+				<param name="actionName">mhreport</param>
+			</result>
+			<result name="MH FIS Report" type="redirectAction">
+				<param name="actionName">mhfisreport</param>
+			</result>
+			<result name="FOCA FIS Report" type="redirectAction">
+				<param name="actionName">focafisreport</param>
+			</result>
+			<result name="ADD FOCA Carriers" type="redirectAction">
+				<param name="actionName">focacarriers</param>
+			</result>
+			<result name="User Management">manageuser.jsp</result>
+			<result name="error">error.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getFocaDelay" method="getFocaDelayData" class="focaDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focadelay.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="logout" method="logout" class="loginAction">
+			<result name="success">index.jsp</result>
+			<result name="session-error">index.jsp</result>
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> --> 
+		</action>
+		
+		<action name="home" method="redirectToHome" class="redirectAction">
+			<result name="success">newhome.jsp</result>
+		</action>
+		
+		<action name="notifyFlight" method="flightNotifications" class="notifyFlt">
+			<result name="success">NotificationDashboard.jsp</result>
+		</action>
+		
+		<action name="sendNotification" method="sendNotificationsToPax" class="notifyFlt">
+			<result name="success">NotificationSent.jsp</result>
+		</action>
+		
+		<action name="delayHelpList" method="getDelayList" class="delayAction">
+			
+		</action>
+		
+		<action name="report" method="getReports" class="delayAction">
+			<result name="success">focadelay.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="delayUpdate" method="delayUpdate" class="delayAction">
+			<result name="success">focadelay.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+
+
+		<action name="getFocaSearchData" method="getFocaSearchData" class="focaDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focadelay.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		
+			<action name="getMhDelay" method="getMhDelayData" class="mhDelayAction">
+				<interceptor-ref name="logginStack"></interceptor-ref>
+				<result name="success">mhdelay.jsp</result>
+				<result name="error">index.jsp</result>
+				 <result name="session-error">index.jsp</result> 
+				<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+				<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			
+			</action>
+		
+			<action name="getMhDelayHelpList" method="getMhDelayList" class="mhDelayUpdateAction">
+			</action>
+		
+			<action name="mhdelayUpdate" method="mhDelayUpdate" class="mhDelayUpdateAction">
+				<interceptor-ref name="logginStack"></interceptor-ref>
+				<result name="success">mhdelay.jsp</result>
+			</action>
+		
+			<action name="getmhSearchData" method="getMhSearchData" class="mhDelayAction">
+				<interceptor-ref name="logginStack"></interceptor-ref>
+				<result name="success">mhdelay.jsp</result>
+				<result name="error">index.jsp</result>
+				 <result name="session-error">index.jsp</result> 
+				<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+				<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			</action>
+			
+		<action name="mhreport" method="toMhReport" class="mhReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="success">mhreport.jsp</result>
+			<result name="error">mhreport.jsp</result>
+		</action>
+		
+		<action name="fetchFilterDetailsMh" method="getFilterParameters" class="mhReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhreport.jsp</result>
+			<result name="error">mhreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getMhReport" method="generateMhReport" class="mhReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhreport.jsp</result>
+			<result name="error">mhreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getMhSearchByDuration" method="mhSearchByDuration" class="mhDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhdelay.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getMhReportByDuration" method="generateMhReportByDuration" class="mhReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhreport.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+
+		<action name="mhfisreport" method="toMhfisReport" class="mhFisReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="success">mhfisreport.jsp</result>
+			<result name="error">mhfisreport.jsp</result>
+		</action>
+		
+		<action name="getMHFisReportAction" method="getMHFisReport" class="mhFisReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhfisreport.jsp</result>
+			<result name="error">mhfisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getMHFisReportActionByDuration" method="getMhFisReportByDuration" class="mhFisReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhfisreport.jsp</result>
+			<result name="error">mhfisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToExcelMHFis" method="getMHFisReportExcel" class="exportActionMHFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhfisreport.jsp</result>
+			<result name="error">mhfisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToExcelByDurationMHFis" method="getMHFisReportExcelByDuration" class="exportActionMHFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhfisreport.jsp</result>
+			<result name="error">mhfisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportPdfMHFis" method="exportToPDFForMHFis" class="exportPdfActionMHFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhfisreport.jsp</result>
+			<result name="error">mhfisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportPdfMHFisByDuration" method="exportToPDFForMHFisByDuration" class="exportPdfActionMHFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhfisreport.jsp</result>
+			<result name="error">mhfisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToCsvMHFis" method="getMHFisReportToCSV" class="exportCSVActionMHFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhfisreport.jsp</result>
+			<result name="error">mhfisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportCSVMHFisByDuration" method="getMHFisReportToCSVByDuration" class="exportCSVActionMHFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhfisreport.jsp</result>
+			<result name="error">mhfisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<!-- FOCA FIS REPORT -->
+		<action name="focafisreport" method="toFocafisReport" class="focaFisReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focafisreport.jsp</result>
+			<result name="error">focafisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		<action name="getFocaFisReportAction" method="getFocaFisReport" class="focaFisReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focafisreport.jsp</result>
+			<result name="error">focafisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		<action name="getFocaFisReportActionByDuration" method="getFocaFisReportByDuration" class="focaFisReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focafisreport.jsp</result>
+			<result name="error">focafisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		<action name="exportToExcelFocaFis" method="getFocaFisReportExcel" class="exportActionFocaFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focafisreport.jsp</result>
+			<result name="error">focafisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		<action name="exportToExcelByDurationFocaFis" method="getFocaReportExcelByDuration" class="exportActionFocaFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focafisreport.jsp</result>
+			<result name="error">focafisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportPdfFocaFis" method="exportToPDFForFocaFis" class="exportPdfActionFocaFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focafisreport.jsp</result>
+			<result name="error">focafisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportPdfByDurationFocaFis" method="exportByDurationPDFFocaFis" class="exportPdfActionFocaFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focafisreport.jsp</result>
+			<result name="error">focafisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToCsvFocaFis" method="getFocaFisReportToCSV" class="exportCSVActionFocaFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focafisreport.jsp</result>
+			<result name="error">focafisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToCsvByDurationFocaFis" method="getFocaFisReportToCSVByDuration" class="exportCSVActionFocaFis">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focafisreport.jsp</result>
+			<result name="error">focafisreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="focacarriers" method="focacarriers" class="focaCarriersAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focacarriers.jsp</result>
+			<result name="error">focacarriers.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getCarrierDetails" method="getCarrierInfo" class="focaCarriersAction">
+		</action>
+		
+		<action name="createNewCarriers" method="addNewCarrier" class="focaCarriersAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focacarriers.jsp</result>
+			<result name="error">focacarriers.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+						
+		<action name="deleteCarrier" method="deleteCarrierDetails" class="focaCarriersAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				<param name="actionName">focacarriers</param>
+			</result>
+			<result name="error">focacarriers.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="fetchAlirlineCodes" method="getFocaCarrierCodeDropDownValues" class="focaDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focadelay.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+
+		<action name="fetchStationList" method="getFocaSourceDropDownValues" class="focaDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focadelay.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="fetchStationListMH" method="getMhSourceDropDownValues" class="mhDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focadelay.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getUserDetails" method="getUserInfo" class="userManagementAction">
+		</action>
+
+		<action name="deleteUser" method="deleteUserDetails" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				<param name="actionName">manageusers</param>
+			</result>
+			<result name="error">manageuser.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+
+		<action name="updateUser" method="updateUserDetails" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+
+		<action name="fetchUpdateFormData" method="fetchUpdateFormData" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="error">manageuser.jsp</result>
+		</action>
+
+		<action name="fetchUpdateFeatures" method="fetchUpdateFeatures" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="error">manageuser.jsp</result>
+		</action>
+
+		<action name="updateUserAction" method="update" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">manageuser.jsp</result>
+			<result name="error">manageuser.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+
+		<action name="fetchDefaultFeatures" method="getDefaultFeatures" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="error">manageuser.jsp</result>
+		</action>
+
+		<action name="fetchAllRoles" method="getAllRoles" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="error">manageuser.jsp</result>
+		</action>
+
+		<action name="addNewRole" method="addRole" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="success">manageuser.jsp</result>
+			<result name="error">manageuser.jsp</result>
+		</action>
+
+		<action name="createNewUser" method="addNewUser" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="success">manageuser.jsp</result>
+			<result name="error">manageuser.jsp</result>
+		</action>
+
+		<action name="ldapSearchAction" method="getLdapDetails" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+
+		<action name="manageusers" method="manageusers" class="userManagementAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="success">manageuser.jsp</result>
+			<result name="error">manageuser.jsp</result>
+		</action>
+		
+		<action name="focareport" method="toFocaReport" class="focaReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+		</action>
+		
+		<action name="fetchFilterDetails" method="getFilterParameters" class="focaReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getFocaReport" method="generateFocaReport" class="focaReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToExcel" method="getFocaReportExcel" class="exportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToPdf" method="getFocaReportPdf" class="exportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToCsv" method="getFocaReportToCSV" class="exportCSVAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		
+		<action name="getFocaSearchduration" method="focaSearchByDuration" class="focaDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focadelay.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getFocaReportDuration" method="generateFocaReportByDuration" class="focaReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="redirectLogin" method="redirectToLogin" class="loginAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="success">index.jsp</result>
+		</action>
+		
+		<action name="exportPdf" method="exportToPDFFoca" class="exportPdfAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		
+		<action name="exportToExcelMH" method="getMHReportExcel" class="exportActionMH">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhreport.jsp</result>
+			<result name="error">mhreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportPdfMH" method="exportToPDFForMH" class="exportPdfActionMH">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhreport.jsp</result>
+			<result name="error">mhreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToCsvMH" method="getMHReportToCSV" class="exportCSVActionMH">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhreport.jsp</result>
+			<result name="error">mhreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getFocaReportAction" method="getFocaReport" class="focaReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getFocaReportActionByDuration" method="getFocaReportByDuration" class="focaReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToExcelByDuration" method="getFocaReportExcelByDuration" class="exportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportPdfByDuration" method="exportByDurationPDFFoca" class="exportPdfAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="success">index.jsp</result>
+		</action>
+		
+		<action name="exportToCsvByDuration" method="getFocaReportToCSVByDuration" class="exportCSVAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focareport.jsp</result>
+			<result name="error">focareport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getMHReportAction" method="getMHReport" class="mhReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhreport.jsp</result>
+			<result name="error">mhreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getMHReportActionByDuration" method="getMhReportByDuration" class="mhReportAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhreport.jsp</result>
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportToExcelByDurationMH" method="getMHReportExcelByDuration" class="exportActionMH">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhreport.jsp</result>
+			<result name="error">mhreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="exportPdfMHByDuration" method="exportToPDFForMHByDuration" class="exportPdfActionMH">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			<result name="success">mhreport.jsp</result>
+			<result name="error">mhreport.jsp</result>
+		</action>
+		
+		<action name="exportCSVMHByDuration" method="getMHReportToCSVByDuration" class="exportCSVActionMH">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhreport.jsp</result>
+			<result name="error">mhreport.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		
+		<action name="getMhDefaultDelay" method="getMhDefaultDelayValues" class="mhDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhdelay.jsp</result>
+			<result name="error">mhdelay.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getMhDelayByFilter" method="getMhDelayValuesByFilter" class="mhDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhdelay.jsp</result>
+			<result name="error">mhdelay.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getMhDelayByDurationFilter" method="getMhDelayValuesByDurationFilter" class="mhDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">mhdelay.jsp</result>
+			<result name="error">mhdelay.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getFocaDefaultDelay" method="getFocaDefaultDelayValue" class="focaDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focadelay.jsp</result>
+			<result name="error">focadelay.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getFocaDelayByFilter" method="getFocaDefaultDelayValueByFilter" class="focaDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focadelay.jsp</result>
+			<result name="error">focadelay.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="getFocaDelayByDuration" method="getFocaDefaultDelayValueByDuration" class="focaDelayAction">
+			<interceptor-ref name="logginStack"></interceptor-ref>
+			<result name="success">focadelay.jsp</result>
+			<result name="error">focadelay.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+		</action>
+		
+		<action name="loginValidateAction" method="loginValidateSSO" class="loginValidateAction">
+		
+			<result name="login-success" type="redirectAction">
+				<param name="actionName">getUserInformation</param>
+			</result>
+			<!-- <result name="success">index.jsp</result> -->
+			<result name="error">index.jsp</result>
+			 <result name="session-error">index.jsp</result> 
+			<!-- <result name="session-error" type="redirect">https://uat-mhlinks.malaysiaairlines.com/users/sign_in</result> -->
+			<!--<result name="session-error" type="redirect">https://mhmessenger.malaysiaairlines.com/fsis/</result> -->
+			
+		</action>
+
+	</package>
+</struts>

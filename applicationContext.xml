@@ -1,0 +1,204 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/task 
+		http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+
+
+	<!--Start: Database Connections -->
+	<!-- AODB  Production  Database  -->	
+	    
+    <bean id="dataSource_sras" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.ibm.db2.jcc.DB2Driver" />
+		<property name="url" value="jdbc:db2://1aodb.mas.net:50000/AIR_OPS" />
+		<property name="username" value="fsisa" />
+		<property name="password" value="Aodb#Fsi@2020" />
+	</bean> 
+     
+	
+	<!-- AODB  UAT  Database  -->	
+	<!--    
+    <bean id="dataSource_sras" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.ibm.db2.jcc.DB2Driver" />
+		<property name="url" value="jdbc:db2://10.224.22.63:50000/AIR_OPS" />
+		<property name="username" value="fsisa" />
+		<property name="password" value="Fsis@20" />
+	</bean> 
+      -->
+  
+	<!--end: Database Connections -->
+
+	<bean id="loginInterceptor" class="net.mas.fsis.action.LoginInterceptor">
+	</bean>
+	
+	<bean id="loginDAO" class="net.mas.fsis.dao.LoginDAO">
+		<property name="dataSource" ref="dataSource_sras"></property>
+	</bean>
+
+	<bean id="loginAction" class="net.mas.fsis.action.LoginAction" scope="prototype">
+	</bean>
+
+	<bean id="userAction" class="net.mas.fsis.action.UserAction" scope="prototype">
+		<property name="logindao" ref="loginDAO"></property>
+	</bean>
+	
+	<bean id="focaDelayAction" class="net.mas.fsis.action.FocaDelayAction" scope="prototype">
+		<property name="fltDao" ref="fltDao"></property>
+		<property name="delaydao" ref="delayDAO"></property>
+	</bean>
+	
+	<bean id="redirectAction" class="net.mas.fsis.action.RedirectAction" scope="prototype">
+	</bean>
+
+	<bean id="mhdelayDAO" class="net.mas.fsis.dao.MhDelayDAO" scope="prototype">
+		<property name="dataSource" ref="dataSource_sras"></property>
+	</bean>
+	
+	<bean id="mhdelayobj" class="net.mas.fsis.action.MhDelayServlet" scope="prototype">
+		<property name="mhdelayDAO" ref="mhdelayDAO"></property>
+	</bean>	
+	
+	<bean id="mhDelayAction" class="net.mas.fsis.action.MhDelayAction" scope="prototype">
+		<property name="fltDao" ref="fltDao"></property>
+		<property name="mhdelaydao" ref="mhdelayDAO"></property>
+	</bean>
+	
+	<bean id="mhDelayUpdateAction" class="net.mas.fsis.action.MhDelayUpdateAction">
+		<property name="fInfoVo" ref="fInfoVO"></property>
+		<property name="mhdelayobj" ref="mhdelayobj"></property>
+	</bean>
+	
+	<bean id="mhReportDAO" class="net.mas.fsis.dao.MhReportDAO">
+		<property name="dataSource" ref="dataSource_sras"></property>
+	</bean>
+	
+	<bean id="mhReportAction" class="net.mas.fsis.action.MhReportAction" scope="prototype">
+		<property name="fltDao" ref="fltDao"></property>
+		<property name="mhReportDAO" ref="mhReportDAO"></property>
+	</bean>
+
+	<bean id="mhFisReportDAO" class="net.mas.fsis.dao.MhFisReportDAO">
+		<property name="dataSource" ref="dataSource_sras"></property>
+	</bean>
+	
+	<bean id="mhFisReportAction" class="net.mas.fsis.action.MhFIsReportAction" scope="prototype">
+		<property name="mhFisReportDAO" ref="mhFisReportDAO"></property>
+	</bean>
+	
+	<bean id="exportActionMHFis" class="net.mas.fsis.action.ExportActionMHFis" scope="prototype">
+		<property name="mhFisReportDAO" ref="mhFisReportDAO"></property>
+	</bean>
+	
+	<bean id="exportPdfActionMHFis" class="net.mas.fsis.action.ExportPDFActionMHFis" scope="prototype">
+		<property name="mhFisReportDAO" ref="mhFisReportDAO"></property>
+	</bean>
+	
+	<bean id="exportCSVActionMHFis" class="net.mas.fsis.action.ExportCSVActionMHFis" scope="prototype">
+		<property name="mhFisReportDAO" ref="mhFisReportDAO"></property>
+	</bean>
+
+	<bean id="focaFisReportDAO" class="net.mas.fsis.dao.FocaFisReportDAO">
+		<property name="dataSource" ref="dataSource_sras"></property>
+	</bean>
+	<bean id="focaFisReportAction" class="net.mas.fsis.action.FocaFisReportAction" scope="prototype">
+		<property name="focaFisReportDAO" ref="focaFisReportDAO"></property>
+	</bean>
+	<bean id="exportActionFocaFis" class="net.mas.fsis.action.ExportActionFocaFis" scope="prototype">
+		<property name="focaFisReportDAO" ref="focaFisReportDAO"></property>
+	</bean>
+	<bean id="exportPdfActionFocaFis" class="net.mas.fsis.action.ExportPDFActionFocaFis" scope="prototype">
+		<property name="focaFisReportDAO" ref="focaFisReportDAO"></property>
+	</bean>
+	<bean id="exportCSVActionFocaFis" class="net.mas.fsis.action.ExportCSVActionFocaFis" scope="prototype">
+		<property name="focaFisReportDAO" ref="focaFisReportDAO"></property>
+	</bean>
+	
+	<bean id="focaCarriersDAO" class="net.mas.fsis.dao.FocaCarriersDAO">
+		<property name="dataSource" ref="dataSource_sras"></property>
+	</bean>
+	
+	<bean id="focaCarriersAction" class="net.mas.fsis.action.FocaCarriersAction" scope="prototype">
+		<property name="focaCarriersDAO" ref="focaCarriersDAO"></property>
+	</bean>
+
+	<!--Start: ArrayList and Utils -->
+	<bean id="arrayList" class="java.util.ArrayList"></bean>
+	<bean id="hashMap" class="java.util.HashMap"></bean>
+
+	
+	<bean id="fltDao" class="net.mas.fsis.dao.FltDisruptDAO">
+			<property name="dataSource" ref="dataSource_sras"></property>
+	</bean> 
+
+	<bean id="delayAction" class="net.mas.fsis.action.DelayAction">
+
+	<property name="fInfoVo" ref="fInfoVO"></property>
+	<property name="delayobj" ref="delayobj"></property>
+	
+	
+	</bean>
+	
+	<bean id="delayDAO" class="net.mas.fsis.dao.DelayDAO" scope="prototype">
+		<property name="dataSource" ref="dataSource_sras"></property>
+	</bean>
+	
+	<bean id="fInfoVO" class="net.mas.fsis.vo.FlightInfoVO" scope="prototype">
+		
+	</bean>
+	
+	<bean id="delayobj" class="net.mas.fsis.action.DelayServlet" scope="prototype">
+		<property name="delayDAO" ref="delayDAO"></property>
+	</bean>
+	
+	<bean id="userDAO" class="net.mas.fsis.dao.UserDAO">
+		<property name="dataSource" ref="dataSource_sras"></property>
+	</bean>
+	
+	<bean id="userManagementAction" class="net.mas.fsis.action.UserManagementAction" scope="prototype">
+		<property name="userdao" ref="userDAO"></property>
+	</bean>
+	
+	<bean id="focaReportDAO" class="net.mas.fsis.dao.FocaReportDAO">
+		<property name="dataSource" ref="dataSource_sras"></property>
+	</bean>
+	
+	<bean id="focaReportAction" class="net.mas.fsis.action.FocaReportAction" scope="prototype">
+		<property name="focaReportDAO" ref="focaReportDAO"></property>
+		<property name="fltDao" ref="fltDao"></property>
+	</bean>
+	
+	<bean id="exportAction" class="net.mas.fsis.action.ExportAction" scope="prototype">
+		<property name="focaReportDAO" ref="focaReportDAO"></property>
+		<property name="fltDao" ref="fltDao"></property>
+	</bean>
+	
+	<bean id="exportCSVAction" class="net.mas.fsis.action.ExportCSVAction" scope="prototype">
+		<property name="focaReportDAO" ref="focaReportDAO"></property>
+		<property name="fltDao" ref="fltDao"></property>
+	</bean>
+	
+	<bean id="exportPdfAction" class="net.mas.fsis.action.ExportPDFAction" scope="prototype">
+		<property name="focaReportDAO" ref="focaReportDAO"></property>
+		<property name="fltDao" ref="fltDao"></property>
+	</bean>
+	
+	<bean id="exportActionMH" class="net.mas.fsis.action.ExportActionMH" scope="prototype">
+		<property name="fltDao" ref="fltDao"></property>
+		<property name="mhReportDAO" ref="mhReportDAO"></property>
+	</bean>
+	
+	<bean id="exportCSVActionMH" class="net.mas.fsis.action.ExportCSVActionMH" scope="prototype">
+		<property name="mhReportDAO" ref="mhReportDAO"></property>
+		<property name="fltDao" ref="fltDao"></property>
+	</bean>
+	
+	<bean id="exportPdfActionMH" class="net.mas.fsis.action.ExportPDFActionMH" scope="prototype">
+		<property name="mhReportDAO" ref="mhReportDAO"></property>
+		<property name="fltDao" ref="fltDao"></property>
+	</bean>
+	
+	<bean id="loginValidateAction" class="net.mas.fsis.action.LoginValidateAction" scope="prototype">
+	</bean>
+	
+</beans>
