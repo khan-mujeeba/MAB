@@ -1,0 +1,13 @@
+[INFO ] 2022-09-29 11:30:00.000 [pool-3-thread-1] RunJobDaily (RunJobDaily.java:52) - inside daily job
+[INFO ] 2022-09-29 11:30:00.002 [pool-3-thread-1] JobDAO (JobDAO.java:27) -  in getCrewJobTime DAO class
+[INFO ] 2022-09-29 11:30:00.003 [pool-3-thread-1] JobDAO (JobDAO.java:35) - view job time schdeuled querySELECT PARAM_VALUE FROM CLRS_PARAM_CONFIG  WHERE PARAM_NAME ='SCHEDULE_TIME' 
+[INFO ] 2022-09-29 11:30:01.080 [pool-3-thread-1] JobDAO (JobDAO.java:46) -  exiting getCrewJobTime DAO class
+[INFO ] 2022-09-29 11:30:01.081 [pool-3-thread-1] RunJobDaily (RunJobDaily.java:61) - org.quartz.impl.StdScheduler@32ffad1d
+[INFO ] 2022-09-29 11:30:01.081 [pool-3-thread-1] RunJobDaily (RunJobDaily.java:74) - 00 30 11 29 9 ? 2022
+[INFO ] 2022-09-29 11:30:01.081 [pool-3-thread-1] RunJobDaily (RunJobDaily.java:78) - JobDetail 'DEFAULT.job1':  jobClass: 'com.clrs.batch.FileProcessingJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: false requestsRecovers: false
+[INFO ] 2022-09-29 11:30:01.081 [pool-3-thread-1] RunJobDaily (RunJobDaily.java:79) - Trigger 'DEFAULT.trigger1':  triggerClass: 'org.quartz.impl.triggers.CronTriggerImpl calendar: 'null' misfireInstruction: 0 nextFireTime: null
+[INFO ] 2022-09-29 11:30:01.081 [pool-3-thread-1] RunJobDaily (RunJobDaily.java:85) - org.quartz.SchedulerException: Based on configured schedule, the given trigger 'DEFAULT.trigger1' will never fire.
+[INFO ] 2022-09-29 11:30:01.081 [pool-3-thread-1] MailUtil (MailUtil.java:56) - entered in mail blast
+[INFO ] 2022-09-29 11:30:01.081 [pool-3-thread-1] MailUtil (MailUtil.java:63) -  
+[INFO ] 2022-09-29 11:30:01.081 [pool-3-thread-1] MailUtil (MailUtil.java:114) - errorCLrs
+[INFO ] 2022-09-29 11:30:13.971 [pool-3-thread-1] MailUtil (MailUtil.java:196) - mail sent successfully to: ext_mujeebazainab.khan@malaysiaairlines.com, ext_abdeali.tinwala@malaysiaairlines.com
